@@ -137,3 +137,6 @@ alias visualparadigm='/home/lo/programs/visual-paradigm/Visual_Paradigm_CE_12.2/
 
 # PHPMyAdmin
 alias start-phpmyadmin='~/start-phpmyadmin.sh'
+
+# Get latest git commit hash
+alias git-glh="~/git-get-latest-hash.sh"
