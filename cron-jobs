@@ -20,4 +20,6 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
+PATH=/home/lo/.gvm/pkgsets/go1.4/global/bin:/home/lo/.gvm/gos/go1.4/bin:/home/lo/.gvm/pkgsets/go1.4/global/overlay/bin:/home/lo/.gvm/bin:/home/lo/.gvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/lo/.rvm/bin
+
 0 23 * * * redshift
