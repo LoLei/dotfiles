@@ -140,3 +140,6 @@ alias start-phpmyadmin='~/start-phpmyadmin.sh'
 
 # Get latest git commit hash
 alias git-glh="~/git-get-latest-hash.sh"
+
+# Swift
+alias swift="/home/lo/code/swift/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr/bin/swift"
