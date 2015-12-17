@@ -45,10 +45,15 @@ filetype plugin indent on    " required
 " " Put your non-Plugin stuff after this line
 "
 " execute pathogen#infect()
-set nu
-syntax on
-colorscheme Tomorrow-Night
-set laststatus=2
-
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
+
+set nu
+syntax on
+colorscheme Tomorrow-Night-Dark
+set laststatus=2
+
+" Turn off auto comment and auto indentation
+set nosi noai
+set formatoptions-=r
+set formatoptions-=o
