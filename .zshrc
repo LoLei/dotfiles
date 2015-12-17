@@ -147,3 +147,6 @@ alias swift="/home/lo/code/swift/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr
 # Android Studio
 alias android-studio="~/programs/android-studio/bin"
 alias adb="/home/lo/Android/Sdk/platform-tools/adb"
+
+# Redshift
+alias redshift-ll="redshift -l 47.070714:15.439503999999943"
