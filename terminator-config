@@ -1,5 +1,22 @@
 [global_config]
-[keybindings]
+  title_transmit_fg_color = "#a7a7a7"
+  title_transmit_bg_color = "#1e1e1e"
+  title_inactive_fg_color = "#a7a7a7"
+  title_inactive_bg_color = "#5f5a60"
+
+[profiles]
+  [[default]]
+    palette = "#1e1e1e:#a54242:#8f9d6a:#f9ee98:#7587a6:#9b859d:#afc4db:#a7a7a7:#5f5a60:#cc6666:#8f9d6a:#f9ee98:#7587a6:#9b859d:#afc4db:#ffffff"
+    foreground_color = "#a7a7a7"
+    background_color = "#181818"
+    cursor_color = "#a7a7a7"
+    background_image = None
+    cursor_blink = False
+    font = Monospace 14
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+
 [layouts]
   [[default]]
     [[[child1]]]
@@ -9,13 +26,3 @@
       parent = ""
       type = Window
 [plugins]
-[profiles]
-  [[default]]
-    background_color = "#181818"
-    background_image = None
-    cursor_blink = False
-    font = Monospace 14
-    palette = "#282a2e:#a54242:#8c9440:#de935f:#5f819d:#85678f:#5e8d87:#707880:#373b41:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6"
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
