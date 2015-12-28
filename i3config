@@ -180,7 +180,9 @@ gaps inner 15
 gaps outer 5
 
 # wallpaper
-exec feh --bg-scale ~/pictures/hills.jpg
+# exec feh --bg-scale ~/pictures/wallpapers/hills.jpg
+exec feh --bg-scale ~/pictures/wallpapers/bloodmoon.jpg
+# exec feh --bg-scale ~/pictures/android-wallpaper.jpg
 
 # borders
 # class                 border  backgr. text    indicator
