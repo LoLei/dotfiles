@@ -158,7 +158,7 @@ bar {
         statusline #adadad
         separator #505050
 
-        focused_workspace  #4c7899 #285577 #ffffff
+        focused_workspace  #6e5642 #4c3420 #ffffff
         active_workspace   #333333 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
         urgent_workspace   #2f343a #900000 #ffffff
@@ -187,8 +187,8 @@ exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
 
 # borders
 # class                 border  backgr. text    indicator
-client.focused          #31434f #31434f #ffffff #31434f
-client.focused_inactive #283640 #283640 #ffffff #283640
-client.unfocused        #283640 #283640 #888888 #283640
-client.urgent           #283640 #283640 #ffffff #283640
+client.focused          #4c3420 #4c3420 #ffffff #4c3420
+client.focused_inactive #6e5642 #6e5642 #ffffff #6e5642
+client.unfocused        #6e5642 #6e5642 #888888 #6e5642
+client.urgent           #6e5642 #6e5642 #ffffff #6e5642
 client.placeholder      #000000 #0c0c0c #ffffff #000000
