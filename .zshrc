@@ -90,7 +90,7 @@ KEYTIMEOUT=1
 # show vim status
 # http://zshwiki.org/home/examples/zlewidgets
 function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/[NORMAL]}/(main|viins)/[INSERT]}"
+    RPS1="${${KEYMAP/vicmd/♢}/(main|viins)/♦}"
     RPS2=$RPS1
     zle reset-prompt
 }
@@ -136,17 +136,16 @@ alias cheat='~/Go/bin/cheat'
 alias visualparadigm='/home/lo/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
 
 # PHPMyAdmin
-alias start-phpmyadmin='~/start-phpmyadmin.sh'
+alias start-phpmyadmin='sudo ~/start-phpmyadmin.sh'
 
-# Get latest git commit hash
-alias git-glh="~/git-get-latest-hash.sh"
+# IntelliJ IDEA
+alias intellij-idea='~/programs/idea-IU-141.2735.5/bin/idea.sh'
 
-# Swift
-alias swift="/home/lo/code/swift/swift-2.2-SNAPSHOT-2015-12-01-b-ubuntu14.04/usr/bin/swift"
+# Git get latest commit hash
+alias git-glh='~/git-get-latest-hash.sh'
+
+# Visual Paradigm
+alias visual-paradigm='~/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
 
 # Android Studio
-alias android-studio="~/programs/android-studio/bin"
-alias adb="/home/lo/Android/Sdk/platform-tools/adb"
-
-# Redshift
-alias redshift-ll="redshift -l 47.070714:15.439503999999943"
+alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
