@@ -11,7 +11,7 @@
 
     # "Light" wallpaper color palette
     # Orange: #c17230
-    palette = "#1e1e1e:#753824:#8f9d6a:#6e5642:#a0773f:#4c3420:#9d5036:#a7a7a7:#5f5a60:#d6ac48:#753824:#856c4b:#a0773f:#e4854f:#b19c67:#988c5e"
+    palette = "#1e1e1e:#753824:#5c6a37:#6e5642:#a0773f:#4c3420:#9d5036:#a7a7a7:#5f5a60:#d6ac48:#753824:#856c4b:#a0773f:#e4854f:#b19c67:#988c5e"
     foreground_color = "#a7a7a7"
     background_color = "#181818"
     cursor_color = "#a7a7a7"
