@@ -149,3 +149,6 @@ alias visual-paradigm='~/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Vi
 
 # Android Studio
 alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
+
+# Execute dircolors, removes background from directories and executables
+eval "$(dircolors ~/.dircolors)"
