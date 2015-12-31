@@ -185,6 +185,9 @@ gaps outer 5
 # exec feh --bg-scale ~/pictures/android-wallpaper.jpg
 exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
 
+# Start compton
+exec ~/start-compton.sh
+
 # borders
 # class                 border  backgr. text    indicator
 client.focused          #4c3420 #4c3420 #ffffff #4c3420
