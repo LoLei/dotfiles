@@ -152,3 +152,7 @@ alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
 
 # Execute dircolors, removes background from directories and executables
 eval "$(dircolors ~/.dircolors)"
+
+# Drive force push and pull
+alias drive-push-f="drive push -ignore-name-clashes -ignore-conflict"
+alias drive-pull-f="drive pull -ignore-name-clashes -ignore-conflict"
