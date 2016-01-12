@@ -1,0 +1,37 @@
+[global_config]
+  handle_size = 0
+  title_transmit_fg_color = "#c0c5ce"
+  title_inactive_fg_color = "#838383"
+  borderless = True
+  title_transmit_bg_color = "#232323"
+  tab_position = hidden
+  inactive_color_offset = 1.0
+  title_inactive_bg_color = "#151515"
+[keybindings]
+  go_up = <Alt>k
+  next_tab = <Primary>Tab
+  prev_tab = <Primary><Shift>Tab
+  go_down = <Alt>j
+  go_right = <Alt>l
+  go_left = <Alt>h
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
+    background_image = None
+    background_darkness = 1.1
+    use_system_font = False
+    cursor_color = "#c0c5ce"
+    foreground_color = "#d0d0d0"
+    font = Ubuntu Mono 12
+    background_color = "#151515"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
