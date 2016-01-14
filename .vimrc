@@ -48,7 +48,7 @@ filetype plugin indent on    " required
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 set t_Co=256
 
-set nu
+set rnu
 syntax on
 colorscheme Tomorrow-Night-Dark
 set laststatus=2
