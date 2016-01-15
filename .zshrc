@@ -156,3 +156,7 @@ eval "$(dircolors ~/.dircolors)"
 # Drive force push and pull
 alias drive-push-f="drive push -ignore-name-clashes -ignore-conflict"
 alias drive-pull-f="drive pull -ignore-name-clashes -ignore-conflict"
+
+# Zoom terminal before opening vim
+# alias vim="~/zoom-terminal-in.sh && vim"
+cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
