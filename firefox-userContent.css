@@ -1,0 +1,23 @@
+/* Fix user input fields being colored by GTK */
+
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']) {
+      -moz-appearance: none !important;
+          background-color: white;
+              color: black;
+}
+
+#downloads-indicator-counter {
+    color: white;
+}
+
+textarea {
+      -moz-appearance: none !important;
+          background-color: white;
+              color: black;
+}
+
+select {
+      -moz-appearance: none !important;
+          background-color: white;
+              color: black;
+}
