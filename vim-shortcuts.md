@@ -14,3 +14,5 @@
 `:%s/foo/bar/gc`: Change each 'foo' to 'bar', but ask for confirmation first.  
 
 [Credit for the last three](http://vim.wikia.com/wiki/Search_and_replace)
+
+More good motion shortcuts [here](http://vimdoc.sourceforge.net/htmldoc/motion.html). (Disclaimer: It's Sourceforge)
