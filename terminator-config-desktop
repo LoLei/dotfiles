@@ -1,46 +1,50 @@
 [global_config]
   handle_size = 0
-  title_transmit_fg_color = "#c0c5ce"
+  inactive_color_offset = 1.0
+  tab_position = hidden
+  title_inactive_bg_color = "#151515"
   title_inactive_fg_color = "#838383"
   title_transmit_bg_color = "#151515"
-  tab_position = hidden
-  inactive_color_offset = 1.0
-  title_inactive_bg_color = "#151515"
+  title_transmit_fg_color = "#c0c5ce"
 [keybindings]
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_right = <Alt>l
   go_up = <Alt>k
   next_tab = <Primary>Tab
   prev_tab = <Primary><Shift>Tab
-  go_down = <Alt>j
-  go_right = <Alt>l
-  go_left = <Alt>h
-[profiles]
-  [[default]]
-    scrollbar_position = hidden
-    palette = "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
-    background_image = None
-    background_darkness = 1.1
-    use_system_font = False
-    cursor_color = "#c0c5ce"
-    foreground_color = "#d0d0d0"
-    font = Ubuntu Mono 12
-    background_color = "#151515"
-  [[vim]]
-    scrollbar_position = hidden
-    palette = "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
-    background_image = None
-    background_darkness = 1.1
-    use_system_font = False
-    cursor_color = "#c0c5ce"
-    foreground_color = "#d0d0d0"
-    font = Ubuntu Mono 14
-    background_color = "#151515"
 [layouts]
   [[default]]
     [[[child1]]]
-      type = Terminal
       parent = window0
       profile = default
+      type = Terminal
     [[[window0]]]
-      type = Window
       parent = ""
+      type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_color = "#151515"
+    background_darkness = 0.9
+    background_image = None
+    background_type = transparent
+    cursor_color = "#c0c5ce"
+    font = Roboto Mono 12
+    # foreground_color = "#d0d0d0"
+    foreground_color = "#94a3a5"
+    # palette = "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
+    palette = "#151515:#a54242:#8c9440:#de935f:#5f819d:#85678f:#5e8d87:#969896:#373b41:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[vim]]
+    background_color = "#151515"
+    background_darkness = 1.1
+    background_image = None
+    cursor_color = "#c0c5ce"
+    font = Ubuntu Mono 14
+    foreground_color = "#d0d0d0"
+    palette = "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
+    scrollbar_position = hidden
+    use_system_font = False
