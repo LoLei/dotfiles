@@ -37,7 +37,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -eh 2 -padding 450 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "#4c3420" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
+bindsym $mod+d exec rofi -show run -eh 2 -padding 450 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -161,24 +161,30 @@ mode "resize" {
         bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+        bindsym Return mode "default" bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
 
+# Color variables
+set $color_light "#4F4F4F"
+set $color_darker "#2D2D2D"
+set $color_transparent "rgba(26,26,26,0.57)"
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+	# i3bar_command i3bar -t
         status_command i3status
+	position top
         colors {
-        background #181818
+        background $color_darker
         statusline #adadad
         separator #505050
 
-        focused_workspace  #6e5642 #4c3420 #ffffff
-        active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #333333 #222222 #888888
+        focused_workspace  $color_darker $color_darker #ffffff
+        active_workspace   $color_darker $color_darker $color_light
+       	inactive_workspace $color_darker $color_darker #adadad
         urgent_workspace   #2f343a #753824 #ffffff
     }
 }
@@ -209,9 +215,9 @@ exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
 exec ~/start-compton.sh
 
 # borders
-# class                 border  backgr. text    indicator
-client.focused          #4c3420 #4c3420 #ffffff #4c3420
-client.focused_inactive #6e5642 #6e5642 #ffffff #6e5642
-client.unfocused        #6e5642 #6e5642 #888888 #6e5642
-client.urgent           #6e5642 #6e5642 #ffffff #6e5642
+# class                 border  	backgr. 	text    	indicator
+client.focused          $color_light 	$color_light 	#ffffff 	$color_light
+client.focused_inactive $color_darker 	$color_darker 	#ffffff 	$color_darker
+client.unfocused        $color_darker 	$color_darker  	#888888 	$color_darker
+client.urgent           $color_darker 	$color_darker  	#ffffff 	$color_darker
 client.placeholder      #000000 #0c0c0c #ffffff #000000
