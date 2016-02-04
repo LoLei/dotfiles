@@ -171,24 +171,6 @@ set $color_light "#4F4F4F"
 set $color_darker "#2D2D2D"
 set $color_transparent "rgba(26,26,26,0.57)"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-	# i3bar_command i3bar -t
-        status_command i3status
-	position top
-        colors {
-        background $color_darker
-        statusline #adadad
-        separator #505050
-
-        focused_workspace  $color_darker $color_darker #ffffff
-        active_workspace   $color_darker $color_darker $color_light
-       	inactive_workspace $color_darker $color_darker #adadad
-        urgent_workspace   #2f343a #753824 #ffffff
-    }
-}
-
 # xfce4-notify
 for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggle
 # shutdown menu
@@ -221,3 +203,24 @@ client.focused_inactive $color_darker 	$color_darker 	#ffffff 	$color_darker
 client.unfocused        $color_darker 	$color_darker  	#888888 	$color_darker
 client.urgent           $color_darker 	$color_darker  	#ffffff 	$color_darker
 client.placeholder      #000000 #0c0c0c #ffffff #000000
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3status
+	position top
+	output DVI-0
+	output DVI-1
+
+        colors {
+        background $color_darker
+        statusline #adadad
+        separator #505050
+
+        focused_workspace  $color_darker $color_darker #ffffff
+        active_workspace   $color_darker $color_darker $color_light
+       	inactive_workspace $color_darker $color_darker #adadad
+        urgent_workspace   #2f343a #753824 #ffffff
+    }
+}
+
