@@ -211,7 +211,7 @@ bar {
         status_command i3status
 	position top
 	output DVI-0
-	output DVI-1
+	# output DVI-1
 
         colors {
         background $color_darker
