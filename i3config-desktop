@@ -190,7 +190,8 @@ gaps outer 5
 # exec feh --bg-scale ~/pictures/wallpapers/bloodmoon.jpg
 # exec feh --bg-scale ~/pictures/android-wallpaper.jpg
 # exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
-exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
+# exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
+exec_always /home/lo/set-random-wallpaper.sh
 
 
 # Start compton
