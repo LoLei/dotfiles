@@ -210,6 +210,9 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000
 bar {
         status_command i3status
 	position top
+	mode hide
+	hidden_state hide
+	modifier Mod4
 	output DVI-0
 	# output DVI-1
 
