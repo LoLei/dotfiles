@@ -195,7 +195,7 @@ exec_always /home/lo/set-random-wallpaper.sh
 
 
 # Start compton
-exec ~/start-compton.sh
+exec_always ~/start-compton.sh
 
 # borders
 # class                 border  	backgr. 	text    	indicator
