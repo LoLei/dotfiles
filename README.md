@@ -2,7 +2,7 @@
 
 Configuration and other files of my Linux setups.
 
-![](http://i.imgur.com/FoIg48P.jpg?1 "screeenfetch")
+![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/shutter-screenfetch.png "screeenfetch")
 
 ## Distro
 Arch Linux
