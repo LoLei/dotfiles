@@ -1,6 +1,8 @@
 # dotfiles
 
-Configuration and other files of my Linux setups. 
+Configuration and other files of my Linux setups.
+
+![](http://i.imgur.com/FoIg48P.jpg?1 "screeenfetch")
 
 ## Distro
 Arch Linux
@@ -13,6 +15,12 @@ i3-gaps
 
 ## Compositor
 compton
+
+## Shell
+ZSH
+
+## Font
+Roboto Mono
 
 ---
 
