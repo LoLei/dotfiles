@@ -13,6 +13,7 @@ general {
 }
 
 # order += "ipv6"
+order += "volume master"
 order += "wireless _first_"
 order += "disk /"
 # order += "run_watch DHCP"
@@ -55,4 +56,10 @@ load {
 
 disk "/" {
         format = "%avail"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "pulse:1"
 }
