@@ -1,27 +1,9 @@
 [global_config]
-  title_transmit_fg_color = "#a7a7a7"
-  title_transmit_bg_color = "#1e1e1e"
-  title_inactive_fg_color = "#a7a7a7"
   title_inactive_bg_color = "#5f5a60"
-
-[profiles]
-  [[default]]
-    # Original color palette
-    # palette = "#1e1e1e:#a54242:#8f9d6a:#f9ee98:#7587a6:#9b859d:#afc4db:#a7a7a7:#5f5a60:#cc6666:#8f9d6a:#f9ee98:#7587a6:#9b859d:#afc4db:#ffffff"
-
-    # "Light" wallpaper color palette
-    # Orange: #c17230
-    palette = "#1e1e1e:#753824:#5c6a37:#6e5642:#a0773f:#4c3420:#9d5036:#a7a7a7:#5f5a60:#d6ac48:#753824:#856c4b:#a0773f:#e4854f:#b19c67:#988c5e"
-    foreground_color = "#a7a7a7"
-    background_color = "#181818"
-    cursor_color = "#a7a7a7"
-    background_image = None
-    cursor_blink = False
-    font = Monospace 14
-    scrollbar_position = hidden
-    show_titlebar = False
-    use_system_font = False
-
+  title_inactive_fg_color = "#a7a7a7"
+  title_transmit_bg_color = "#1e1e1e"
+  title_transmit_fg_color = "#a7a7a7"
+[keybindings]
 [layouts]
   [[default]]
     [[[child1]]]
@@ -31,3 +13,17 @@
       parent = ""
       type = Window
 [plugins]
+[profiles]
+  [[default]]
+    background_color = "#181818"
+    background_darkness = 0.9
+    background_image = None
+    background_type = transparent
+    cursor_blink = False
+    cursor_color = "#a7a7a7"
+    font = Roboto Mono for Powerline 14
+    foreground_color = "#a7a7a7"
+    palette = "#151515:#a54242:#8c9440:#de935f:#5f819d:#85678f:#5e8d87:#969896:#373b41:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
