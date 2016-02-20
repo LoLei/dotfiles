@@ -1,5 +1,5 @@
 syntax enable
-colorscheme wargrey
+colorscheme Tomorrow-Night
 set rnu
 
 execute pathogen#infect()
