@@ -10,14 +10,14 @@ let "number %= 8"
 echo $number
 
 # Predefine images
-image0="/home/lo/Pictures/wallpapers/wallmod-memovaslg/Glassius.png"
-image1="/home/lo/Pictures/wallpapers/wallmod-memovaslg/Atrittion.png"
-image2="/home/lo/Pictures/wallpapers/wallmod-memovaslg/Hard piont.jpg"
-image3="/home/lo/Pictures/wallpapers/wallmod-memovaslg/Carbine.jpg"
-image4="/home/lo/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG"
-image5="/home/lo/Pictures/wallpapers/wallmod-memovaslg/Respawn.png"
-image6="/home/lo/Pictures/wallpapers/wallmod-memovaslg/mod extra.png"
-image7="/home/lo/Pictures/wallpapers/wallmod-memovaslg/gray-mountains.jpg"
+image0="/home/lo/pictures/wallpapers/wallpaper-slideshow/Glassius.png"
+image1="/home/lo/pictures/wallpapers/wallpaper-slideshow/Atrittion.png"
+image2="/home/lo/pictures/wallpapers/wallpaper-slideshow/Hard piont.jpg"
+image3="/home/lo/pictures/wallpapers/wallpaper-slideshow/Carbine.jpg"
+image4="/home/lo/pictures/wallpapers/wallpaper-slideshow/pearl.JPG"
+image5="/home/lo/pictures/wallpapers/wallpaper-slideshow/Respawn.png"
+image6="/home/lo/pictures/wallpapers/wallpaper-slideshow/mod extra.png"
+image7="/home/lo/pictures/wallpapers/wallpaper-slideshow/gray-mountains.jpg"
 
 # "Switch" statement, execute feh with image selected by RNG
 case "$number" in
