@@ -18,6 +18,7 @@ image4="/home/lo/pictures/wallpapers/wallpaper-slideshow/pearl.JPG"
 image5="/home/lo/pictures/wallpapers/wallpaper-slideshow/Respawn.png"
 image6="/home/lo/pictures/wallpapers/wallpaper-slideshow/mod extra.png"
 image7="/home/lo/pictures/wallpapers/wallpaper-slideshow/gray-mountains.jpg"
+# image8="/home/lo/pictures/wallpapers/wallpaper-slideshow/hills.jpg"
 
 # "Switch" statement, execute feh with image selected by RNG
 case "$number" in
@@ -45,4 +46,7 @@ case "$number" in
 7)  echo  "$image7"
     feh --bg-scale "$image7"
     ;;
+# 8)  echo  "$image8"
+    # feh --bg-scale "$image8"
+    # ;;
 esac
