@@ -24,7 +24,7 @@
     font = Roboto Mono for Powerline 14
     foreground_color = "#a7a7a7"
     # palette = "#151515:#a54242:#8c9440:#de935f:#5f819d:#85678f:#5e8d87:#969896:#373b41:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6"
-    palette = "#151515:#a54242:#8c9440:#a66a3f:#56758f:#7c6085:#5c8a84:#969896:#373b41:#a54242:#8c9440:#a66a3f:#56748f:#7c758f:#5c8a84:#c5c8c6"
+    palette = "#151515:#a54242:#5c6039:#a66a3f:#56758f:#7c6085:#5c8a84:#969896:#373b41:#a54242:#5c6039:#a66a3f:#56748f:#7c758f:#5c8a84:#c5c8c6"
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
