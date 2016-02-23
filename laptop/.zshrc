@@ -90,7 +90,7 @@ KEYTIMEOUT=1
 # show vim status
 # http://zshwiki.org/home/examples/zlewidgets
 function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/♢}/(main|viins)/♦}"
+    RPS1="${${KEYMAP/vicmd/ }/(main|viins)/ }"
     RPS2=$RPS1
     zle reset-prompt
 }
@@ -153,9 +153,6 @@ alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
 # Execute dircolors, removes background from directories and executables
 eval "$(dircolors ~/.dircolors)"
 
-# Drive force push and pull
-alias drive-push-f="drive push -ignore-name-clashes -ignore-conflict"
-alias drive-pull-f="drive pull -ignore-name-clashes -ignore-conflict"
 
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
