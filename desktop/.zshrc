@@ -84,3 +84,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # ZSH
 alias drive="~/go/bin/drive"
+alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
