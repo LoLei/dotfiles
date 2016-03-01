@@ -153,7 +153,9 @@ alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
 # Execute dircolors, removes background from directories and executables
 eval "$(dircolors ~/.dircolors)"
 
-
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
 cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
+
+# GCC 4.9
+alias gcc-4.9='/usr/local/gcc/4.9.0/bin/gcc'
