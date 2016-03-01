@@ -85,3 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # ZSH
 alias drive="~/go/bin/drive"
 alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
+alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
