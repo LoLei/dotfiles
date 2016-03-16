@@ -143,6 +143,8 @@ aliases = {
   ATAG = "WINDOW SERVER";
   UNSET = "set -clear";
   RESET = "set -default";
+  CBNC = "connect melon.bnc4free.com 1337";
+  ABNC = "quote PASS Kvothe:NMMmUgMcPOMWmE";
 };
 
 statusbar = {
@@ -301,7 +303,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "Kvothe"; user_name = "Kvothe"; nick = "Kvothe"; };
+  core = { real_name = "Kvothe, son of Arliden"; user_name = "Kvothe"; nick = "Kvothe"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "weed"; };
   "perl/core/scripts" = {
