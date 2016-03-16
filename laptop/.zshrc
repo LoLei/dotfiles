@@ -159,3 +159,6 @@ cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
 
 # GCC 4.9
 alias gcc-4.9='/usr/local/gcc/4.9.0/bin/gcc'
+
+# Tree color
+alias tree="tree -C"
