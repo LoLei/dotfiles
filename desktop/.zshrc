@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode)
 
 # User configuration
 
@@ -86,3 +86,9 @@ source $ZSH/oh-my-zsh.sh
 alias drive="~/go/bin/drive"
 alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
 alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
+
+# Tree Color
+alias tree="tree -C"
+
+# gitwatch
+alias gitwatch="~/git/gitwatch/gitwatch.sh"
