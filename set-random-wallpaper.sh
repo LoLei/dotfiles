@@ -13,7 +13,7 @@ echo $number
 image0="/home/lo/pictures/wallpapers/wallpaper-slideshow/Glassius.png"
 image1="/home/lo/pictures/wallpapers/wallpaper-slideshow/Atrittion.png"
 image2="/home/lo/pictures/wallpapers/wallpaper-slideshow/Hard piont.jpg"
-image3="/home/lo/pictures/wallpapers/wallpaper-slideshow/Carbine.jpg"
+image3="/home/lo/pictures/wallpapers/wallpaper-slideshow/trees.png"
 image4="/home/lo/pictures/wallpapers/wallpaper-slideshow/pearl.JPG"
 image5="/home/lo/pictures/wallpapers/wallpaper-slideshow/moon.png"
 image6="/home/lo/pictures/wallpapers/wallpaper-slideshow/mod extra.png"
