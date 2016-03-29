@@ -56,9 +56,17 @@ set rnu
 set wildmenu
 " Fuzzy file finder
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+set hidden
 
 " Use powerline font
 let g:airline_powerline_fonts = 1
+map <C-i> :NERDTreeToggle<CR>
+
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set smartindent
+
 set timeoutlen=50
 
 " Auto reload vimrc
