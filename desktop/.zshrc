@@ -92,3 +92,7 @@ alias tree="tree -C"
 
 # gitwatch
 alias gitwatch="~/git/gitwatch/gitwatch.sh"
+
+# Zoom terminal before opening vim
+# alias vim="~/zoom-terminal-in.sh && vim"
+cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
