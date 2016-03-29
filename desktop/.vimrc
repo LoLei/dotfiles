@@ -28,6 +28,7 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,6 +54,9 @@ set rnu
 set wildmenu
 " Fuzzy file finder
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Use powerline font
+let g:airline_powerline_fonts = 1
 
 " Auto reload vimrc
 augroup myvimrc
