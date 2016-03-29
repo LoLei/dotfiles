@@ -57,6 +57,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Use powerline font
 let g:airline_powerline_fonts = 1
+set timeoutlen=50
 
 " Auto reload vimrc
 augroup myvimrc
