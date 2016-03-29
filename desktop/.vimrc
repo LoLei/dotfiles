@@ -29,6 +29,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'chriskempson/base16-vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,7 +81,15 @@ hi VertSplit ctermbg=0 ctermfg=0
 " Transparent background
 hi Normal ctermbg=none
 
+" YCM
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_auto_trigger = 1
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_confirm_extra_conf = 0
+
 " Highlight current line
 let g:conoline_auto_enable = 1
 " Wait until plugins are loaded
 autocmd VimEnter * ConoLineColorDark
+
+
