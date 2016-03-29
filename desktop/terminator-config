@@ -29,11 +29,11 @@
     background_darkness = 0.9
     background_image = None
     background_type = transparent
+    cursor_blink = False
     cursor_color = "#94a3a5"
-    font = Roboto Mono 12
-    # foreground_color = "#d0d0d0"
+    font = Roboto Mono for Powerline 12
     foreground_color = "#94a3a5"
-    # palette = "#151515:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#d0d0d0:#505050:#ac4142:#90a959:#f4bf75:#6a9fb5:#aa759f:#75b5aa:#f5f5f5"
+    icon_bell = False
     palette = "#151515:#a54242:#8c9440:#de935f:#5f819d:#85678f:#5e8d87:#969896:#373b41:#cc6666:#b5bd68:#f0c674:#81a2be:#b294bb:#8abeb7:#c5c8c6"
     scrollbar_position = hidden
     show_titlebar = False
