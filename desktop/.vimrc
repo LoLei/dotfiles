@@ -25,6 +25,9 @@ Plugin 'file:///home/gmarik/path/to/plugin'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'chriskempson/base16-vim'
+Plugin 'vim-airline/vim-airline'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,6 +49,32 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set clipboard=unnamedplus
-set nu
+set rnu
 set wildmenu
+" Fuzzy file finder
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Auto reload vimrc
+augroup myvimrc
+	au!
+	au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
+
+" Color scheme
+set background=dark
+set t_Co=256
+colorscheme Tomorrow-Night-Edit
+
+" Always show airline status bar
+set laststatus=2
+" Hide vertical split windows bar
+set fillchars+=vert:\ 
+hi VertSplit ctermbg=0 ctermfg=0
+
+" Transparent background
+hi Normal ctermbg=none
+
+" Highlight current line
+let g:conoline_auto_enable = 1
+" Wait until plugins are loaded
+autocmd VimEnter * ConoLineColorDark
