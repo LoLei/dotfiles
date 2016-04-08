@@ -58,6 +58,9 @@ set wildmenu
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set hidden
 
+" Allow mouse usage
+set mouse=a
+
 " Use powerline font
 let g:airline_powerline_fonts = 1
 set timeoutlen=50
