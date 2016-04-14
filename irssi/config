@@ -143,8 +143,8 @@ aliases = {
   ATAG = "WINDOW SERVER";
   UNSET = "set -clear";
   RESET = "set -default";
-  CBNC = "connect melon.bnc4free.com 1337";
-  ABNC = "quote PASS Kvothe:NMMmUgMcPOMWmE";
+  CBNC = "connect shells.fnordserver.eu 1400";
+  ABNC = "quote PASS Kvothe/euirc:kukwEkcv0in6kQWoEMAQSnyj8kaO4Y";
 };
 
 statusbar = {
