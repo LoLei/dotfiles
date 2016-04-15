@@ -5,7 +5,7 @@
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="steeef-edit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -96,3 +96,5 @@ alias gitwatch="~/git/gitwatch/gitwatch.sh"
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
 cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
