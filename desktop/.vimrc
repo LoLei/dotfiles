@@ -68,6 +68,8 @@ set softtabstop=2
 set smartindent
 
 set timeoutlen=50
+" git
+au FileType gitcommit set tw=50
 
 " Auto reload vimrc
 augroup myvimrc
