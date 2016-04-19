@@ -95,6 +95,8 @@ let g:ycm_confirm_extra_conf = 0
 let g:conoline_auto_enable = 1
 " Wait until plugins are loaded
 autocmd VimEnter * ConoLineColorDark
+autocmd VimEnter * AirlineTheme base16_default
+
 
 map <C-i> :NERDTreeToggle<CR>
 
