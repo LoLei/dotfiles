@@ -85,6 +85,9 @@ hi VertSplit ctermbg=0 ctermfg=0
 " Transparent background
 hi Normal ctermbg=none
 
+" git
+au FileType gitcommit set tw=50
+
 " YCM
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_auto_trigger = 1
