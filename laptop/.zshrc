@@ -60,6 +60,7 @@ export PATH="/home/lo/.gvm/bin:/home/lo/.gvm/bin:/home/lo/.gvm/bin:/home/lo/.gvm
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+source zsh-history-substring-search.zsh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -160,5 +161,28 @@ cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
 # GCC 4.9
 alias gcc-4.9='/usr/local/gcc/4.9.0/bin/gcc'
 
-# Tree color
-alias tree="tree -C"
+## Arrow Keys ###########################################
+
+# OPTION 1: for most systems
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+
+# OPTION 2: for iTerm2 running on Apple MacBook laptops
+zmodload zsh/terminfo
+bindkey "$terminfo[cuu1]" history-substring-search-up
+bindkey "$terminfo[cud1]" history-substring-search-down
+
+# OPTION 3: for Ubuntu 12.04, Fedora 21, and MacOSX 10.9
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+## EMACS mode ###########################################
+
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
+
+## VI mode ##############################################
+
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
