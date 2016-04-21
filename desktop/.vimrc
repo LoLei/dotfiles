@@ -69,7 +69,7 @@ set smartindent
 
 set timeoutlen=50
 " git
-au FileType gitcommit set tw=50
+au FileType gitcommit set tw=72
 
 " Auto reload vimrc
 augroup myvimrc
