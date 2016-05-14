@@ -97,6 +97,8 @@ source zsh-history-substring-search.zsh
 alias drive="~/go/bin/drive"
 alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
 alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
+alias pacmansyuigngcc="sudo pacman -Syu --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
+
 
 # Tree Color
 alias tree="tree -C"
