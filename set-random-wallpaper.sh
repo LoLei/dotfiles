@@ -5,7 +5,7 @@
 # $RANDOM returns a different random integer at each invocation.
 # Nominal range: 0 - 32767 (signed 16-bit integer).
 number=$RANDOM
-let "number %= 10"
+let "number %= 11"
 
 echo $number
 
@@ -20,6 +20,7 @@ image6="/home/lo/pictures/wallpapers/wallpaper-slideshow/yellow-rope.jpg"
 image7="/home/lo/pictures/wallpapers/wallpaper-slideshow/gray-mountains.jpg"
 image8="/home/lo/pictures/wallpapers/wallpaper-slideshow/cloudsrise.jpg"
 image9="/home/lo/pictures/wallpapers/wallpaper-slideshow/dans-les-nuages.jpg"
+image10="/home/lo/pictures/wallpapers/wallpaper-slideshow/trees.jpg"
 
 # "Switch" statement, execute feh with image selected by RNG
 case "$number" in
@@ -52,5 +53,8 @@ case "$number" in
     ;;
 9)  echo  "$image9"
     feh --bg-scale "$image9"
+    ;;
+10)  echo  "$image10"
+    feh --bg-fill "$image10"
     ;;
 esac
