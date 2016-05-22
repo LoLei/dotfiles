@@ -61,6 +61,7 @@ plugins=(
   sbt
   scala
   screen
+  svn
   web-search
 )
 
