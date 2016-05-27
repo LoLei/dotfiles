@@ -97,6 +97,17 @@ let g:ycm_confirm_extra_conf = 0
 
 " Highlight current line
 let g:conoline_auto_enable = 1
+
+" Show function name
+fun! ShowFuncName()
+  let lnum = line(".")
+  let col = col(".")
+  echohl ModeMsg
+  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+  echohl None
+  call search("\\%" . lnum . "l" . "\\%" . col . "c")
+endfun
+map ö :call ShowFuncName() <CR>
 " Wait until plugins are loaded
 autocmd VimEnter * ConoLineColorDark
 autocmd VimEnter * AirlineTheme base16_default
@@ -108,3 +119,5 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set smartindent
+
+
