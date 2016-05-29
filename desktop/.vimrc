@@ -32,6 +32,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'tacahiroy/ctrlp-funky'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,12 +64,23 @@ set hidden
 let g:airline_powerline_fonts = 1
 map <C-i> :NERDTreeToggle<CR>
 
+set showcmd
+" Map leader to space
+let mapleader = " "
+" Ctrl-P Funky fuzzy function finder
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_syntax_highlight = 1
+
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set smartindent
 
-set timeoutlen=50
+" Disable this short timeout for Leader key
+" TODO: Find out why I set it so low
+" set timeoutlen=50
 " git
 au FileType gitcommit set tw=72
 
