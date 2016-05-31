@@ -32,6 +32,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'tacahiroy/ctrlp-funky'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,7 +65,7 @@ set mouse=a
 
 " Use powerline font
 let g:airline_powerline_fonts = 1
-set timeoutlen=50
+" set timeoutlen=50
 
 " Auto reload vimrc
 augroup myvimrc
@@ -87,7 +88,7 @@ hi VertSplit ctermbg=0 ctermfg=0
 hi Normal ctermbg=none
 
 " git
-au FileType gitcommit set tw=50
+au FileType gitcommit set tw=72
 
 " YCM
 let g:ycm_min_num_of_chars_for_completion = 1
@@ -115,9 +116,17 @@ autocmd VimEnter * AirlineTheme base16_default
 
 map <C-i> :NERDTreeToggle<CR>
 
+set showcmd
+" Map leader to space
+let mapleader = " "
+" Ctrl-P Funky fuzzy function finder
+nnoremap <Leader>fu :CtrlPFunky<Cr>
+" narrow the list down with a word under cursor
+nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
+let g:ctrlp_funky_syntax_highlight = 1
+
 set expandtab
 set shiftwidth=2
 set softtabstop=2
 set smartindent
-
 
