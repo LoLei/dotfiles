@@ -261,8 +261,8 @@ bar {
 	mode hide
 	hidden_state hide
 	modifier Mod4
-	output DVI-0
-	# output DVI-1
+	# output DVI-0
+	output DVI-1
 
         colors {
         background $color_darker
