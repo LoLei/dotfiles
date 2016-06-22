@@ -185,7 +185,7 @@ bindsym $mod+Shift+s exec xfce4-settings-manager
 for_window [class="^.*"] border pixel 4
 
 # gaps
-gaps inner 20
+gaps inner 45
 gaps outer 5
 
 # Change gap size at runtime
@@ -211,8 +211,8 @@ mode "$mode_gaps_inner" {
         bindsym Shift+minus gaps inner all minus $grap_increment
         bindsym Shift+0     gaps inner all set 0
 
-        bindsym r           gaps inner current set 20
-        bindsym Shift+r     gaps inner all set 20
+        bindsym r           gaps inner current set 45
+        bindsym Shift+r     gaps inner all set 45
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
