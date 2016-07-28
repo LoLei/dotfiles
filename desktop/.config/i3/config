@@ -239,7 +239,7 @@ mode "$mode_gaps_outer" {
 # exec feh --bg-scale ~/pictures/android-wallpaper.jpg
 # exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
 # exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
-exec_always /home/lo/set-random-wallpaper.sh
+exec_always ~/set-random-wallpaper-archist.sh ~/pictures/wallpapers 86400
 
 
 # Start compton
