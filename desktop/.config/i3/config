@@ -188,6 +188,10 @@ for_window [class="^.*"] border pixel 4
 gaps inner 45
 gaps outer 5
 
+# Gaps for workspace 10 / 0
+workspace $workspace0 gaps inner 70
+workspace $workspace0 gaps outer 5
+
 # Change gap size at runtime
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global), (Shift)+r reset
@@ -233,13 +237,17 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+# Set up dual screens
+exec ~/.screenlayout/dvi1-dvi0.sh
+
 # wallpaper
 # exec feh --bg-scale ~/pictures/wallpapers/hills.jpg
 # exec feh --bg-scale ~/pictures/wallpapers/bloodmoon.jpg
 # exec feh --bg-scale ~/pictures/android-wallpaper.jpg
 # exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
 # exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
-exec_always ~/set-random-wallpaper-archist.sh ~/pictures/wallpapers 86400
+# exec_always ~/set-random-wallpaper-archist.sh ~/pictures/wallpapers 86400
+exec feh --bg-scale ~/pictures/wallpapers/ubuntu/wallhaven-247926.jpg
 
 
 # Start compton
@@ -275,4 +283,7 @@ bar {
         urgent_workspace   #2f343a #753824 #ffffff
     }
 }
+
+# Put workspace 0 on right screen
+workspace $workspace0 output DVI-0
 
