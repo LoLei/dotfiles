@@ -35,5 +35,5 @@ URxvt.color7: 		#866481
 URxvt.color15: 		#866481
 URxvt*cursorColor:	#94a3a5
 URxvt*transparent: 	true
-URxvt*shading:		30
+URxvt*shading:		25
 URxvt*blurRadius:	7
