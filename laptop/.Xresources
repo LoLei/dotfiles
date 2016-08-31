@@ -10,29 +10,29 @@ rofi.color-urgent: #2D2D2D, #ff1844, #2D2D2D, #4F4F4F, #ff1844
 ! ------------------------------------------------------------------------------
 ! urxvt
 ! ------------------------------------------------------------------------------
-URxvt*scrollBar:	false 
+URxvt*scrollBar:	false
 
 URxvt.background: 	#181818
 URxvt.foreground: 	#94a3a5
 
 URxvt.font:             xft:Roboto Mono for Powerline:size=14
 
-URxvt.color0: 		#583653
-URxvt.color8: 		#5e3c59
-URxvt.color1: 		#b88e85
-URxvt.color9: 		#dcc7c3
-URxvt.color2: 		#85b88e
-URxvt.color10: 		#c3dcc7
-URxvt.color3: 		#aeb885
-URxvt.color11: 		#d7dcc3
-URxvt.color4: 		#8e85b8
-URxvt.color12: 		#c7c3dc
-URxvt.color5: 		#b885ae
-URxvt.color13: 		#dcc3d7
-URxvt.color6: 		#85aeb8
-URxvt.color14: 		#c3d7dc
-URxvt.color7: 		#6e4c6a
-URxvt.color15: 		#765471
+URxvt.color0: 		#a54242
+URxvt.color8: 		#a54242
+URxvt.color1: 		#a66a3f
+URxvt.color9: 		#a66a3f
+URxvt.color2: 		#6b7043
+URxvt.color10: 		#6b7043
+URxvt.color3: 		#6b7043
+URxvt.color11: 		#6b7043
+URxvt.color4: 		#56758f
+URxvt.color12: 		#56758f
+URxvt.color5: 		#866481
+URxvt.color13: 		#866481
+URxvt.color6: 		#5c8a84
+URxvt.color14: 		#5c8a84
+URxvt.color7: 		#866481
+URxvt.color15: 		#866481
 URxvt*cursorColor:	#94a3a5
 URxvt*transparent: 	true
 URxvt*shading:		30
