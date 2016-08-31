@@ -15,7 +15,7 @@ URxvt*scrollBar:	false
 URxvt.background: 	#181818
 URxvt.foreground: 	#94a3a5
 
-URxvt.font:             xft:Roboto Mono for Powerline:size=14
+URxvt.font:             xft:Roboto Mono for Powerline:size=15
 
 URxvt.color0: 		#a54242
 URxvt.color8: 		#a54242
