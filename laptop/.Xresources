@@ -37,4 +37,3 @@ URxvt*cursorColor:	#94a3a5
 URxvt*transparent: 	true
 URxvt*shading:		30
 URxvt*blurRadius:	7
-URxvt.fading:		30
