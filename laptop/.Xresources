@@ -6,3 +6,35 @@ rofi.color-window: #2D2D2D, #2D2D2D, #2D2D2D
 rofi.color-normal: #2D2D2D, #c1c1c1, #2D2D2D, #4F4F4F, #ffffff
 rofi.color-active: #2D2D2D, #80cbc4, #2D2D2D, #4F4F4F, #80cbc4
 rofi.color-urgent: #2D2D2D, #ff1844, #2D2D2D, #4F4F4F, #ff1844
+
+! ------------------------------------------------------------------------------
+! urxvt
+! ------------------------------------------------------------------------------
+URxvt*scrollBar:	false 
+
+URxvt.background: 	#181818
+URxvt.foreground: 	#94a3a5
+
+URxvt.font:             xft:Roboto Mono for Powerline:size=14
+
+URxvt.color0: 		#583653
+URxvt.color8: 		#5e3c59
+URxvt.color1: 		#b88e85
+URxvt.color9: 		#dcc7c3
+URxvt.color2: 		#85b88e
+URxvt.color10: 		#c3dcc7
+URxvt.color3: 		#aeb885
+URxvt.color11: 		#d7dcc3
+URxvt.color4: 		#8e85b8
+URxvt.color12: 		#c7c3dc
+URxvt.color5: 		#b885ae
+URxvt.color13: 		#dcc3d7
+URxvt.color6: 		#85aeb8
+URxvt.color14: 		#c3d7dc
+URxvt.color7: 		#6e4c6a
+URxvt.color15: 		#765471
+URxvt*cursorColor:	#94a3a5
+URxvt*transparent: 	true
+URxvt*shading:		30
+URxvt*blurRadius:	7
+URxvt.fading:		30
