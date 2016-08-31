@@ -130,3 +130,5 @@ set shiftwidth=2
 set softtabstop=2
 set smartindent
 
+" Paste multiple times
+xnoremap p pgvy
