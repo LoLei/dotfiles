@@ -167,7 +167,7 @@ eval "$(dircolors ~/.dircolors)"
 
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
-cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
+cvim () { ~/zoom-terminal-in-urxvt.sh && vim $1 && ~/zoom-terminal-reset-urxvt.sh & }
 
 # GCC 4.9
 alias gcc-4.9='/usr/local/gcc/4.9.0/bin/gcc'
