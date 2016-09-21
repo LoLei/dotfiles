@@ -109,7 +109,7 @@ alias gitwatch="~/git/gitwatch/gitwatch.sh"
 
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
-cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
+cvim () { ~/zoom-terminal-in-urxvt.sh && vim $1 && ~/zoom-terminal-reset-urxvt.sh & }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
