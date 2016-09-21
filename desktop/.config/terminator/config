@@ -13,6 +13,8 @@
   go_up = <Alt>k
   next_tab = <Primary>Tab
   prev_tab = <Primary><Shift>Tab
+  copy = <Alt><Ctrl>c
+  paste = <Alt><Ctrl>v
 [layouts]
   [[default]]
     [[[child1]]]
