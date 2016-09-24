@@ -134,7 +134,7 @@ assign [class="Atom"] $workspace2
 assign [class="Firefox"] $workspace3
 assign [class="Scudcloud"] $workspace4
 assign [class="Spotify"] $workspace5
-assign [class="Steam"] $workspace7
+#assign [class="Steam"] $workspace7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
