@@ -179,7 +179,7 @@ for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggl
 # shutdown menu
 bindsym $mod+Shift+p exec xfce4-session-logout
 # xfce settings
-bindsym $mod+Shift+s exec xfce4-settings-manager
+bindsym $mod+Shift+s exec unity-control-center
 
 # no title bars
 for_window [class="^.*"] border pixel 4
