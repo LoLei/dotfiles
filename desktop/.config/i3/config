@@ -133,8 +133,10 @@ bindsym $mod+Shift+0 move container to workspace $workspace0
 assign [class="Atom"] $workspace2
 assign [class="Firefox"] $workspace3
 assign [class="Scudcloud"] $workspace4
-assign [class="Spotify"] $workspace5
-#assign [class="Steam"] $workspace7
+assign [class="Slack"] $workspace4
+assign [class="Thunderbird"] $workspace5
+assign [class="Spotify"] $workspace7
+assign [class="Steam"] $workspace9
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
