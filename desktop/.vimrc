@@ -105,6 +105,9 @@ hi VertSplit ctermbg=0 ctermfg=0
 " Transparent background
 hi Normal ctermbg=none
 
+" Paste multiple times
+xnoremap p pgvy
+
 " YCM
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_auto_trigger = 1
