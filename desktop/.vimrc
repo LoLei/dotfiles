@@ -108,6 +108,9 @@ hi Normal ctermbg=none
 " Paste multiple times
 xnoremap p pgvy
 
+" Detex latex properly
+let g:tex_flavor = 'latex'
+
 " YCM
 let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_auto_trigger = 1
