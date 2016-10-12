@@ -68,6 +68,7 @@ map <C-i> :NERDTreeToggle<CR>
 set showcmd
 " Map leader to space
 let mapleader = " "
+let maplocalleader = "-"
 " Ctrl-P Funky fuzzy function finder
 nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
