@@ -109,7 +109,7 @@ alias gitwatch="~/git/gitwatch/gitwatch.sh"
 
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
-cvim () { ~/zoom-terminal-in-urxvt.sh && vim $1 && ~/zoom-terminal-reset-urxvt.sh & }
+cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -140,3 +140,6 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 eval $(thefuck --alias)
+
+export NVM_DIR="/home/me/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
