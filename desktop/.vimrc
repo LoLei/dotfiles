@@ -136,3 +136,4 @@ fun! ShowFuncName()
 endfun
 map ö :call ShowFuncName() <CR>
 
+map <F3> :w !detex \| wc -w<CR>
