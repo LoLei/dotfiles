@@ -33,6 +33,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'lervag/vimtex'
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -132,3 +133,6 @@ set smartindent
 
 " Paste multiple times
 xnoremap p pgvy
+
+" PDF viewer for vim latex
+let g:vimtex_view_method = 'mupdf'
