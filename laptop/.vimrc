@@ -140,4 +140,4 @@ set smartindent
 xnoremap p pgvy
 
 " PDF viewer for vim latex
-let g:vimtex_view_method = 'mupdf'
+let g:vimtex_view_method = 'zathura'
