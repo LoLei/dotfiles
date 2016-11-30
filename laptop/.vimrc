@@ -110,6 +110,11 @@ fun! ShowFuncName()
   call search("\\%" . lnum . "l" . "\\%" . col . "c")
 endfun
 map ö :call ShowFuncName() <CR>
+
+" LaTeX
+map <F3> :w !detex \| wc -w<CR>
+map <F2> :setlocal spell! spelllang=en_us<CR>
+
 " Wait until plugins are loaded
 autocmd VimEnter * ConoLineColorDark
 autocmd VimEnter * AirlineTheme base16_default
@@ -135,4 +140,4 @@ set smartindent
 xnoremap p pgvy
 
 " PDF viewer for vim latex
-let g:vimtex_view_method = 'mupdf'
+let g:vimtex_view_method = 'zathura'
