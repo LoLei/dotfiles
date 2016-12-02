@@ -5,5 +5,5 @@ sudo cpupower frequency-set -g powersave
 echo 'Lowering min CPU frequency to 400MHz'
 sudo cpupower frequency-set -d 400MHz
 
-echo 'Lowering max CPU frequency to 600MHz'
+echo 'Lowering max CPU frequency to 800MHz'
 sudo cpupower frequency-set -u 800MHz
