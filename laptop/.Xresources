@@ -40,3 +40,8 @@ URxvt*transparent: 	true
 URxvt*shading:		25
 URxvt*blurRadius:	7
 URxvt*pointerBlank:	true
+
+! Man page colors
+URxvt.colorIT:      #87af5f
+URxvt.colorBD:      #d7d7d7
+URxvt.colorUL:      #87afd7
