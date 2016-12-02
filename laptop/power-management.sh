@@ -8,14 +8,14 @@ echo $CHARGING
 if cat uevent | grep STATUS | grep -q Charging; then
   echo "AC"
   xbacklight -set 100
-  ~/fast-cpu
+  ~/git/dotfiles/laptop/fast-cpu
 else
   echo "Draining"
   # Check battery level
   PERCENTAGE="$(cat uevent | grep "CAPACITY=" | grep -Eo '[0-9]{1,4}')"
   echo $PERCENTAGE
   xbacklight -set 50
-  ~/slow-cpu
+  ~/git/dotfiles/laptop/slow-cpu
   if [ $PERCENTAGE -lt 25 ]; then
     xbacklight -set 25
   fi
