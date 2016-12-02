@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Checking battery status..."
+
 cd /sys/class/power_supply/BAT0
 
 # Check if AC or battery
@@ -25,3 +27,4 @@ else
   fi
 fi
 
+sleep 2
