@@ -1,5 +1,4 @@
 #!/bin/bash
-#TODO: Use CPU power to lower cpu usage
 cd /sys/class/power_supply/BAT0
 
 # Check if AC or battery
