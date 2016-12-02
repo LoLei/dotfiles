@@ -14,9 +14,10 @@ else
   # Check battery level
   PERCENTAGE="$(cat uevent | grep "CAPACITY=" | grep -Eo '[0-9]{1,4}')"
   echo $PERCENTAGE
+  xbacklight -set 50
+  ~/slow-cpu
   if [ $PERCENTAGE -lt 25 ]; then
     xbacklight -set 25
-    ~/slow-cpu
   fi
 fi
 
