@@ -204,13 +204,14 @@ alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.5-complete.jar:$CLASSPAT
 CLASSPATH="/usr/local/lib/antlr-4.5-complete.jar"
 
 ## Man colors
+#Colors bottom bar, but not needed
+#LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
 man() {
 	env \
 		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
 		LESS_TERMCAP_md=$(printf "\e[1;31m") \
 		LESS_TERMCAP_me=$(printf "\e[0m") \
 		LESS_TERMCAP_se=$(printf "\e[0m") \
-		LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
 		LESS_TERMCAP_ue=$(printf "\e[0m") \
 		LESS_TERMCAP_us=$(printf "\e[1;32m") \
 			man "$@"
