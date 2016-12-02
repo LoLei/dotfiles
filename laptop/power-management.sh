@@ -8,6 +8,7 @@ echo $CHARGING
 if cat uevent | grep STATUS | grep -q Charging; then
   echo "AC"
   xbacklight -set 100
+  ~/fast-cpu
 else
   echo "Draining"
   # Check battery level
@@ -15,6 +16,7 @@ else
   echo $PERCENTAGE
   if [ $PERCENTAGE -lt 25 ]; then
     xbacklight -set 25
+    ~/slow-cpu
   fi
 fi
 
