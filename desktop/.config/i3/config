@@ -249,7 +249,8 @@ exec ~/.screenlayout/dvi1-dvi0.sh
 # exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
 # exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
 # exec_always ~/set-random-wallpaper-archist.sh ~/pictures/wallpapers 86400
-exec feh --bg-scale ~/pictures/wallpapers/ubuntu/wallhaven-247926.jpg
+# exec feh --bg-scale ~/pictures/wallpapers/ubuntu/wallhaven-247926.jpg
+exec feh --bg-scale ~/git/dotfiles/wallpapers/elementaryos-pine.jpg
 
 
 # Start compton
