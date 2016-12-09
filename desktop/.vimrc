@@ -139,3 +139,6 @@ map ö :call ShowFuncName() <CR>
 " LaTeX
 map <F3> :w !detex \| wc -w<CR>
 map <F2> :setlocal spell! spelllang=en_us<CR>
+
+" Enable buffer view
+let g:airline#extensions#tabline#enabled = 1
