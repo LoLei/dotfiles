@@ -244,7 +244,7 @@ exec_always feh --bg-fill -z ~/git/dotfiles/wallpapers/*
 
 
 # Start compton
-exec_always ~/start-compton.sh
+exec ~/start-compton.sh
 
 # borders
 # class                 border  	backgr. 	text    	indicator
