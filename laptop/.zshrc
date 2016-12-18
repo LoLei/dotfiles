@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/lo/.oh-my-zsh
+export ZSH=/home/me/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -46,7 +46,7 @@ ZSH_THEME="avit"
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Ommit lo@lo-laptop
-DEFAULT_USER="lo"
+DEFAULT_USER="me"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -67,7 +67,7 @@ plugins=(
 
 # User configuration
 
-export PATH="/home/lo/.gvm/bin:/home/lo/.gvm/bin:/home/lo/.gvm/bin:/home/lo/.gvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/home/me/.gvm/bin:/home/me/.gvm/bin:/home/me/.gvm/bin:/home/me/.gvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -142,10 +142,10 @@ alias cheat='~/Go/bin/cheat'
 
 # GVM
 [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-[[ -s "/home/lo/.gvm/scripts/gvm" ]] && source "/home/lo/.gvm/scripts/gvm"
+[[ -s "/home/me/.gvm/scripts/gvm" ]] && source "/home/me/.gvm/scripts/gvm"
 
 # Visual Paradigm
-alias visualparadigm='/home/lo/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
+alias visualparadigm='/home/me/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
 
 # PHPMyAdmin
 alias start-phpmyadmin='sudo ~/start-phpmyadmin.sh'
@@ -160,7 +160,7 @@ alias git-glh='~/git-get-latest-hash.sh'
 alias visual-paradigm='~/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
 
 # Android Studio
-alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
+alias android-studio='/home/me/programs/android-studio/bin/studio.sh'
 
 # Execute dircolors, removes background from directories and executables
 eval "$(dircolors ~/.dircolors)"
