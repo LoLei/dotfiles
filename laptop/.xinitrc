@@ -36,3 +36,4 @@ get_session(){
 }
 
 exec $(get_session)
+# TODO: Exec wal 
