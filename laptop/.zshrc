@@ -216,3 +216,7 @@ man() {
 		LESS_TERMCAP_us=$(printf "\e[1;32m") \
 			man "$@"
 }
+
+# Use current wal color scheme
+alias wal="~/git/wal/wal"
+wal -r
