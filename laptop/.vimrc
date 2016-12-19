@@ -143,5 +143,5 @@ xnoremap p pgvy
 let g:vimtex_view_method = 'zathura'
 
 " Enable buffer view
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 
