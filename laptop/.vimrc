@@ -27,12 +27,13 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'chriskempson/base16-vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'tacahiroy/ctrlp-funky'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'lervag/vimtex'
 "
 " " All of your Plugins must be added before the following line
@@ -65,7 +66,7 @@ set hidden
 set mouse=a
 
 " Use powerline font
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 " set timeoutlen=50
 
 " Auto reload vimrc
@@ -80,7 +81,7 @@ set t_Co=256
 colorscheme Tomorrow-Night-Edit
 
 " Always show airline status bar
-set laststatus=2
+" set laststatus=2
 " Hide vertical split windows bar
 set fillchars+=vert:\ 
 hi VertSplit ctermbg=0 ctermfg=0
@@ -98,7 +99,7 @@ let g:ycm_show_diagnostics_ui = 0
 let g:ycm_confirm_extra_conf = 0
 
 " Highlight current line
-let g:conoline_auto_enable = 1
+" let g:conoline_auto_enable = 1
 
 " Show function name
 fun! ShowFuncName()
@@ -116,8 +117,8 @@ map <F3> :w !detex \| wc -w<CR>
 map <F2> :setlocal spell! spelllang=en_us<CR>
 
 " Wait until plugins are loaded
-autocmd VimEnter * ConoLineColorDark
-autocmd VimEnter * AirlineTheme base16_default
+" autocmd VimEnter * ConoLineColorDark
+" autocmd VimEnter * AirlineTheme base16_default
 
 
 map <C-i> :NERDTreeToggle<CR>
