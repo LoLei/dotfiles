@@ -15,7 +15,7 @@ URxvt*scrollBar:	false
 URxvt.background: 	#181818
 URxvt.foreground: 	#94a3a5
 
-URxvt.font:             xft:Roboto Mono for Powerline:size=15
+URxvt.font:             xft:Roboto Mono for Powerline:size=12
 
 URxvt.color0: 		#232323
 URxvt.color8: 		#232323
@@ -34,11 +34,11 @@ URxvt.color14: 		#5c8a84
 URxvt.color7: 		#94a3a5
 URxvt.color15: 		#94a3a5
 
-
+URxvt.internalBorder:   10
 URxvt*cursorColor:	#94a3a5
-URxvt*transparent: 	true
+URxvt*transparent: 	false
 URxvt*shading:		25
-URxvt*blurRadius:	7
+! URxvt*blurRadius:	7
 URxvt*pointerBlank:	true
 
 ! Man page colors

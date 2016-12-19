@@ -182,7 +182,7 @@ bindsym $mod+Shift+p exec xfce4-session-logout
 bindsym $mod+Shift+s exec xfce4-settings-manager
 
 # no title bars
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 0
 
 # gaps
 gaps inner 45
