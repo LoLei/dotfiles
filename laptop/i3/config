@@ -247,6 +247,9 @@ exec_always ./exec-wal.sh
 # Start compton
 # exec ~/start-compton.sh
 
+# Load Xresources for urxvt
+exec xrdb .Xresources
+
 # borders
 # class                 border  	backgr. 	text    	indicator
 client.focused          $color_light 	$color_light 	#ffffff 	$color_light
