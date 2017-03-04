@@ -256,6 +256,9 @@ exec feh --bg-scale ~/git/dotfiles/wallpapers/elementaryos-pine.jpg
 # Start compton
 exec_always ~/start-compton.sh
 
+# Set mouse sensitivity
+exec xset mouse 1 0
+
 # borders
 # class                 border  	backgr. 	text    	indicator
 client.focused          $color_light 	$color_light 	#ffffff 	$color_light
