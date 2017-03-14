@@ -143,3 +143,6 @@ eval $(thefuck --alias)
 
 export NVM_DIR="/home/me/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by Anaconda3 4.3.1 installer
+export PATH="/home/me/anaconda3/bin:$PATH"
