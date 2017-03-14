@@ -142,3 +142,6 @@ map <F2> :setlocal spell! spelllang=en_us<CR>
 
 " Enable buffer view
 let g:airline#extensions#tabline#enabled = 1
+
+" Open all folds
+set foldlevelstart=20
