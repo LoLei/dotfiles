@@ -67,7 +67,7 @@ plugins=(
 
 # User configuration
 
-export PATH="/home/me/.gvm/bin:/home/me/.gvm/bin:/home/me/.gvm/bin:/home/me/.gvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+export PATH="/home/me/.gvm/bin:/home/me/.gvm/bin:/home/me/.gvm/bin:/home/me/.gvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/me/git/wal"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -135,7 +135,7 @@ bindkey -M vicmd '^s' history-incremental-search-backward
 alias lock='. ~/lock.sh'
 
 # thefuck
-eval $(thefuck --alias)
+# eval $(thefuck --alias)
 
 # cheat sheet
 alias cheat='~/Go/bin/cheat'
@@ -220,3 +220,6 @@ man() {
 # Use current wal color scheme
 alias wal="~/git/wal/wal"
 wal -r
+
+# added by Anaconda3 4.3.1 installer
+export PATH="/home/me/programs/anaconda3/bin:$PATH"
