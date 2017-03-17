@@ -114,6 +114,7 @@ let g:tex_flavor = 'latex'
 
 " YCM
 let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_server_python_interpreter = "/usr/bin/python"
 let g:ycm_auto_trigger = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_confirm_extra_conf = 0
