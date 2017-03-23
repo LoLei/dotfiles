@@ -38,8 +38,8 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec rofi -show run -eh 2 -padding 450 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
-# There also is the (new) i3-dmenu-desktop which only displays applications
+# start dmenu (a program launcher)
+bindsym $mod+d exec rofi -show run -eh 2 -padding 500 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
@@ -251,7 +251,8 @@ exec ~/.screenlayout/dvi1-dvi0.sh
 # exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
 # exec_always ~/set-random-wallpaper-archist.sh ~/pictures/wallpapers 86400
 # exec feh --bg-scale ~/pictures/wallpapers/ubuntu/wallhaven-247926.jpg
-exec feh --bg-scale ~/git/dotfiles/wallpapers/elementaryos-pine.jpg
+# exec feh --bg-scale ~/git/dotfiles/wallpapers/elementaryos-pine.jpg
+exec_always ~/git/dotfiles/desktop/exec-wal.sh
 
 
 # Start compton
