@@ -27,8 +27,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'chriskempson/base16-vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'vim-airline/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 Plugin 'derekwyatt/vim-scala'
@@ -62,7 +62,7 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 set hidden
 
 " Use powerline font
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 map <C-i> :NERDTreeToggle<CR>
 
 set showcmd
@@ -94,11 +94,11 @@ augroup END
 
 " Color scheme
 set background=dark
-set t_Co=256
+" set t_Co=256
 colorscheme Tomorrow-Night-Edit
 
 " Always show airline status bar
-set laststatus=2
+" set laststatus=2
 " Hide vertical split windows bar
 set fillchars+=vert:\ 
 hi VertSplit ctermbg=0 ctermfg=0
@@ -123,8 +123,9 @@ let g:ycm_confirm_extra_conf = 0
 let g:conoline_auto_enable = 1
 " Wait until plugins are loaded
 autocmd VimEnter * ConoLineColorDark
-
-autocmd VimEnter * AirlineTheme base16_default
+" autocmd VimEnter * ConoLineDisable
+let g:conoline_color_insert_dark = 'guibg=#000000'
+" autocmd VimEnter * AirlineTheme base16_default
 
 " Show function name
 fun! ShowFuncName()
@@ -142,7 +143,7 @@ map <F3> :w !detex \| wc -w<CR>
 map <F2> :setlocal spell! spelllang=en_us<CR>
 
 " Enable buffer view
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 
 " Open all folds
 set foldlevelstart=20
