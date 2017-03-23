@@ -31,7 +31,8 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -184,7 +185,7 @@ bindsym $mod+Shift+p exec xfce4-session-logout
 bindsym $mod+Shift+s exec unity-control-center
 
 # no title bars
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 0
 
 # gaps
 gaps inner 45
