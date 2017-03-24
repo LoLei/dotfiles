@@ -147,3 +147,6 @@ map <F2> :setlocal spell! spelllang=en_us<CR>
 
 " Open all folds
 set foldlevelstart=20
+
+" Ruler
+set ruler
