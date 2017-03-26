@@ -100,7 +100,7 @@ let g:ycm_confirm_extra_conf = 0
 let g:ycm_server_python_interpreter = "/usr/bin/python"
 
 " Highlight current line
-let g:conoline_auto_enable = 1
+let g:conoline_auto_enable = 0
 let g:conoline_color_insert_dark = 'guibg=#000000'
 
 " Show function name
@@ -119,7 +119,8 @@ map <F3> :w !detex \| wc -w<CR>
 map <F2> :setlocal spell! spelllang=en_us<CR>
 
 " Wait until plugins are loaded
-autocmd VimEnter * ConoLineColorDark
+" autocmd VimEnter * ConoLineColorDark
+" autocmd VimEnter * ConoLineDisable
 " autocmd VimEnter * AirlineTheme base16_default
 
 
