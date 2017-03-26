@@ -241,7 +241,7 @@ mode "$mode_gaps_outer" {
 # exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
 # exec_always /home/lo/set-random-wallpaper.sh
 # exec_always feh --bg-fill -z ~/git/dotfiles/wallpapers/*
-exec_always ./exec-wal.sh
+exec_always ~/git/dotfiles/laptop/exec-wal.sh
 
 
 # Start compton
