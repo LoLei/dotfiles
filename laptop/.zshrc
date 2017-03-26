@@ -222,4 +222,4 @@ alias wal="~/git/wal/wal"
 wal -r
 
 # added by Anaconda3 4.3.1 installer
-export PATH="/home/lo/programs/anaconda3/bin:$PATH"
+export PATH="/home/lo/anaconda3/bin:$PATH"
