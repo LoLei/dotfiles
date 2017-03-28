@@ -97,9 +97,11 @@ let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_auto_trigger = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_server_python_interpreter = "/usr/bin/python"
 
 " Highlight current line
-" let g:conoline_auto_enable = 1
+let g:conoline_auto_enable = 0
+let g:conoline_color_insert_dark = 'guibg=#000000'
 
 " Show function name
 fun! ShowFuncName()
@@ -118,6 +120,7 @@ map <F2> :setlocal spell! spelllang=en_us<CR>
 
 " Wait until plugins are loaded
 " autocmd VimEnter * ConoLineColorDark
+" autocmd VimEnter * ConoLineDisable
 " autocmd VimEnter * AirlineTheme base16_default
 
 
@@ -146,3 +149,5 @@ let g:vimtex_view_method = 'zathura'
 " Enable buffer view
 " let g:airline#extensions#tabline#enabled = 1
 
+" Open all folds
+set foldlevelstart=20
