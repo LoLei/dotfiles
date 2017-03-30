@@ -1,0 +1,27 @@
+total 100K
+drwxr-xr-x 25 lo users 4.0K Mar 30 14:06 .
+drwxr-xr-x  5 lo users 4.0K Oct 20 12:49 ..
+drwxr-xr-x  4 lo users 4.0K Mar 30  2016 auto-pairs
+drwxr-xr-x  5 lo users 4.0K Mar 26 23:44 base16-vim
+drwxr-xr-x 13 lo users 4.0K Mar 26 23:44 command-t
+drwxr-xr-x  7 lo users 4.0K Mar 29  2016 conoline.vim
+drwxr-xr-x  7 lo users 4.0K Mar 26 23:44 ctrlp-funky
+drwxr-xr-x  6 lo users 4.0K Mar 26 23:44 ctrlp.vim
+drwxr-xr-x  6 lo users 4.0K Mar 29  2016 L9
+drwxr-xr-x  9 lo users 4.0K Mar 26 23:44 nerdtree
+drwxr-xr-x  4 lo users 4.0K Mar 26 23:44 nerdtree-git-plugin
+drwxr-xr-x 11 lo users 4.0K Mar 26 22:24 python-mode
+drwxr-xr-x  6 lo users 4.0K Mar 29  2016 sparkup
+drwxr-xr-x  8 lo users 4.0K Mar 30 14:02 syntastic
+drwxr-xr-x  7 lo users 4.0K Mar 29  2016 vim-airline_bak
+drwxr-xr-x  5 lo users 4.0K Mar 29  2016 vim-airline-themes_bak
+drwxr-xr-x  4 lo users 4.0K Mar 29  2016 vim-colorschemes
+drwxr-xr-x  5 lo users 4.0K Mar 29  2016 vim-fugitive
+drwxr-xr-x  7 lo users 4.0K Jan 15  2016 vim-gitgutter
+drwxr-xr-x  7 lo users 4.0K Mar 30 14:02 vim-jsdoc
+-rw-r--r--  1 lo users    0 Mar 30 14:06 vim-plugin.txt
+drwxr-xr-x 13 lo users 4.0K Mar 26 23:44 vim-scala
+drwxr-xr-x 11 lo users 4.0K Mar 26 23:44 vimtex
+drwxr-xr-x  8 lo users 4.0K Mar 26 23:44 Vundle.vim
+drwxr-xr-x  5 lo users 4.0K Mar 26 23:44 YCM-Generator
+drwxr-xr-x 10 lo users 4.0K Mar 26 23:44 YouCompleteMe
