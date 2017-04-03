@@ -245,7 +245,7 @@ exec_always ~/git/dotfiles/laptop/feh-and-wal.sh ~/git/dotfiles/wallpapers/selec
 
 
 # Start compton
-exec ~/start-compton.sh
+exec_always ~/start-compton.sh
 
 # Load Xresources for urxvt
 exec xrdb .Xresources
