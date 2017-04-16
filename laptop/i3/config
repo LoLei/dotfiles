@@ -241,11 +241,11 @@ mode "$mode_gaps_outer" {
 # exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
 # exec_always /home/lo/set-random-wallpaper.sh
 # exec_always feh --bg-fill -z ~/git/dotfiles/wallpapers/*
-exec_always ~/git/dotfiles/laptop/exec-wal.sh
+exec_always ~/git/dotfiles/laptop/feh-and-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers
 
 
 # Start compton
-# exec ~/start-compton.sh
+exec_always ~/start-compton.sh
 
 # Load Xresources for urxvt
 exec xrdb .Xresources
