@@ -150,3 +150,9 @@ export PATH="/home/me/anaconda3/bin:$PATH"
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
 (wal -r &)
+
+# Tiny Care Terminal
+export TTC_APIKEYS=false
+export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
+export TTC_REPOS='~/git'
+export TTC_WEATHER='Graz'
