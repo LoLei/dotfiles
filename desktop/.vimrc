@@ -163,3 +163,5 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 set backspace=2
+
+set textwidth=80
