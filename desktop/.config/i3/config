@@ -254,6 +254,9 @@ exec ~/.screenlayout/dvi1-dvi0.sh
 # exec feh --bg-scale ~/git/dotfiles/wallpapers/elementaryos-pine.jpg
 exec_always ~/git/dotfiles/desktop/exec-wal.sh
 
+# Set keyboard layout to US
+exec "setxkbmap -layout us"
+
 
 # Start compton
 exec_always ~/start-compton.sh
