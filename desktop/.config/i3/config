@@ -256,7 +256,7 @@ exec_always ~/git/dotfiles/desktop/exec-wal.sh
 
 # Set keyboard layout to US
 exec "setxkbmap -layout us"
-
+exec "setxkbmap -option compose:rctrl"
 
 # Start compton
 exec_always ~/start-compton.sh
