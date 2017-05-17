@@ -1,3 +1,1 @@
-@reboot gitlab-ci-multi-runner start
-@reboot ~/git/dotfiles/laptop/power-management.sh
 @reboot udevil mount /dev/sda1
