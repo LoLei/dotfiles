@@ -6,6 +6,6 @@
 
 # invoke global X session script
 . /etc/X11/Xsession
-setxkbmap -layout us
-setxkbmap -option compose:rctrl
-exec firefox-aurora
+setxkbmap -layout us &
+setxkbmap -option compose:rctrl &
+udiskie -F &
