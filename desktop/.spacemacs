@@ -132,9 +132,17 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(sourcerer
+   dotspacemacs-themes '(
+                         base16-tomorrow-night
+                         base16-tomorrow
+                         base16-google-dark
                          spacemacs-light
-                         spacemacs-dark)
+                         spacemacs-dark
+                         sourcerer
+                         jbeans
+                         afternoon
+                         bubbleberry
+                         )
    ;; If non nil the cursor color matches the state color in GUI Emacs.
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
@@ -335,4 +343,6 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ ;; This overwrites the themes background-color, etc
+ ;;'(default ((((class color) (min-colors 89)) (:foreground "#c2c2b0" :background "#000000")))))
  )
