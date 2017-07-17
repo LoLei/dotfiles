@@ -147,7 +147,7 @@ export NVM_DIR="/home/me/.nvm"
 # added by Anaconda3 4.3.1 installer
 export PATH="/home/me/anaconda3/bin:$PATH"
 # added by Anaconda2 4.4.0 installer
-export PATH="/home/me/anaconda2/bin:$PATH"
+# export PATH="/home/me/anaconda2/bin:$PATH"
 
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
