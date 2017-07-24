@@ -35,6 +35,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+# kill all windows in workspace
+bindsym $mod+Control+Shift+k focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec rofi -show run -eh 2 -padding 500 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
