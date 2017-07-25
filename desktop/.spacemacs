@@ -139,11 +139,11 @@ values."
    dotspacemacs-themes '(
                          base16-tomorrow-night
                          base16-tomorrow
+                         jbeans
                          base16-google-dark
                          spacemacs-light
                          spacemacs-dark
                          sourcerer
-                         jbeans
                          afternoon
                          bubbleberry
                          )
