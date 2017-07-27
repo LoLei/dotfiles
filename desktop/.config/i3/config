@@ -137,6 +137,7 @@ assign [class="Atom"] $workspace2
 # assign [class="Firefox"] $workspace3
 assign [class="Scudcloud"] $workspace4
 assign [class="Slack"] $workspace4
+assign [class="Vivaldi"] $workspace4
 assign [class="Thunderbird"] $workspace5
 assign [class="Spotify"] $workspace7
 assign [class="Steam"] $workspace9
@@ -193,9 +194,15 @@ for_window [class="^.*"] border pixel 0
 gaps inner 45
 gaps outer 5
 
-# Gaps for workspace 10 / 0
+# Default gap sizes for specific workspaces
 workspace $workspace0 gaps inner 70
 workspace $workspace0 gaps outer 5
+
+workspace $workspace4 gaps inner 100
+workspace $workspace4 gaps outer 5
+
+workspace $workspace7 gaps inner 100
+workspace $workspace7 gaps outer 5
 
 # Change gap size at runtime
 set $mode_gaps Gaps: (o) outer, (i) inner
