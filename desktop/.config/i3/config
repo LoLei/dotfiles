@@ -39,8 +39,7 @@ bindsym $mod+Shift+q kill
 # kill all windows in workspace
 bindsym $mod+Control+Shift+k focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, kill
 
-# start dmenu (a program launcher)
-# start dmenu (a program launcher)
+# start dmenu (a program launcher), or actually rofi 
 bindsym $mod+d exec rofi -show run -eh 2 -padding 500 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -253,14 +252,6 @@ mode "$mode_gaps_outer" {
 exec ~/.screenlayout/dvi1-dvi0.sh
 
 # wallpaper
-# exec feh --bg-scale ~/pictures/wallpapers/hills.jpg
-# exec feh --bg-scale ~/pictures/wallpapers/bloodmoon.jpg
-# exec feh --bg-scale ~/pictures/android-wallpaper.jpg
-# exec feh --bg-scale ~/pictures/wallpapers/light-crop.jpg
-# exec_always feh --bg-scale ~/Pictures/wallpapers/wallmod-memovaslg/pearl.JPG
-# exec_always ~/set-random-wallpaper-archist.sh ~/pictures/wallpapers 86400
-# exec feh --bg-scale ~/pictures/wallpapers/ubuntu/wallhaven-247926.jpg
-# exec feh --bg-scale ~/git/dotfiles/wallpapers/elementaryos-pine.jpg
 exec_always ~/git/dotfiles/desktop/exec-wal.sh
 
 # Set keyboard layout to US
