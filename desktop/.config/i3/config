@@ -258,7 +258,7 @@ exec_always ~/git/dotfiles/desktop/exec-wal.sh
 exec_always "~/set-us-layout.sh"
 
 # Start compton
-exec_always ~/start-compton.sh
+exec_always compton
 
 # Set mouse sensitivity
 exec xset mouse 1 0
