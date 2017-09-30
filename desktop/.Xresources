@@ -35,9 +35,9 @@ URxvt.color14: 		#5c8a84
 URxvt.color7: 		#94a3a5
 URxvt.color15: 		#94a3a5
 
-
 URxvt*cursorColor:	#94a3a5
 ! URxvt*transparent: 	true
 ! URxvt*shading:		25
 ! URxvt*blurRadius:	7
 URxvt*pointerBlank:	true
+URxvt.internalBorder:   10
