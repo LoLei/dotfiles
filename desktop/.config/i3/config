@@ -10,6 +10,19 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
+# KEY DEFINITIONS 
+
+# $Mod = WINDOWS key or Super key or Mod4
+# Mod1 = ALT key
+# Control = CTRL key
+# Shift = SHIFT key
+# Escape = ESCAPE key
+# Return = ENTER or RETURN key
+# Pause = PAUSE key
+# Print = PRINT key
+# Tab = TAB key
+
+
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
