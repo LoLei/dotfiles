@@ -2,25 +2,33 @@
 
 Configuration and other files of my Linux setups.
 
-![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/shutter-screenfetch.png "screeenfetch")
+![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/neofetch-antergos.png "neofetch")
 
 ## Distro
-Arch Linux
+Arch Linux (Laptop)
+Antergos (Desktop)
 
 ## DE
-Xfce4
+Mostly disabled Xfce4 (Laptop)
+No DE (Desktop)
 
 ## WM
-i3-gaps
+i3-gaps (next branch)
 
 ## Compositor
 compton
 
 ## Shell
-ZSH
+Zsh with Oh My Zsh
+
+## Terminal
+urxvt
 
 ## Font
 Roboto Mono
+
+## Editor
+Spacemacs with evil mode (vim)
 
 ---
 
