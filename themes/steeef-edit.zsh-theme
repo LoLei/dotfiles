@@ -20,19 +20,12 @@ autoload -U add-zsh-hook
 autoload -Uz vcs_info
 
 #use extended color pallete if available
-if [[ $terminfo[colors] -ge 256 ]]; then
-    turquoise="%F{81}"
-    orange="%F{166}"
-    purple="%F{135}"
-    hotpink="%F{161}"
-    limegreen="%F{118}"
-else
+# if [[ $terminfo[colors] -ge 256 ]]; then
     turquoise="%F{cyan}"
     orange="%F{yellow}"
     purple="%F{magenta}"
     hotpink="%F{red}"
     limegreen="%F{green}"
-fi
 
 # enable VCS systems you use
 zstyle ':vcs_info:*' enable git svn
