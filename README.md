@@ -2,25 +2,33 @@
 
 Configuration and other files of my Linux setups.
 
-![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/shutter-screenfetch.png "screeenfetch")
+![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/neofetch-antergos.png "neofetch")
 
 ## Distro
-Arch Linux
+[Arch Linux](https://www.archlinux.org/) (Laptop)  
+[Antergos](https://antergos.com/) (Desktop)
 
 ## DE
-Xfce4
+Mostly disabled [Xfce4](https://xfce.org/) (Laptop)  
+No DE (Desktop)
 
 ## WM
-i3-gaps
+[i3-gaps](https://github.com/Airblader/i3/tree/gaps-next)
 
 ## Compositor
-compton
+[compton](https://github.com/chjj/compton)
 
 ## Shell
-ZSH
+[Zsh](http://www.zsh.org/) with [Oh My Zsh](http://ohmyz.sh/)
+
+## Terminal
+[urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
 
 ## Font
-Roboto Mono
+[Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
+
+## Editor
+[Spacemacs](http://spacemacs.org/) with evil mode (vim)
 
 ---
 
