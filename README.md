@@ -5,11 +5,11 @@ Configuration and other files of my Linux setups.
 ![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/neofetch-antergos.png "neofetch")
 
 ## Distro
-Arch Linux (Laptop)
+Arch Linux (Laptop)  
 Antergos (Desktop)
 
 ## DE
-Mostly disabled Xfce4 (Laptop)
+Mostly disabled Xfce4 (Laptop)  
 No DE (Desktop)
 
 ## WM
