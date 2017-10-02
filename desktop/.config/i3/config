@@ -169,6 +169,9 @@ exec pasystray
 # clipit
 exec clipit
 
+# bluetooth
+exec blueberry-tray
+
 # User applications
 # Browser
 exec firefox
