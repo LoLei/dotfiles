@@ -329,8 +329,8 @@ bindsym $mod+Shift+b bar mode toggle
 
 bar {
 
-#   mode hide
-#   hidden_state hide
+    mode hide
+    hidden_state hide
 #   modifier Mod4
     position top
     height 23
