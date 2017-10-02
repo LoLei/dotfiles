@@ -150,6 +150,8 @@ assign [class="Firefox"] → $workspace3
 assign [class="Slack"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
+# Spotify needs extra attention
+for_window [class="Spotify"] move to worspace $workspace7
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"] → $workspace8
 
 # Startup applications
@@ -318,82 +320,36 @@ client.unfocused        $color_darker 	$color_darker  	#888888 	$color_darker
 client.urgent           $color_darker 	$color_darker  	#ffffff 	$color_darker
 client.placeholder      #000000 #0c0c0c #ffffff #000000
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-# bar {
-#       status_command i3status
-# 	position top
-# 	mode hide
-# 	hidden_state hide
-# 	modifier Mod4
-# 	# output DVI-0
-# 	output DVI-1
-# 
-#       colors {
-#         background $color_darker
-#         statusline #adadad
-#         separator #505050
-# 
-#         focused_workspace  $color_darker $color_darker #ffffff
-#         active_workspace   $color_darker $color_darker $color_light
-#     	  inactive_workspace $color_darker $color_darker #adadad
-#         urgent_workspace   #2f343a #753824 #ffffff
-#       }
-# }
-
 ################### BAR ######################
 
-
 # bar toggle, hide or show 
-bindsym $mod+b bar mode toggle
-
+bindsym $mod+Shift+b bar mode toggle
 
 ################### BAR APPEARANCE ######################
 
-
 bar {
 
-    height 25
+#   mode hide
+#   hidden_state hide
+#   modifier Mod4
+    position top
+    height 23
     workspace_buttons yes
-    # font pango:DroidSansMono 13
-    font pango:Noto Sans 14
+    font pango:Roboto Mono for Powerline 12
     #you can change the place via xrandr
-    #output DVI-0
-
-# OPTION 1 : i3status  
-
-    # type status_command i3status without the config file and 
-    # you will get the standard i3status bar
-    # this is the standard statusbar with my personal settings
-
-#status_command i3status
-#status_command i3status -c ~/.config/i3/i3status.conf
-
+    output $firstMonitor
 
 # OPTION 2 : i3blocks
 
     # https://github.com/vivien/i3blocks
     # another way to provide text in the statusbar
-   
     # put hastag in front if not installed
 
 #status_command i3blocks
-status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#status_command i3blocks -c ~/.config/i3/i3blocks.conf
 #status_command i3blocks -c ~/.config/i3/i3blocks-original.conf
-#status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
+status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
 
-
-# OPTION 3 : conky
-
-    # You can also replace the istatus bar with a conky
-    # be sure to install conky
-    # start-conky-i3statusbar.sh is started and conky will follow
-    # documentation : https://i3wm.org/docs/user-contributed/conky-i3bar.html
-    # conky configuration is in conky-i3statusbar
-        
-#status_command ~/.config/i3/start-conky-i3statusbar.sh
-
-   
 colors {
         background #2F2F2F
         statusline #eeeeee
@@ -407,5 +363,5 @@ colors {
 
     }
 
-#Popups during fullscreen mode
+# Popups during fullscreen mode
 popup_during_fullscreen smart
