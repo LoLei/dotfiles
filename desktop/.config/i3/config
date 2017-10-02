@@ -162,7 +162,7 @@ exec --no-startup-id nm-applet
 
 # Tray icons
 # volume
-exec pasystray
+# exec pasystray # Has annoying notifications
 #exec volti
 #exec volumeicon
 
