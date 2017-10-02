@@ -151,7 +151,7 @@ assign [class="Slack"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
 # Spotify needs extra attention
-for_window [class="Spotify"] move to worspace $workspace7
+for_window [class="Spotify|spotify"] move to workspace $workspace7
 assign [class="Nemo|Thunar|Caja|nautilus|Nautilus"] → $workspace8
 
 # Startup applications
