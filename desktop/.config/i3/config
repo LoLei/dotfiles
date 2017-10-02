@@ -174,10 +174,8 @@ exec blueberry-tray
 # User applications
 # Browser
 exec firefox
-for_window [class="Firefox"] focus
 # Music
 exec --no-startup-id spotify
-for_window [class="Spotify"] focus
 # Chat
 exec slack
 
