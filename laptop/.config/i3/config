@@ -171,13 +171,13 @@ exec clipit
 # bluetooth
 exec blueberry-tray
 
-# User applications
+# User applications - Do not start these on the laptop
 # Browser
-exec firefox
+# exec firefox
 # Music
-exec --no-startup-id spotify
+# exec --no-startup-id spotify
 # Chat
-exec slack
+# exec slack
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
