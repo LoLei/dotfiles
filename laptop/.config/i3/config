@@ -295,9 +295,6 @@ set $firstMonitor eDP1
 # wallpaper
 exec_always ~/git/dotfiles/desktop/exec-wal.sh
 
-# Set keyboard layout to US
-exec_always "~/set-us-layout.sh"
-
 # Set mouse sensitivity
 exec xset mouse 1 0
 

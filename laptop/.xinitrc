@@ -6,6 +6,4 @@
 
 # invoke global X session script
 # . /etc/X11/Xsession
-setxkbmap -layout us &
-setxkbmap -option compose:rctrl &
-exec udiskie -F
+udiskie -F
