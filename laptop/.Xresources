@@ -1,11 +1,11 @@
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
-rofi.color-enabled: true
-rofi.color-window: #2D2D2D, #2D2D2D, #2D2D2D
-rofi.color-normal: #2D2D2D, #c1c1c1, #2D2D2D, #4F4F4F, #ffffff
-rofi.color-active: #2D2D2D, #80cbc4, #2D2D2D, #4F4F4F, #80cbc4
-rofi.color-urgent: #2D2D2D, #ff1844, #2D2D2D, #4F4F4F, #ff1844
+!rofi.color-enabled: true
+!rofi.color-window: #2D2D2D, #2D2D2D, #2D2D2D
+!rofi.color-normal: #2D2D2D, #c1c1c1, #2D2D2D, #4F4F4F, #ffffff
+!rofi.color-active: #2D2D2D, #80cbc4, #2D2D2D, #4F4F4F, #80cbc4
+!rofi.color-urgent: #2D2D2D, #ff1844, #2D2D2D, #4F4F4F, #ff1844
 
 ! ------------------------------------------------------------------------------
 ! urxvt
@@ -16,6 +16,7 @@ URxvt.background: 	#181818
 URxvt.foreground: 	#94a3a5
 
 URxvt.font:             xft:Roboto Mono for Powerline:size=15
+URxvt.letterSpace: -1
 
 URxvt.color0: 		#232323
 URxvt.color8: 		#232323
@@ -34,14 +35,9 @@ URxvt.color14: 		#5c8a84
 URxvt.color7: 		#94a3a5
 URxvt.color15: 		#94a3a5
 
-URxvt.internalBorder:   10
 URxvt*cursorColor:	#94a3a5
-URxvt*transparent: 	false
-URxvt*shading:		25
+! URxvt*transparent: 	true
+! URxvt*shading:		25
 ! URxvt*blurRadius:	7
 URxvt*pointerBlank:	true
-
-! Man page colors
-URxvt.colorIT:      #87af5f
-URxvt.colorBD:      #d7d7d7
-URxvt.colorUL:      #87afd7
+URxvt.internalBorder:   10

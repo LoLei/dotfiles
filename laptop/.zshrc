@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/lo/.oh-my-zsh
+  export ZSH=/home/me/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="avit-edit"
+ZSH_THEME="steeef-edit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -45,9 +45,6 @@ ZSH_THEME="avit-edit"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-# Ommit lo@lo-laptop
-DEFAULT_USER="lo"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -67,7 +64,7 @@ plugins=(
 
 # User configuration
 
-export PATH="/home/lo/.gvm/bin:/home/lo/.gvm/bin:/home/lo/.gvm/bin:/home/lo/.gvm/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/lo/git/wal"
+  # export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -89,39 +86,6 @@ source zsh-history-substring-search.zsh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# Vim mode
-# enable vim mode on commmand line
-bindkey -v
-
-# no delay entering normal mode
-# https://coderwall.com/p/h63etq
-# https://github.com/pda/dotzsh/blob/master/keyboard.zsh#L10
-# 10ms for key sequences
-KEYTIMEOUT=1
-
-# show vim status
-# http://zshwiki.org/home/examples/zlewidgets
-function zle-line-init zle-keymap-select {
-    RPS1="${${KEYMAP/vicmd/ }/(main|viins)/ }"
-    RPS2=$RPS1
-    zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
-
-# add missing vim hotkeys
-# fixes backspace deletion issues
-# http://zshwiki.org/home/zle/vi-mode
-bindkey -a u undo
-bindkey -a '^R' redo
-bindkey '^?' backward-delete-char
-bindkey '^H' backward-delete-char
-
-# history search in vim mode
-# http://zshwiki.org./home/zle/bindkeys#why_isn_t_control-r_working_anymore
-bindkey -M viins '^s' history-incremental-search-backward
-bindkey -M vicmd '^s' history-incremental-search-backward
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -130,47 +94,24 @@ bindkey -M vicmd '^s' history-incremental-search-backward
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# ZSH
+alias drive="~/go/bin/drive"
+alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
+alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
+alias pacmansyuigngcc="sudo pacman -Syu --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
+alias yaourtsyuigngcc="yaourt -Syu --aur --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
 
-# i3lock
-alias lock='. ~/lock.sh'
+# Tree Color
+alias tree="tree -C"
 
-# thefuck
-# eval $(thefuck --alias)
-
-# cheat sheet
-alias cheat='~/Go/bin/cheat'
-
-# GVM
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-[[ -s "/home/lo/.gvm/scripts/gvm" ]] && source "/home/lo/.gvm/scripts/gvm"
-
-# Visual Paradigm
-alias visualparadigm='/home/lo/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
-
-# PHPMyAdmin
-alias start-phpmyadmin='sudo ~/start-phpmyadmin.sh'
-
-# IntelliJ IDEA
-alias intellij-idea='~/programs/idea-IU-141.2735.5/bin/idea.sh'
-
-# Git get latest commit hash
-alias git-glh='~/git-get-latest-hash.sh'
-
-# Visual Paradigm
-alias visual-paradigm='~/programs/visual-paradigm/Visual_Paradigm_CE_12.2/bin/Visual_Paradigm'
-
-# Android Studio
-alias android-studio='/home/lo/programs/android-studio/bin/studio.sh'
-
-# Execute dircolors, removes background from directories and executables
-eval "$(dircolors ~/.dircolors)"
+# gitwatch
+alias gitwatch="~/git/gitwatch/gitwatch.sh"
 
 # Zoom terminal before opening vim
 # alias vim="~/zoom-terminal-in.sh && vim"
-cvim () { ~/zoom-terminal-in-urxvt.sh && vim $1 && ~/zoom-terminal-reset-urxvt.sh & }
+cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
 
-# GCC 4.9
-alias gcc-4.9='/usr/local/gcc/4.9.0/bin/gcc'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## Arrow Keys ###########################################
 
@@ -198,28 +139,20 @@ bindkey -M emacs '^N' history-substring-search-down
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-## ANTLR
-alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.5-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
-#alias grun='java org.antlr.v4.runtime.misc.TestRig'
-CLASSPATH="/usr/local/lib/antlr-4.5-complete.jar"
-
-## Man colors
-#Colors bottom bar, but not needed
-#LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
-man() {
-	env \
-		LESS_TERMCAP_mb=$(printf "\e[1;31m") \
-		LESS_TERMCAP_md=$(printf "\e[1;31m") \
-		LESS_TERMCAP_me=$(printf "\e[0m") \
-		LESS_TERMCAP_se=$(printf "\e[0m") \
-		LESS_TERMCAP_ue=$(printf "\e[0m") \
-		LESS_TERMCAP_us=$(printf "\e[1;32m") \
-			man "$@"
-}
-
-# Use current wal color scheme
-alias wal="~/git/wal/wal"
-wal -r
+export NVM_DIR="/home/me/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # added by Anaconda3 4.3.1 installer
-export PATH="/home/lo/anaconda3/bin:$PATH"
+export PATH="/home/me/anaconda3/bin:$PATH"
+# added by Anaconda2 4.4.0 installer
+# export PATH="/home/me/anaconda2/bin:$PATH"
+
+# Import colorscheme from 'wal'
+export PATH="/home/me/git/wal:$PATH"
+(wal -r &)
+
+# Tiny Care Terminal
+export TTC_APIKEYS=false
+export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
+export TTC_REPOS='~/git'
+export TTC_WEATHER='Graz'
