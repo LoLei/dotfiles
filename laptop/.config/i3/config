@@ -161,7 +161,7 @@ for_window [class="Spotify|spotify"] move to workspace $workspace7
 # System
 exec_always compton
 exec --no-startup-id nm-applet
-exec xrdb .Xresources
+exec xrdb ~/.Xresources
 
 # Tray icons
 # volume
