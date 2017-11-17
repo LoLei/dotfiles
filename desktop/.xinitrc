@@ -8,4 +8,5 @@
 # . /etc/X11/Xsession
 setxkbmap -layout us &
 setxkbmap -option compose:rctrl &
-udiskie -F
+udiskie -F &
+exec i3
