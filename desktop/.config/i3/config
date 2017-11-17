@@ -162,6 +162,7 @@ for_window [class="Spotify|spotify"] focus
 # System
 exec_always compton
 exec --no-startup-id nm-applet
+exec xrdb ~/.Xresources
 exec udiskie -F
 
 # Tray icons
