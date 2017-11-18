@@ -9,4 +9,5 @@
 setxkbmap -layout us &
 setxkbmap -option compose:rctrl &
 udiskie -F &
+xrdb ~/.Xresources &
 exec i3
