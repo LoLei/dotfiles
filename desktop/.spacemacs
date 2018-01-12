@@ -354,6 +354,15 @@ you should place your code here."
       (call-interactively 'evil-paste-after)))
 
   (define-key evil-visual-state-map "p" 'evil-paste-after-from-0)
+
+  "Autocomplete behaviour"
+  (setq-default
+      auto-completion-return-key-behavior nil
+      auto-completion-tab-key-behavior 'complete
+      auto-completion-complete-with-key-sequence nil
+      auto-completion-complete-with-key-sequence-delay 0.1
+      auto-completion-private-snippets-directory nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
