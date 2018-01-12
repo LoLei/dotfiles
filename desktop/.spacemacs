@@ -337,6 +337,15 @@ you should place your code here."
   "JS indendation fix"
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
+  (setq-default
+   ;; js2-mode
+   js2-basic-offset 2
+   ;; web-mode
+   css-indent-offset 2
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2)
 
   "xnoremap p pgvy (Keep yanked stuff after pasting over selection)"
   (defun evil-paste-after-from-0 ()
