@@ -158,3 +158,4 @@ export TTC_APIKEYS=false
 export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
 export TTC_REPOS='~/git'
 export TTC_WEATHER='Graz'
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
