@@ -294,7 +294,7 @@ mode "$mode_gaps_outer" {
 
 # Set up dual screens
 set $firstMonitor DVI-1
-set $secondMonitor DVI-0
+# set $secondMonitor DVI-0
 exec ~/.screenlayout/dvi1-dvi0.sh
 
 # Output specific workspaces on specific screens
@@ -304,10 +304,10 @@ workspace $workspace3 output $firstMonitor
 workspace $workspace4 output $firstMonitor
 workspace $workspace5 output $firstMonitor
 workspace $workspace6 output $firstMonitor
-workspace $workspace7 output $secondMonitor
+workspace $workspace7 output $firstMonitor
 workspace $workspace8 output $firstMonitor
 workspace $workspace9 output $firstMonitor
-workspace $workspace0 output $secondMonitor
+workspace $workspace0 output $firstMonitor
 
 # wallpaper
 exec_always ~/git/dotfiles/desktop/exec-wal.sh
