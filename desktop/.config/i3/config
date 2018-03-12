@@ -183,7 +183,7 @@ exec firefox
 # Music
 exec --no-startup-id spotify
 # Chat
-exec slack
+# exec slack
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
