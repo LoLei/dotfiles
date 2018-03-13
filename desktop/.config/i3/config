@@ -179,7 +179,7 @@ exec blueberry-tray
 
 # User applications
 # Browser
-exec firefox
+exec chromium
 # Music
 exec --no-startup-id spotify
 # Chat
@@ -293,9 +293,9 @@ mode "$mode_gaps_outer" {
 }
 
 # Set up dual screens
-set $firstMonitor DVI-1
+set $firstMonitor DisplayPort-0
 # set $secondMonitor DVI-0
-exec ~/.screenlayout/dvi1-dvi0.sh
+# exec ~/.screenlayout/dvi1-dvi0.sh
 
 # Output specific workspaces on specific screens
 workspace $workspace1 output $firstMonitor
