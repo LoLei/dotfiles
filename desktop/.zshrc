@@ -70,6 +70,21 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source zsh-history-substring-search.zsh
 
+# ZPlug ZSH Plugin manager
+source ~/.zplug/init.zsh
+zplug "akarzim/zsh-docker-aliases"
+
+# Install plugins if there are plugins that have not been installed
+# if ! zplug check --verbose; then
+#    printf "Install? [y/N]: "
+#    if read -q; then
+#        echo; zplug install
+#    fi
+# fi
+
+# Then, source plugins and add commands to $PATH
+zplug load
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
