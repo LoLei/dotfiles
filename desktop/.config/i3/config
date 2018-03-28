@@ -177,6 +177,9 @@ exec clipit
 # bluetooth
 exec blueberry-tray
 
+# Prevent auto-off of speakers, causing noise
+exec pavucontrol
+
 # User applications
 # Browser
 exec chromium
