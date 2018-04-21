@@ -105,11 +105,8 @@ zplug load
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # ZSH
-alias drive="~/go/bin/drive"
 alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
 alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
-alias pacmansyuigngcc="sudo pacman -Syu --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
-alias yaourtsyuigngcc="yaourt -Syu --aur --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
 alias e="evince"
 alias t="tty-clock -c"
 
@@ -119,10 +116,6 @@ alias tree="tree -C"
 # gitwatch
 alias gitwatch="~/git/gitwatch/gitwatch.sh"
 
-# Zoom terminal before opening vim
-# alias vim="~/zoom-terminal-in.sh && vim"
-cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## Arrow Keys ###########################################
@@ -131,20 +124,6 @@ cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-
-# OPTION 2: for iTerm2 running on Apple MacBook laptops
-zmodload zsh/terminfo
-bindkey "$terminfo[cuu1]" history-substring-search-up
-bindkey "$terminfo[cud1]" history-substring-search-down
-
-# OPTION 3: for Ubuntu 12.04, Fedora 21, and MacOSX 10.9
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-## EMACS mode ###########################################
-
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
 
 ## VI mode ##############################################
 
@@ -156,8 +135,6 @@ export NVM_DIR="/home/me/.nvm"
 
 # added by Anaconda3 4.3.1 installer
 export PATH="/home/me/anaconda3/bin:$PATH"
-# added by Anaconda2 4.4.0 installer
-# export PATH="/home/me/anaconda2/bin:$PATH"
 
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
