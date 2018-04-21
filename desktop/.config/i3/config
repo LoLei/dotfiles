@@ -239,7 +239,7 @@ bindsym $mod+Shift+s exec unity-control-center
 for_window [class="^.*"] border pixel 0
 
 # gaps
-gaps inner 45
+gaps inner 35
 gaps outer 5
 
 # Not needed with ultrawide monitor
