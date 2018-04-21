@@ -240,7 +240,7 @@ for_window [class="^.*"] border pixel 0
 
 # gaps
 gaps inner 35
-gaps outer 5
+gaps outer 0
 
 # Not needed with ultrawide monitor
 # Default gap sizes for specific workspaces
