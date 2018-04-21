@@ -53,13 +53,8 @@ plugins=(
   git 
   vi-mode
   z
-  catimg
   python
-  sbt
-  scala
-  screen
   svn
-  web-search
 )
 
 # User configuration
