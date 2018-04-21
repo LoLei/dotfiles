@@ -242,15 +242,16 @@ for_window [class="^.*"] border pixel 0
 gaps inner 45
 gaps outer 5
 
+# Not needed with ultrawide monitor
 # Default gap sizes for specific workspaces
-workspace $workspace0 gaps inner 70
-workspace $workspace0 gaps outer 5
+# workspace $workspace0 gaps inner 70
+# workspace $workspace0 gaps outer 5
 
-workspace $workspace4 gaps inner 100
-workspace $workspace4 gaps outer 5
+# workspace $workspace4 gaps inner 100
+# workspace $workspace4 gaps outer 5
 
-workspace $workspace7 gaps inner 100
-workspace $workspace7 gaps outer 5
+# workspace $workspace7 gaps inner 100
+# workspace $workspace7 gaps outer 5
 
 # Change gap size at runtime
 set $mode_gaps Gaps: (o) outer, (i) inner
