@@ -155,7 +155,7 @@ assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
 # Spotify needs extra attention
 for_window [class="Spotify|spotify"] move to workspace $workspace7
-for_window [class="Spotify|spotify"] focus
+# for_window [class="Spotify|spotify"] focus
 assign [class="Spotify|spotify"] → $workspace7
 assign [class="pavucontrol|Pavucontrol"] → $workspace0
 
