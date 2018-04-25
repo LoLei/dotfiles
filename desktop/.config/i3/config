@@ -149,13 +149,15 @@ bindsym $mod+Shift+0 move container to workspace $workspace0
 
 # Automatically open specific applications on specific workspace
 assign [class="Emacs|Atom"] → $workspace2
-# assign [class="Firefox"] → $workspace3
-assign [class="Slack"] → $workspace4
+assign [class="Chromium|chromium"] → $workspace3
+assign [class="Slack|signal|Signal"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
 # Spotify needs extra attention
 for_window [class="Spotify|spotify"] move to workspace $workspace7
-for_window [class="Spotify|spotify"] focus
+# for_window [class="Spotify|spotify"] focus
+assign [class="Spotify|spotify"] → $workspace7
+assign [class="pavucontrol|Pavucontrol"] → $workspace0
 
 # Startup applications
 
@@ -177,13 +179,16 @@ exec clipit
 # bluetooth
 exec blueberry-tray
 
+# Prevent auto-off of speakers, causing noise
+exec pavucontrol
+
 # User applications
 # Browser
-exec firefox
+exec chromium
 # Music
 exec --no-startup-id spotify
 # Chat
-exec slack
+# exec slack
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -234,18 +239,19 @@ bindsym $mod+Shift+s exec unity-control-center
 for_window [class="^.*"] border pixel 0
 
 # gaps
-gaps inner 45
-gaps outer 5
+gaps inner 35
+gaps outer 0
 
+# Not needed with ultrawide monitor
 # Default gap sizes for specific workspaces
-workspace $workspace0 gaps inner 70
-workspace $workspace0 gaps outer 5
+# workspace $workspace0 gaps inner 70
+# workspace $workspace0 gaps outer 5
 
-workspace $workspace4 gaps inner 100
-workspace $workspace4 gaps outer 5
+# workspace $workspace4 gaps inner 100
+# workspace $workspace4 gaps outer 5
 
-workspace $workspace7 gaps inner 100
-workspace $workspace7 gaps outer 5
+# workspace $workspace7 gaps inner 100
+# workspace $workspace7 gaps outer 5
 
 # Change gap size at runtime
 set $mode_gaps Gaps: (o) outer, (i) inner
@@ -293,9 +299,9 @@ mode "$mode_gaps_outer" {
 }
 
 # Set up dual screens
-set $firstMonitor DVI-1
-set $secondMonitor DVI-0
-exec ~/.screenlayout/dvi1-dvi0.sh
+set $firstMonitor DisplayPort-0
+# set $secondMonitor DVI-0
+# exec ~/.screenlayout/dvi1-dvi0.sh
 
 # Output specific workspaces on specific screens
 workspace $workspace1 output $firstMonitor
@@ -304,10 +310,10 @@ workspace $workspace3 output $firstMonitor
 workspace $workspace4 output $firstMonitor
 workspace $workspace5 output $firstMonitor
 workspace $workspace6 output $firstMonitor
-workspace $workspace7 output $secondMonitor
+workspace $workspace7 output $firstMonitor
 workspace $workspace8 output $firstMonitor
 workspace $workspace9 output $firstMonitor
-workspace $workspace0 output $secondMonitor
+workspace $workspace0 output $firstMonitor
 
 # wallpaper
 exec_always ~/git/dotfiles/desktop/exec-wal.sh

@@ -31,6 +31,8 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
+     react
+     typescript
      html
      markdown
      latex
@@ -335,6 +337,15 @@ you should place your code here."
   "JS indendation fix"
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
+  (setq-default
+   ;; js2-mode
+   js2-basic-offset 2
+   ;; web-mode
+   css-indent-offset 2
+   web-mode-markup-indent-offset 2
+   web-mode-css-indent-offset 2
+   web-mode-code-indent-offset 2
+   web-mode-attr-indent-offset 2)
 
   "xnoremap p pgvy (Keep yanked stuff after pasting over selection)"
   (defun evil-paste-after-from-0 ()
@@ -343,6 +354,15 @@ you should place your code here."
       (call-interactively 'evil-paste-after)))
 
   (define-key evil-visual-state-map "p" 'evil-paste-after-from-0)
+
+  "Autocomplete behaviour"
+  (setq-default
+      auto-completion-return-key-behavior nil
+      auto-completion-tab-key-behavior 'complete
+      auto-completion-complete-with-key-sequence nil
+      auto-completion-complete-with-key-sequence-delay 0.1
+      auto-completion-private-snippets-directory nil)
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
@@ -354,12 +374,13 @@ you should place your code here."
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#0a0814" "#f2241f" "#67b11d" "#b1951d" "#4f97d7" "#a31db1" "#28def0" "#b2b2b2"])
+ '(evil-want-Y-yank-to-eol nil)
  '(package-selected-packages
    (quote
-    (auctex-latexmk web-mode tagedit powerline slim-mode scss-mode sass-mode pug-mode spinner mmm-mode markdown-toc markdown-mode less-css-mode hydra parent-mode projectile helm-css-scss haml-mode gh-md pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight emmet-mode disaster diminish company-web web-completion-data company-c-headers company-auctex cmake-mode clang-format bind-map bind-key packed auctex f dash s all-the-icons memoize font-lock+ helm avy helm-core async popup yapfify xterm-color xkcd web-beautify smeargle shell-pop pyvenv pytest pyenv-mode py-isort pip-requirements orgit noflet multi-term magit-gitflow livid-mode skewer-mode simple-httpd live-py-mode json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc hy-mode helm-pydoc helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter fuzzy flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help ensime sbt-mode scala-mode diff-hl cython-mode company-tern dash-functional tern company-statistics company-anaconda company coffee-mode auto-yasnippet yasnippet anaconda-mode pythonic ac-ispell auto-complete sourcerer-theme ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
+    (tide typescript-mode auctex-latexmk web-mode tagedit powerline slim-mode scss-mode sass-mode pug-mode spinner mmm-mode markdown-toc markdown-mode less-css-mode hydra parent-mode projectile helm-css-scss haml-mode gh-md pkg-info epl flx smartparens iedit anzu evil goto-chg undo-tree highlight emmet-mode disaster diminish company-web web-completion-data company-c-headers company-auctex cmake-mode clang-format bind-map bind-key packed auctex f dash s all-the-icons memoize font-lock+ helm avy helm-core async popup yapfify xterm-color xkcd web-beautify smeargle shell-pop pyvenv pytest pyenv-mode py-isort pip-requirements orgit noflet multi-term magit-gitflow livid-mode skewer-mode simple-httpd live-py-mode json-mode json-snatcher json-reformat js2-refactor multiple-cursors js2-mode js-doc hy-mode helm-pydoc helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter fuzzy flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help ensime sbt-mode scala-mode diff-hl cython-mode company-tern dash-functional tern company-statistics company-anaconda company coffee-mode auto-yasnippet yasnippet anaconda-mode pythonic ac-ispell auto-complete sourcerer-theme ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((((class color) (min-colors 89)) (:foreground "#cccccc" :background "#151515")))))
+ '(default ((((class color) (min-colors 89)) (:foreground "#cccccc" :background "#151515" :family "Iosevka" :foundry "CYEL" :slant normal :weight normal :height 128 :width normal)))))
