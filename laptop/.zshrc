@@ -147,11 +147,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 export NVM_DIR="/home/me/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# added by Anaconda3 4.3.1 installer
-export PATH="/home/me/anaconda3/bin:$PATH"
-# added by Anaconda2 4.4.0 installer
-# export PATH="/home/me/anaconda2/bin:$PATH"
-
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
 (wal -r &)
