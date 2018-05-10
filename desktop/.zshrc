@@ -109,6 +109,7 @@ alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
 alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
 alias e="evince"
 alias t="tty-clock -c"
+alias za="zathura"
 
 # Tree Color
 alias tree="tree -C"
