@@ -195,6 +195,9 @@ exec blueberry-tray
 # Prevent auto-off of speakers, causing noise
 exec pavucontrol
 
+# Notification daemon
+exec --no-startup-id dunst
+
 # User applications
 
 # Browser
