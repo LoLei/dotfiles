@@ -196,12 +196,18 @@ exec blueberry-tray
 exec pavucontrol
 
 # User applications
+
 # Browser
 exec chromium
+
 # Music
 exec --no-startup-id spotify
+
 # Chat (currently disabled)
 # exec slack
+
+# Alarms (Clock)
+exec alarm-clock-applet
 
 
 ################################################################################
