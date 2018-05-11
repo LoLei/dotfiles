@@ -196,7 +196,8 @@ exec blueberry-tray
 exec pavucontrol
 
 # Notification daemon
-exec --no-startup-id dunst
+# Apparently not needed, started automatically by systemd
+# exec --no-startup-id dunst
 
 # User applications
 
