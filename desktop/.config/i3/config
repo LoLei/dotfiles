@@ -210,9 +210,6 @@ exec --no-startup-id spotify
 # Chat (currently disabled)
 # exec slack
 
-# Alarms (Clock)
-exec alarm-clock-applet
-
 
 ################################################################################
 # User defined key bindings
