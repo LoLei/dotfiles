@@ -55,6 +55,8 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Move to center
+bindsym $mod+Shift+c move position center
 
 ################################################################################
 # Default key bindings
@@ -216,7 +218,7 @@ exec --no-startup-id spotify
 ################################################################################
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+Control+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
