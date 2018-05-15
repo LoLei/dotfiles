@@ -167,7 +167,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace0
 
 # Automatically open specific applications on specific workspace
 assign [class="Emacs|Atom"] → $workspace2
-assign [class="Chromium|chromium"] → $workspace3
+# assign [class="Chromium|chromium"] → $workspace3
 assign [class="Slack|signal|Signal"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
@@ -204,7 +204,8 @@ exec pavucontrol
 # User applications
 
 # Browser
-exec chromium
+# exec chromium
+exec firefox
 
 # Music
 exec --no-startup-id spotify
