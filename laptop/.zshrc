@@ -92,19 +92,11 @@ source zsh-history-substring-search.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# ZSH
 alias drive="~/go/bin/drive"
-alias gcc-4.9="/usr/local/gcc/4.9.0/bin/gcc"
-alias g++-4.9="/usr/local/gcc/4.9.0/bin/g++"
-alias pacmansyuigngcc="sudo pacman -Syu --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
-alias yaourtsyuigngcc="yaourt -Syu --aur --ignore gcc-multilib --ignore gcc-libs-multilib --ignore lib32-gcc-libs"
 alias e="evince"
 alias gnomestartx="startx /usr/bin/gnome-session"
 alias i3startx="startx ~/.xinitrc"
 alias i3s="startx ~/.xinitrc"
-#alias i3startx="startx /usr/bin/i3"
 
 # Tree Color
 alias tree="tree -C"
@@ -112,32 +104,7 @@ alias tree="tree -C"
 # gitwatch
 alias gitwatch="~/git/gitwatch/gitwatch.sh"
 
-# Zoom terminal before opening vim
-# alias vim="~/zoom-terminal-in.sh && vim"
-cvim () { ~/zoom-terminal-in.sh && vim $1 && ~/zoom-terminal-reset.sh & }
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-## Arrow Keys ###########################################
-
-# OPTION 1: for most systems
-zmodload zsh/terminfo
-bindkey "$terminfo[kcuu1]" history-substring-search-up
-bindkey "$terminfo[kcud1]" history-substring-search-down
-
-# OPTION 2: for iTerm2 running on Apple MacBook laptops
-zmodload zsh/terminfo
-bindkey "$terminfo[cuu1]" history-substring-search-up
-bindkey "$terminfo[cud1]" history-substring-search-down
-
-# OPTION 3: for Ubuntu 12.04, Fedora 21, and MacOSX 10.9
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
-## EMACS mode ###########################################
-
-bindkey -M emacs '^P' history-substring-search-up
-bindkey -M emacs '^N' history-substring-search-down
 
 ## VI mode ##############################################
 
@@ -150,9 +117,3 @@ export NVM_DIR="/home/me/.nvm"
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
 (wal -r &)
-
-# Tiny Care Terminal
-export TTC_APIKEYS=false
-export TTC_BOTS='tinycarebot,selfcare_bot,magicrealismbot'
-export TTC_REPOS='~/git'
-export TTC_WEATHER='Graz'
