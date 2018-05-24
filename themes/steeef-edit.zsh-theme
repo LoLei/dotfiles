@@ -55,8 +55,11 @@ zstyle ':vcs_info:*:prompt:*' nvcsformats   ""
 
 
 function steeef_preexec {
-    case "$(history $HISTCMD)" in
+    case "$2" in
         *git*)
+            PR_GIT_UPDATE=1
+            ;;
+        *hub*)
             PR_GIT_UPDATE=1
             ;;
         *svn*)
@@ -64,6 +67,7 @@ function steeef_preexec {
             ;;
     esac
 }
+add-zsh-hook preexec steeef_preexec
 add-zsh-hook preexec steeef_preexec
 
 function steeef_chpwd {
