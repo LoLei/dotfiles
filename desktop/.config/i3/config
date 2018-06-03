@@ -187,15 +187,16 @@ exec_always compton
 exec --no-startup-id nm-applet
 exec xrdb ~/.Xresources
 exec udiskie -F
+exec --no-startup-id polychromatic-tray-applet # Razer peripherals
 
 # clipit
 exec clipit
 
 # bluetooth
-exec blueberry-tray
+exec --no-startup-id blueberry-tray
 
 # Prevent auto-off of speakers, causing noise
-exec pavucontrol
+exec --no-startup-id pavucontrol
 
 # Notification daemon
 # Apparently not needed, started automatically by systemd
@@ -205,7 +206,7 @@ exec pavucontrol
 
 # Browser
 # exec chromium
-exec firefox
+exec --no-startup-id firefox
 
 # Music
 exec --no-startup-id spotify
