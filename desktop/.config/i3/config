@@ -206,10 +206,10 @@ exec --no-startup-id pavucontrol
 
 # Browser
 # exec chromium
-exec --no-startup-id firefox
+# exec --no-startup-id firefox
 
 # Music
-exec --no-startup-id spotify
+# exec --no-startup-id spotify
 
 # Chat (currently disabled)
 # exec slack
