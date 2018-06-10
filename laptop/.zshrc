@@ -94,6 +94,7 @@ source zsh-history-substring-search.zsh
 # Example aliases
 alias drive="~/go/bin/drive"
 alias e="evince"
+alias za="zathura"
 alias gnomestartx="startx /usr/bin/gnome-session"
 alias i3startx="startx ~/.xinitrc"
 alias i3s="startx ~/.xinitrc"
