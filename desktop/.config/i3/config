@@ -186,17 +186,16 @@ assign [class="pavucontrol|Pavucontrol"] → $workspace0
 exec_always compton
 exec --no-startup-id nm-applet
 exec xrdb ~/.Xresources
-exec udiskie -F
 exec --no-startup-id polychromatic-tray-applet # Razer peripherals
 
 # clipit
 exec clipit
 
 # bluetooth
-exec --no-startup-id blueberry-tray
+# exec --no-startup-id blueberry-tray
 
 # Prevent auto-off of speakers, causing noise
-exec --no-startup-id pavucontrol
+# exec --no-startup-id pavucontrol
 
 # Notification daemon
 # Apparently not needed, started automatically by systemd
@@ -317,7 +316,8 @@ mode "$mode_gaps_outer" {
 ################################################################################
 
 # Set up dual screens
-set $firstMonitor DisplayPort-0
+set $firstMonitor VGA-1
+# set $firstMonitor DisplayPort-0
 # set $secondMonitor DVI-0
 # exec ~/.screenlayout/dvi1-dvi0.sh
 
@@ -338,9 +338,9 @@ workspace $workspace0 output $firstMonitor
 # Wallpaper
 ################################################################################
 
-exec_always ~/git/dotfiles/desktop/exec-wal.sh
-bindsym $mod+Shift+w exec "wal -i ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
-bindsym $mod+Shift+v exec "wal -i ~/git/dotfiles/wallpapers/vaporwave"
+# exec_always ~/git/dotfiles/desktop/exec-wal.sh
+# bindsym $mod+Shift+w exec "wal -i ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
+# bindsym $mod+Shift+v exec "wal -i ~/git/dotfiles/wallpapers/vaporwave"
 
 
 ################################################################################
@@ -348,10 +348,10 @@ bindsym $mod+Shift+v exec "wal -i ~/git/dotfiles/wallpapers/vaporwave"
 ################################################################################
 
 # Set keyboard layout to US
-exec_always "~/set-us-layout.sh"
+# exec_always "~/set-us-layout.sh"
 
 # Set mouse sensitivity
-exec xset mouse 1 0
+# exec xset mouse 1 0
 
 
 ################################################################################
@@ -389,7 +389,8 @@ bar {
     #you can change the place via xrandr
     output $firstMonitor
 
-status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
+# status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
+status_command i3status
 
 colors {
         #background #2F2F2F
@@ -414,5 +415,3 @@ popup_during_fullscreen smart
 
 # no title bars
 for_window [class="^.*"] border pixel 0
-
-
