@@ -54,6 +54,7 @@ plugins=(
   vi-mode
   z
   python
+  history-substring-search
 )
 
 # User configuration
@@ -62,7 +63,6 @@ plugins=(
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-source zsh-history-substring-search.zsh
 
 # ZPlug ZSH Plugin manager
 source ~/.zplug/init.zsh
@@ -118,5 +118,5 @@ export NVM_DIR="/home/me/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Import colorscheme from 'wal'
-export PATH="/home/me/git/wal:$PATH"
-(wal -r &)
+# export PATH="/home/me/git/wal:$PATH"
+# (wal -r &)
