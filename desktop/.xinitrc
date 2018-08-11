@@ -6,8 +6,6 @@
 
 # invoke global X session script
 # . /etc/X11/Xsession
-setxkbmap -layout us &
 setxkbmap -option compose:ralt &
-udiskie -F &
 xrdb ~/.Xresources &
 exec i3
