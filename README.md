@@ -5,12 +5,7 @@ Configuration and other files of my Linux setups.
 ![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/neofetch-antergos.png "neofetch")
 
 ## Distro
-[Arch Linux](https://www.archlinux.org/) (Laptop)  
-[Antergos](https://antergos.com/) (Desktop)
-
-## DE
-Mostly disabled [Xfce4](https://xfce.org/) (Laptop)  
-No DE (Desktop)
+[Arch Linux](https://www.archlinux.org/)
 
 ## WM
 [i3-gaps](https://github.com/Airblader/i3/tree/gaps-next)
@@ -28,8 +23,8 @@ No DE (Desktop)
 [Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
 
 ## Editor
-[Spacemacs](http://spacemacs.org/) with evil mode (vim)
+[Vim] for basic editing and [Spacemacs](http://spacemacs.org/) with evil mode (vim mode) for more advanced editing
 
 ---
 
-Files slightly different on my desktop and laptop are separated by the folders.
+Files slightly different on my desktop and laptop are separated by the directories. Files applicable to both are in the root directory.
