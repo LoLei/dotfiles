@@ -1,4 +1,49 @@
 ! ------------------------------------------------------------------------------
+! urxvt
+! ------------------------------------------------------------------------------
+
+! General setttings
+URxvt*scrollBar:	false
+URxvt.font:             xft:Roboto Mono for Powerline:size=12
+URxvt.letterSpace:      -1
+URxvt*pointerBlank:	true
+URxvt.internalBorder:   10
+! URxvt*transparent: 	true
+! URxvt*shading:        25
+! URxvt*blurRadius:	7
+
+! Colors
+! hard contrast: *background: #1d2021
+URxvt.background: #282828
+! soft contrast: *background: #32302f
+URxvt.foreground: #ebdbb2
+! Black + DarkGrey
+URxvt.color0:  #282828
+URxvt.color8:  #928374
+! DarkRed + Red
+URxvt.color1:  #cc241d
+URxvt.color9:  #fb4934
+! DarkGreen + Green
+URxvt.color2:  #98971a
+URxvt.color10: #b8bb26
+! DarkYellow + Yellow
+URxvt.color3:  #d79921
+URxvt.color11: #fabd2f
+! DarkBlue + Blue
+URxvt.color4:  #458588
+URxvt.color12: #83a598
+! DarkMagenta + Magenta
+URxvt.color5:  #b16286
+URxvt.color13: #d3869b
+! DarkCyan + Cyan
+URxvt.color6:  #689d6a
+URxvt.color14: #8ec07c
+! LightGrey + White
+URxvt.color7:  #a89984
+URxvt.color15: #ebdbb2
+!URxvt*cursorColor:	#94a3a5
+
+! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
 !rofi.color-enabled: true
@@ -7,37 +52,3 @@
 !rofi.color-active: #2D2D2D, #80cbc4, #2D2D2D, #4F4F4F, #80cbc4
 !rofi.color-urgent: #2D2D2D, #ff1844, #2D2D2D, #4F4F4F, #ff1844
 
-! ------------------------------------------------------------------------------
-! urxvt
-! ------------------------------------------------------------------------------
-URxvt*scrollBar:	false
-
-URxvt.background: 	#181818
-URxvt.foreground: 	#94a3a5
-
-URxvt.font:             xft:Roboto Mono for Powerline:size=12
-URxvt.letterSpace: -1
-
-URxvt.color0: 		#232323
-URxvt.color8: 		#232323
-URxvt.color1: 		#a54242
-URxvt.color9: 		#a54242
-URxvt.color2: 		#6b7043
-URxvt.color10: 		#6b7043
-URxvt.color3: 		#a66a3f
-URxvt.color11: 		#a66a3f
-URxvt.color4: 		#56758f
-URxvt.color12: 		#56758f
-URxvt.color5: 		#866481
-URxvt.color13: 		#866481
-URxvt.color6: 		#5c8a84
-URxvt.color14: 		#5c8a84
-URxvt.color7: 		#94a3a5
-URxvt.color15: 		#94a3a5
-
-URxvt*cursorColor:	#94a3a5
-! URxvt*transparent: 	true
-! URxvt*shading:		25
-! URxvt*blurRadius:	7
-URxvt*pointerBlank:	true
-URxvt.internalBorder:   10
