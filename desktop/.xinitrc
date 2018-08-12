@@ -8,4 +8,5 @@
 # . /etc/X11/Xsession
 setxkbmap -option compose:ralt &
 xrdb ~/.Xresources &
+VBoxClient-all &
 exec i3
