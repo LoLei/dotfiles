@@ -341,6 +341,7 @@ workspace $workspace0 output $firstMonitor
 # exec_always ~/git/dotfiles/desktop/exec-wal.sh
 # bindsym $mod+Shift+w exec "wal -i ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
 # bindsym $mod+Shift+v exec "wal -i ~/git/dotfiles/wallpapers/vaporwave"
+exec feh --bg-fill ~/git/dotfiles/wallpapers/gruvbox
 
 
 ################################################################################
