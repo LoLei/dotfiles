@@ -25,3 +25,13 @@ xnoremap p pgvy
 " LaTeX
 map <F3> :w !detex \| wc -w<CR>
 map <F2> :setlocal spell! spelllang=en_us<CR>
+
+" vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+
+call plug#end()
+
+" Theme
+colorscheme gruvbox
