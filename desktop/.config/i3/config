@@ -381,21 +381,19 @@ bindsym $mod+Shift+b bar mode toggle
 ################################################################################
 
 bar {
-    mode hide
-    hidden_state hide
+    # mode hide
+    # hidden_state hide
     # modifier Mod4
-    position top
+    position bottom
     height 23
     workspace_buttons yes
     font pango:Roboto Mono for Powerline 12
-    #you can change the place via xrandr
     output $firstMonitor
 
-# status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
-status_command i3status
+status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
 colors {
-        #background #2F2F2F
+        background #282828
         statusline #eeeeee
         separator #666666
         #                     border  backgr. text
