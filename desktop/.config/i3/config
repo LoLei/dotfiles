@@ -33,6 +33,11 @@ set $mod Mod1
 set $color_light "#4F4F4F"
 set $color_darker "#2D2D2D"
 set $color_transparent "rgba(26,26,26,0.57)"
+set $fg  "#ebdbb2"
+set $fg4 "#a89984"
+set $bg  "#282828"
+set $bg2  "#504945"
+set $gray "#928374"
 
 
 ################################################################################
@@ -40,7 +45,8 @@ set $color_transparent "rgba(26,26,26,0.57)"
 ################################################################################
 
 # Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# is used in the bar {} block below. No window titles used now, so this font
+# is not shown anywhere right now
 font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -72,7 +78,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Control+Shift+k focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, kill
 
 # start dmenu (a program launcher), or actually rofi 
-# bindsym $mod+d exec rofi -show run -eh 2 -padding 500 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
 bindsym $mod+d exec rofi -theme gruvbox-dark -show run
 
 # change focus
@@ -168,7 +173,6 @@ bindsym $mod+Shift+0 move container to workspace $workspace0
 
 # Automatically open specific applications on specific workspace
 assign [class="Emacs|Atom"] → $workspace2
-# assign [class="Chromium|chromium"] → $workspace3
 assign [class="Slack|signal|Signal"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
@@ -176,7 +180,6 @@ assign [class="Spotify|spotify"] → $workspace7
 for_window [class="Spotify|spotify"] move to workspace $workspace7
 # for_window [class="Spotify|spotify"] focus
 assign [class="Spotify|spotify"] → $workspace7
-assign [class="pavucontrol|Pavucontrol"] → $workspace0
 
 
 ################################################################################
@@ -185,12 +188,9 @@ assign [class="pavucontrol|Pavucontrol"] → $workspace0
 
 # System
 exec_always compton
-exec --no-startup-id nm-applet
+# exec --no-startup-id nm-applet
 exec xrdb ~/.Xresources
-exec --no-startup-id polychromatic-tray-applet # Razer peripherals
-
-# clipit
-exec clipit
+# exec --no-startup-id polychromatic-tray-applet # Razer peripherals
 
 # bluetooth
 # exec --no-startup-id blueberry-tray
@@ -318,9 +318,6 @@ mode "$mode_gaps_outer" {
 
 # Set up dual screens
 set $firstMonitor VGA-1
-# set $firstMonitor DisplayPort-0
-# set $secondMonitor DVI-0
-# exec ~/.screenlayout/dvi1-dvi0.sh
 
 # Output specific workspaces on specific screens
 workspace $workspace1 output $firstMonitor
@@ -393,13 +390,13 @@ bar {
 status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
 colors {
-        background #282828
+        background $bg
         statusline #eeeeee
-        separator #666666
+        separator $bg2
         #                     border  backgr. text
-        focused_workspace     #a9a9a9 #222222 #a9a9a9
+        focused_workspace     $fg4    $bg     $fg
         active_workspace      #a9a9a9 #222222 #a9a9a9
-        inactive_workspace    #a9a9a9 #5f676a #a9a9a9
+        inactive_workspace    $gray   $bg     $gray
         urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
         }
 

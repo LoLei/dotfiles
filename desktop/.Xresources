@@ -4,7 +4,7 @@
 
 ! General setttings
 URxvt*scrollBar:	false
-URxvt.font:             xft:Roboto Mono for Powerline:size=12
+URxvt.font:             xft:RobotoMono Nerd Font:size=12
 URxvt.letterSpace:      -1
 URxvt*pointerBlank:	true
 URxvt.internalBorder:   10
