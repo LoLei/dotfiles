@@ -387,7 +387,7 @@ bar {
     position bottom
     height 23
     workspace_buttons yes
-    font pango:Roboto Mono for Powerline 12
+    font pango:RobotoMono Nerd Font 12
     output $firstMonitor
 
 status_command i3blocks -c ~/.config/i3/i3blocks.conf
