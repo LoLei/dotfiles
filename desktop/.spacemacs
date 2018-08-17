@@ -133,6 +133,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
+                         gruvbox
                          jbeans
                          spacemacs-light
                          spacemacs-dark
@@ -141,7 +142,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Iosevka"
+   dotspacemacs-default-font '("RobotoMono Nerd Font"
                                :size 17
                                :weight normal
                                :width normal
@@ -309,6 +310,8 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (load-file "~/.emacs.d/dash.el")
+  (load-file "~/.emacs.d/autothemer.el")
   )
 
 (defun dotspacemacs/user-config ()
