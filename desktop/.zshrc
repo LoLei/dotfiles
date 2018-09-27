@@ -120,3 +120,5 @@ export NVM_DIR="/home/me/.nvm"
 # Import colorscheme from 'wal'
 # export PATH="/home/me/git/wal:$PATH"
 # (wal -r &)
+
+source /usr/share/nvm/init-nvm.sh
