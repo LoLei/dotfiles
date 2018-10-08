@@ -102,9 +102,6 @@ alias i3s="startx ~/.xinitrc"
 # Tree Color
 alias tree="tree -C"
 
-# gitwatch
-alias gitwatch="~/git/gitwatch/gitwatch.sh"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## VI mode ##############################################
