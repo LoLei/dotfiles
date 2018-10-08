@@ -112,9 +112,8 @@ alias gitwatch="~/git/gitwatch/gitwatch.sh"
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-export NVM_DIR="/home/me/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
 (wal -r &)
+
+source /usr/share/nvm/init-nvm.sh
