@@ -102,9 +102,6 @@ alias i3s="startx ~/.xinitrc"
 # Tree Color
 alias tree="tree -C"
 
-# gitwatch
-alias gitwatch="~/git/gitwatch/gitwatch.sh"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## VI mode ##############################################
@@ -112,9 +109,8 @@ alias gitwatch="~/git/gitwatch/gitwatch.sh"
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
-export NVM_DIR="/home/me/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
 (wal -r &)
+
+source /usr/share/nvm/init-nvm.sh
