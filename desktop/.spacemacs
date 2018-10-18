@@ -338,6 +338,12 @@ you should place your code here."
    web-mode-code-indent-offset 2
    web-mode-attr-indent-offset 2)
 
+  "C++ curly braces indendation fix"
+  (defun my-c++-mode-hook ()
+    (setq c-basic-offset 2)
+    (c-set-offset 'substatement-open 0))
+  (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
   "xnoremap p pgvy (Keep yanked stuff after pasting over selection)"
   (defun evil-paste-after-from-0 ()
     (interactive)
