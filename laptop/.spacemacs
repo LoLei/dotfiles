@@ -335,6 +335,12 @@ you should place your code here."
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
   )
 
+  "C++ curly braces indendation fix"
+  (defun my-c++-mode-hook ()
+    (setq c-basic-offset 2)
+    (c-set-offset 'substatement-open 0))
+  (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
 (custom-set-variables
