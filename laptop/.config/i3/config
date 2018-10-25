@@ -227,6 +227,8 @@ for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggl
 bindsym $mod+Shift+p exec xfce4-session-logout
 # xfce settings
 bindsym $mod+Shift+s exec unity-control-center
+# lock screen
+bindsym $mod+Control+l exec /home/me/git/dotfiles/lock.sh
 
 # no title bars
 for_window [class="^.*"] border pixel 0

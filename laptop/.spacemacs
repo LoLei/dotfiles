@@ -333,13 +333,30 @@ you should place your code here."
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
   (add-hook 'doc-view-mode-hook 'auto-revert-mode)
-  )
 
   "C++ curly braces indendation fix"
   (defun my-c++-mode-hook ()
     (setq c-basic-offset 2)
     (c-set-offset 'substatement-open 0))
   (add-hook 'c++-mode-hook 'my-c++-mode-hook)
+
+  "xnoremap p pgvy (Keep yanked stuff after pasting over selection)"
+  (defun evil-paste-after-from-0 ()
+    (interactive)
+    (let ((evil-this-register ?0))
+      (call-interactively 'evil-paste-after)))
+
+  (define-key evil-visual-state-map "p" 'evil-paste-after-from-0)
+
+  "Autocomplete behaviour"
+  (setq-default
+   auto-completion-return-key-behavior nil
+   auto-completion-tab-key-behavior 'complete
+   auto-completion-complete-with-key-sequence nil
+   auto-completion-complete-with-key-sequence-delay 0.1
+   auto-completion-private-snippets-directory nil)
+
+  )
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
