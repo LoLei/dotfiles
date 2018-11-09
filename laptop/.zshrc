@@ -114,3 +114,6 @@ export PATH="/home/me/git/wal:$PATH"
 (wal -r &)
 
 source /usr/share/nvm/init-nvm.sh
+
+# added by Anaconda3 installer
+export PATH="/home/me/anaconda3/bin:$PATH"
