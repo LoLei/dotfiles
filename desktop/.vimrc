@@ -35,3 +35,5 @@ call plug#end()
 
 " Theme
 colorscheme gruvbox
+set background=dark    " Setting dark mode
+let g:gruvbox_contrast_dark = 'soft'
