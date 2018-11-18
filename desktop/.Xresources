@@ -13,8 +13,9 @@ URxvt.internalBorder:   10
 ! URxvt*blurRadius:	7
 
 ! Colors
-! hard contrast: *background: #1d2021
-URxvt.background: #282828
+! light contrast: *background: #282828
+!URxvt.background: #1d2021
+URxvt.background: #1c1c1c
 ! soft contrast: *background: #32302f
 URxvt.foreground: #ebdbb2
 ! Black + DarkGrey
