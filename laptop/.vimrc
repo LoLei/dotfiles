@@ -75,6 +75,5 @@ nnoremap <Leader>fU :execute 'CtrlPFunky ' . expand('<cword>')<Cr>
 let g:ycm_global_ycm_extra_conf = '~/git/dotfiles/.ycm_extra_conf.py'
 set completeopt-=preview
 let g:ycm_show_diagnostics_ui = 0
-let g:ycm_key_list_select_completion = ['<Down>', '<c-j>' ]
-let g:ycm_key_list_previous_completion = ['<Up>', '<c-k>' ]
-let g:ycm_key_list_stop_completion = ['<TAB>']
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<c-j>' ]
+let g:ycm_key_list_previous_completion = ['<S-TAB>', '<Up>', '<c-k>' ]
