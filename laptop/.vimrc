@@ -48,6 +48,17 @@ set backspace=2
 set textwidth=80
 colorscheme pablo
 
+" Show current function name
+fun! ShowFuncName()
+  let lnum = line(".")
+  let col = col(".")
+  echohl ModeMsg
+  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+  echohl None
+  call search("\\%" . lnum . "l" . "\\%" . col . "c")
+endfun
+map <F1> :call ShowFuncName() <CR>
+
 " Auto reload vimrc
 augroup myvimrc
 	au!
