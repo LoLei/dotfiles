@@ -93,6 +93,7 @@ zplug load
 alias e="evince"
 alias t="tty-clock -c"
 alias za="zathura"
+alias mj="make -j && make test"
 
 # Tree Color
 alias tree="tree -C"
