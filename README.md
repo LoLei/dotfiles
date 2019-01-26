@@ -23,7 +23,10 @@ Configuration and other files of my Linux setups.
 [Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
 
 ## Editor
-Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/laptop/.vimrc).
+Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/laptop/.vimrc)
+
+## Rice
+[wal](https://github.com/dylanaraps/wal)
 
 ---
 
