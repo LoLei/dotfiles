@@ -23,7 +23,7 @@ Configuration and other files of my Linux setups.
 [Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
 
 ## Editor
-Vim for basic editing and [Spacemacs](http://spacemacs.org/) with evil mode (vim mode) for more advanced editing
+Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/laptop/.vimrc).
 
 ---
 
