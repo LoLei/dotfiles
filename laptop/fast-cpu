@@ -1,9 +1,0 @@
-#!/bin/bash
-echo 'Swapping to performance governor'
-sudo cpupower frequency-set -g performance
-
-echo 'Setting maximum CPU frequency to 3.1GHz'
-sudo cpupower frequency-set -u 3.1GHz
-
-echo 'Setting minimum CPU frequency to 2GHz'
-sudo cpupower frequency-set -d 2GHz
