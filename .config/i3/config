@@ -322,11 +322,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-# Set up dual screens
-set $firstMonitor eDP1
-# set $secondMonitor DVI-0
-# Not necessary on laptop
-# exec ~/.screenlayout/dvi1-dvi0.sh
+set $firstMonitor VGA-1
 
 ################################################################################
 # Wallpaper
@@ -368,7 +364,7 @@ bar {
 
     mode hide
     hidden_state hide
-#   modifier Mod4
+    modifier Mod4
     position top
     height 23
     workspace_buttons yes
