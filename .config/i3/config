@@ -261,12 +261,6 @@ gaps outer 5
 workspace $workspace0 gaps inner 70
 workspace $workspace0 gaps outer 5
 
-workspace $workspace4 gaps inner 100
-workspace $workspace4 gaps outer 5
-
-workspace $workspace7 gaps inner 100
-workspace $workspace7 gaps outer 5
-
 # Change gap size at runtime
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global), (Shift)+r reset
