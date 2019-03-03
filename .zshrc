@@ -112,7 +112,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
-(wal -r &)
+(cat ~/.cache/wal/sequences &)
 
 # added by Anaconda3 installer
 export PATH="/home/me/anaconda3/bin:$PATH"
