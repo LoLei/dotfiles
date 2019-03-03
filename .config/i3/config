@@ -54,7 +54,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Control+Shift+k focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, focus parent, kill
 
 # start dmenu (a program launcher), or actually rofi 
-bindsym $mod+d exec rofi -show run -eh 2 -padding 500 -width 100 -height 100 -lines 5 -hide-scrollbar -bw 0 -bg "#1A1A1A" -bc "$color_light" -fg "#ADADAD" -hlbg "#333333" -opacity "85" -font "Inconsolata bold 18"
+bindsym $mod+d exec rofi -show run -eh 2 -padding 500 -width 100 -height 100 -lines 5 -hide-scrollbar -opacity "85" -font "Roboto Mono for Powerline Bold 18"
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
