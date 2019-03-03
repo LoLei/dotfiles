@@ -316,7 +316,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
-set $firstMonitor VGA-1
+set $firstMonitor DP-2
 
 ################################################################################
 # Wallpaper
