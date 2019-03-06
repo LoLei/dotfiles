@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/me/.oh-my-zsh
+export ZSH=/home/me/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -106,7 +106,6 @@ alias tree="tree -C"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## VI mode ##############################################
-
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
