@@ -15,6 +15,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'dylanaraps/wal.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,7 +47,7 @@ set smartindent
 set ruler
 set backspace=2
 set textwidth=80
-colorscheme pablo
+colorscheme wal
 
 " Show current function name
 fun! ShowFuncName()
