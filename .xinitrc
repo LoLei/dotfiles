@@ -7,4 +7,5 @@
 # invoke global X session script
 # . /etc/X11/Xsession
 
+udiskie &
 exec i3
