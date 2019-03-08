@@ -363,8 +363,6 @@ bar {
     height 23
     workspace_buttons yes
     font pango:Roboto Mono for Powerline 12
-    #you can change the place via xrandr
-    output $firstMonitor
 
 # OPTION 2 : i3blocks
 
@@ -394,3 +392,8 @@ colors {
 
 # Popups during fullscreen mode
 popup_during_fullscreen smart
+
+# Set us layout if on us-keyboard
+
+# Auto mount external hard drives
+
