@@ -394,6 +394,7 @@ colors {
 popup_during_fullscreen smart
 
 # Set us layout if on us-keyboard
+exec ~/git/dotfiles/set-us-layout.sh
 
 # Auto mount external hard drives
-
+# Done in .xinitrc
