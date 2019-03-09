@@ -397,4 +397,4 @@ popup_during_fullscreen smart
 exec ~/git/dotfiles/set-us-layout.sh
 
 # Auto mount external hard drives
-# Done in .xinitrc
+exec udiskie
