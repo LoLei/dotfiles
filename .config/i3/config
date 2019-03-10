@@ -157,6 +157,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace0
 assign [class="Emacs|Atom"] → $workspace2
 assign [class="Firefox"] → $workspace3
 assign [class="Slack"] → $workspace4
+assign [class="Signal"] → $workspace4
 assign [class="Thunderbird"] → $workspace5
 assign [class="Spotify|spotify"] → $workspace7
 # Spotify needs extra attention
@@ -183,13 +184,9 @@ exec clipit
 # bluetooth
 exec blueberry-tray
 
-# User applications - Do not start these on the laptop
-# Browser
-# exec firefox
-# Music
-# exec --no-startup-id spotify
-# Chat
-# exec slack
+# User applications
+exec slack
+exec signal-desktop
 
 
 ################################################################################
