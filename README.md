@@ -10,6 +10,9 @@ Configuration and other files of my Linux setups.
 ## WM
 [i3-gaps](https://github.com/Airblader/i3/tree/gaps-next)
 
+## Bar
+[polybar](https://github.com/jaagr/polybar)
+
 ## Compositor
 [compton](https://github.com/chjj/compton)
 
@@ -23,11 +26,7 @@ Configuration and other files of my Linux setups.
 [Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
 
 ## Editor
-Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/laptop/.vimrc)
+Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/.vimrc)
 
-## Rice
-[wal](https://github.com/dylanaraps/wal)
-
----
-
-Files slightly different on my desktop and laptop are separated by the directories. Files applicable to both are in the root directory.
+## Colors
+[pywal](https://github.com/dylanaraps/pywal)
