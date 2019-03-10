@@ -255,6 +255,9 @@ gaps inner 45
 gaps outer 5
 
 # Default gap sizes for specific workspaces
+workspace $workspace3 gaps inner 25
+workspace $workspace3 gaps outer 0
+
 workspace $workspace0 gaps inner 70
 workspace $workspace0 gaps outer 5
 
