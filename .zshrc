@@ -99,7 +99,6 @@ alias gnomestartx="startx /usr/bin/gnome-session"
 alias i3startx="startx ~/.xinitrc"
 alias i3s="startx ~/.xinitrc"
 alias mj="make -j && make test"
-alias vim='PATH=/usr/bin vim' # Make vim not use anaconda python
 
 # Tree Color
 alias tree="tree -C"
@@ -113,9 +112,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 # Import colorscheme from 'wal'
 export PATH="/home/me/git/wal:$PATH"
 (cat ~/.cache/wal/sequences &)
-
-# added by Anaconda3 installer
-export PATH="/home/me/anaconda3/bin:$PATH"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/me/google-cloud-sdk/path.zsh.inc' ]; then . '/home/me/google-cloud-sdk/path.zsh.inc'; fi
