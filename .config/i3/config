@@ -347,44 +347,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000
 # Bar
 ################################################################################
 
-# bar toggle, hide or show 
-bindsym $mod+Shift+b bar mode toggle
-
-################################################################################
-# Bar appearance
-################################################################################
-
-bar {
-
-    mode hide
-    hidden_state hide
-    modifier Mod4
-    position top
-    height 23
-    workspace_buttons yes
-    font pango:Roboto Mono for Powerline 12
-
-# OPTION 2 : i3blocks
-
-    # https://github.com/vivien/i3blocks
-    # another way to provide text in the statusbar
-    # put hastag in front if not installed
-
-status_command i3blocks -c ~/.config/i3/i3blocks-awesome.conf
-
-colors {
-        #background #2F2F2F
-        statusline #eeeeee
-        separator #666666
-        #                     border  backgr. text
-        focused_workspace     #a9a9a9 #222222 #a9a9a9
-        active_workspace      #a9a9a9 #222222 #a9a9a9
-        inactive_workspace    #a9a9a9 #5f676a #a9a9a9
-        urgent_workspace      #4A4A4A #4A4A4A #a9a9a9
-        }
-
-    }
-
+exec_always --no-startup-id ~/git/dotfiles/launch-polybar.sh
 
 ################################################################################
 # Misc
