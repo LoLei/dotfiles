@@ -64,7 +64,7 @@ plugins=(
 
 # User configuration
 
-  # export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
+# export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -74,11 +74,11 @@ source zsh-history-substring-search.zsh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -99,6 +99,7 @@ alias gnomestartx="startx /usr/bin/gnome-session"
 alias i3startx="startx ~/.xinitrc"
 alias i3s="startx ~/.xinitrc"
 alias mj="make -j && make test"
+alias vim='PATH=/usr/bin vim' # Make vim not use anaconda python
 
 # Tree Color
 alias tree="tree -C"
