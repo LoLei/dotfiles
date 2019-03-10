@@ -185,8 +185,8 @@ exec clipit
 exec blueberry-tray
 
 # User applications
-exec slack
-exec signal-desktop
+#exec slack
+#exec signal-desktop
 
 
 ################################################################################
