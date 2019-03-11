@@ -2,15 +2,15 @@
 
 # Get current primary color used by pywal
 RGB="$(xrdb -query | grep "*color1:" | awk -F '#' '{print $2}')"
-echo $RGB
 
+echo "Xresrouces color1: "
 # Split by RGB
 R=${RGB:0:2}
-echo $R
+echo R: $R
 G=${RGB:2:2}
-echo $G
+echo G: $G
 B=${RGB:4:2}
-echo $B
+echo B: $B
 
 # Go to device drive directory 
 # https://github.com/openrazer/openrazer/wiki/Using-the-keyboard-driver
