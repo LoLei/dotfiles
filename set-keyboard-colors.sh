@@ -4,6 +4,7 @@
 RGB="$(xrdb -query | grep "*color1:" | awk -F '#' '{print $2}')"
 
 echo "Xresrouces color1: "
+echo $RGB
 # Split by RGB
 R=${RGB:0:2}
 echo R: $R
@@ -16,5 +17,6 @@ echo B: $B
 # https://github.com/openrazer/openrazer/wiki/Using-the-keyboard-driver
 cd /sys/bus/hid/drivers/razerkbd/0003:1532:021A.0008
 
+echo "Writing color to keyboard driver..."
 # Write color values into driver file
-echo -n -e "\xFF\xFF\xFF" > matrix_effect_static
+echo -n -e "\x$R\x$G\x$B" > matrix_effect_static
