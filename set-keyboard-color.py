@@ -1,6 +1,28 @@
+# https://github.com/openrazer/openrazer/blob/feature_docs/examples/basic_effect.py
+
+import subprocess, sys
 from openrazer.client import DeviceManager
 from openrazer.client import constants as razer_constants
 
+# -----------------------------------------------------------------------------
+# COLORS
+# Get current primary color used by pywal
+output = subprocess.check_output(
+        "xrdb -query | grep \"*color1:\" | awk -F '#' '{print $2}'", 
+        shell=True)
+rgb = output.decode()
+print("RGB: {}".format(rgb))
+
+print("In decimal: ")
+r = int(rgb[0:2], 16)
+sys.stdout.write(str(r) + " ")
+g = int(rgb[2:4], 16)
+sys.stdout.write(str(g) + " ")
+b = int(rgb[4:6], 16)
+sys.stdout.write(str(b) + "\n\n")
+
+# -----------------------------------------------------------------------------
+# DEVICES
 # Create a DeviceManager. This is used to get specific devices
 device_manager = DeviceManager()
 
@@ -17,4 +39,4 @@ for device in device_manager.devices:
 
     # Set the effect to wave.
     # wave requires a direction, but different effect have different arguments.
-    device.fx.static(255,0,0)
+    device.fx.static(r, g, b)
