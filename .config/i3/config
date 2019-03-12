@@ -361,3 +361,6 @@ exec ~/git/dotfiles/set-us-layout.sh
 
 # Auto mount external hard drives
 exec udiskie
+
+# Open emoji search bar
+bindsym Mod4+period exec emoji-keyboard -s
