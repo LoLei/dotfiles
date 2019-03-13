@@ -1,5 +1,12 @@
 #!/bin/bash
 
+#####
+#
+# DEPRECATED
+# Use the python script instead
+#
+#####
+
 # Get current primary color used by pywal
 RGB="$(xrdb -query | grep "*color1:" | awk -F '#' '{print $2}')"
 
