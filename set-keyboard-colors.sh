@@ -4,6 +4,7 @@
 #
 # DEPRECATED
 # Use the python script instead
+# https://github.com/LoLei/razer-x-color
 #
 #####
 
