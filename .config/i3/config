@@ -321,9 +321,9 @@ set $firstMonitor DP-2
 ################################################################################
 # Wallpaper
 ################################################################################
-exec_always ~/git/dotfiles/exec-wal.sh
-bindsym $mod+Shift+w exec "wal -i ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
-bindsym $mod+Shift+v exec "wal -i ~/git/dotfiles/wallpapers/vaporwave"
+exec_always ~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers
+bindsym $mod+Shift+w exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
+bindsym $mod+Shift+v exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/vaporwave"
 
 
 ################################################################################

@@ -4,6 +4,8 @@ import subprocess, sys
 from openrazer.client import DeviceManager
 from openrazer.client import constants as razer_constants
 
+print("Starting Razer colors script...")
+
 # -----------------------------------------------------------------------------
 # COLORS
 # Get current primary color used by pywal
