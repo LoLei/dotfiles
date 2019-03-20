@@ -187,7 +187,7 @@ exec blueberry-tray
 # User applications
 exec slack
 # https://www.reddit.com/r/i3wm/comments/3yy916/how_to_stop_i3_showing_highlighted_workspaces/
-exec xdotool search --sync --name "plaidchat" set_window --urgency 0
+exec xdotool search --sync --name "slack" set_window --urgency 0
 #exec signal-desktop
 
 
