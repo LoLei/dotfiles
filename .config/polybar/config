@@ -16,6 +16,9 @@
 ;
 ;==========================================================
 
+
+; Use gucharmap to view nerd font icons to copy paste here
+
 [colors]
 background = ${xrdb:color0:#222}
 background-alt = ${xrdb:color0:#222}
