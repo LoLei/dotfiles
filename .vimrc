@@ -91,6 +91,7 @@ let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<c-j>' ]
 let g:ycm_key_list_previous_completion = ['<S-TAB>', '<Up>', '<c-k>' ]
 let g:ycm_confirm_extra_conf=0
 nnoremap <F5>           :YcmForceCompileAndDiagnostics<CR>
+nnoremap <leader>gt     :YcmCompleter GoTo<CR>
 nnoremap <leader>gic    :YcmCompleter GoToInclude<CR>
 nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gdf    :YcmCompleter GoToDefinition<CR>
