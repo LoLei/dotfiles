@@ -89,3 +89,10 @@ set completeopt-=preview
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<c-j>' ]
 let g:ycm_key_list_previous_completion = ['<S-TAB>', '<Up>', '<c-k>' ]
+let g:ycm_confirm_extra_conf=0
+nnoremap <F5>           :YcmForceCompileAndDiagnostics<CR>
+nnoremap <leader>gic    :YcmCompleter GoToInclude<CR>
+nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gdf    :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gip    :YcmCompleter GoToImprecise<CR>
+nnoremap <leader>fi     :YcmCompleter FixIt<CR>
