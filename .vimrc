@@ -9,13 +9,13 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'dylanaraps/wal.vim'
+Plugin 'mboughaba/i3config.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -32,7 +32,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" ------ OWN CONFIG ------
+" --------------------------------- OWN CONFIG ---------------------------------
 " Small standard changes
 syntax on
 set clipboard=unnamedplus
@@ -97,3 +97,12 @@ nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gdf    :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gip    :YcmCompleter GoToImprecise<CR>
 nnoremap <leader>fi     :YcmCompleter FixIt<CR>
+
+" i3 config syntax highlighting
+aug i3config_ft_detection
+  au!
+  au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+aug end
+
+" requirements.txt syntax highlighting
+autocmd BufNewFile,BufRead requirements*.txt set syntax=python
