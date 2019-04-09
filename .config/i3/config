@@ -243,7 +243,7 @@ bindsym $mod+Shift+p exec xfce4-session-logout
 # xfce settings
 bindsym $mod+Shift+s exec unity-control-center
 # lock screen
-bindsym $mod+Control+l exec /home/me/git/dotfiles/lock.sh
+bindsym $mod+Control+l exec i3lock-fancy
 
 # no title bars
 for_window [class="^.*"] border pixel 0
