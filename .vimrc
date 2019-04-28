@@ -16,6 +16,7 @@ Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'dylanaraps/wal.vim'
 Plugin 'mboughaba/i3config.vim'
+Plugin 'tpope/vim-surround'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
