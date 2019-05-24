@@ -60,7 +60,7 @@ font-3 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem updates-arch-combined xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = right
 tray-padding = 0
@@ -413,6 +413,11 @@ menu-2-0 = power off
 menu-2-0-exec = sudo poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/updates-arch-combined]
+type = custom/script
+exec = ~/git/dotfiles/.config/polybar/updates-arch-combined.sh
+interval = 600
 
 [settings]
 screenchange-reload = true
