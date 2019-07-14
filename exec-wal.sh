@@ -1,6 +1,11 @@
 #!/bin/zsh
 
 DIR=$1
-wal -i $DIR
+# Generate colors and set terminal theme
+wal -i $DIR &&
+
+# Set GTK and icon theme
+~/git/dotfiles/change-gtk-theme.sh &&
+
 sleep 1
 ~/git/razer-cli/razer-cli.py -a

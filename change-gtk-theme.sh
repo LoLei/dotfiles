@@ -1,5 +1,6 @@
 #!/bin/bash
 # Exec pywal first
+# Done in exec-wal.sh
 
 # Generate GTK3 theme
 oomox-cli /opt/oomox/scripted_colors/xresources/xresources2
