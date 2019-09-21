@@ -8,4 +8,4 @@ wal -i $DIR &&
 ~/git/dotfiles/change-gtk-theme.sh &&
 
 sleep 1
-~/git/razer-cli/razer-cli.py -a
+razer-cli -a
