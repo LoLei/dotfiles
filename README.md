@@ -29,4 +29,6 @@ Configuration and other files of my Linux setups.
 Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/.vimrc)
 
 ## Colors
-[pywal](https://github.com/dylanaraps/pywal)
+[pywal](https://github.com/dylanaraps/pywal)  
+[oomox](https://github.com/themix-project/oomox)  
+[razer-cli](https://github.com/LoLei/razer-cli)  
