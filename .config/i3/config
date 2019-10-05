@@ -185,9 +185,9 @@ exec clipit
 exec blueberry-tray
 
 # User applications
-exec slack && xdotool search --sync --name "slack" set_window --urgency 0
+# exec slack && xdotool search --sync --name "slack" set_window --urgency 0
 # https://www.reddit.com/r/i3wm/comments/3yy916/how_to_stop_i3_showing_highlighted_workspaces/
-#exec signal-desktop
+# exec signal-desktop
 
 
 ################################################################################
