@@ -107,3 +107,6 @@ aug end
 
 " requirements.txt syntax highlighting
 autocmd BufNewFile,BufRead requirements*.txt set syntax=python
+
+" Auto fix indentation
+map <F7> gg=G<C-o><C-o>
