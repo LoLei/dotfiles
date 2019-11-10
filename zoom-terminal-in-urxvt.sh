@@ -1,1 +1,1 @@
-printf '\33]50;%s\007' "xft:Roboto Mono for Powerline:pixelsize=22"
+printf '\33]50;%s\007' "xft:Roboto Mono for Powerline:pixelsize=32"
