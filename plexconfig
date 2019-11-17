@@ -1,0 +1,4 @@
+Change user and group to own user in
+/usr/lib/systemd/system/plexmediaserver.service
+and
+chown -R $USER:$USER /var/lib/plex

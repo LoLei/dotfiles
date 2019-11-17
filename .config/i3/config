@@ -168,7 +168,7 @@ for_window [class="Spotify|spotify"] move to workspace $workspace7
 ################################################################################
 
 # System
-exec_always compton
+exec_always picom
 exec --no-startup-id nm-applet
 exec xrdb ~/.Xresources
 
