@@ -122,3 +122,7 @@ if [ -f '/home/me/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/me/googl
 # Golang
 export GOPATH=/home/me/go
 export PATH=$PATH:$GOPATH/bin
+
+# Ranger
+export RANGER_LOAD_DEFAULT_RC=FALSE
+
