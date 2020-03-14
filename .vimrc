@@ -18,6 +18,7 @@ Plugin 'dylanaraps/wal.vim'
 Plugin 'mboughaba/i3config.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'mhinz/vim-startify'
+Plugin 'lervag/vimtex'
 
 
 " All of your Plugins must be added before the following line
