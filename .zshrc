@@ -99,6 +99,8 @@ alias gnomestartx="startx /usr/bin/gnome-session"
 alias i3startx="startx ~/.xinitrc"
 alias i3s="startx ~/.xinitrc"
 alias mj="make -j && make test"
+# Pre-compose properly hard-wrapped email body
+alias vim-email="vim -c 'set textwidth=72'"
 
 # Tree Color
 alias tree="tree -C"
