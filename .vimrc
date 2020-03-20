@@ -81,6 +81,7 @@ map <F2> :setlocal spell! spelllang=en_us<CR>
 "let mapleader=" "
 "nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>"
+let maplocalleader = "\\"
 
 " Ctrl-P Funky
 nnoremap <Leader>fu :CtrlPFunky<Cr>
