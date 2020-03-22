@@ -118,5 +118,9 @@ map <F7> gg=G<C-o><C-o>
 " Auto commit and push
 command Gcp :! git commit --all -m "-" && git push
 
+" LaTeX biblatex bibliography fix
+command Bf :s/{/"/g <bar> :s/}/"/g
+nnoremap <leader>bf :Bf<CR>
+
 " VimTeX
 let g:vimtex_view_method='zathura'
