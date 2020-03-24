@@ -124,3 +124,8 @@ nnoremap <leader>bf :Bf<CR>
 
 " VimTeX
 let g:vimtex_view_method='zathura'
+
+if !exists('g:ycm_semantic_triggers')
+  let g:ycm_semantic_triggers = {}
+endif
+au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
