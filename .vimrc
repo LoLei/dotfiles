@@ -118,10 +118,6 @@ map <F7> gg=G<C-o><C-o>
 " Auto commit and push
 command Gcp :! git commit --all -m "-" && git push
 
-" LaTeX biblatex bibliography fix
-command Bf :s/{/"/g <bar> :s/}/"/g
-nnoremap <leader>bf :Bf<CR>
-
 " VimTeX
 let g:vimtex_view_method='zathura'
 
@@ -129,6 +125,11 @@ if !exists('g:ycm_semantic_triggers')
   let g:ycm_semantic_triggers = {}
 endif
 au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
+
+" LaTeX bibliography fixes
+" {} to ""
+command Bf :s/{/"/g <bar> :s/}/"/g
+nnoremap <leader>bf :Bf<CR>
 
 " Title Case Capitalization
 " https://github.com/nickjj/title-case-converter
