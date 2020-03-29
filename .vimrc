@@ -129,3 +129,7 @@ if !exists('g:ycm_semantic_triggers')
   let g:ycm_semantic_triggers = {}
 endif
 au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
+
+" Title Case Capitalization
+" https://github.com/nickjj/title-case-converter
+vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR>
