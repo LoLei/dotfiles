@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from sys import argv
+from sys import stdin
 
 
 def author_fix(authors):
@@ -25,9 +26,12 @@ def author_fix(authors):
 
 
 def main():
-    authors = argv[1]
+    if not stdin.isatty():
+        authors = stdin.read()
+    else:
+        authors = argv[1]
     authors = author_fix(authors)
-    return authors
+    print(authors)
 
 
 if __name__ == "__main__":

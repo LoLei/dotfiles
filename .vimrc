@@ -133,3 +133,6 @@ au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
 " Title Case Capitalization
 " https://github.com/nickjj/title-case-converter
 vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR>
+
+" Author formatting fix
+vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
