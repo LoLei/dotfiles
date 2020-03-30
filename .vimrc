@@ -120,6 +120,7 @@ command Gcp :! git commit --all -m "-" && git push
 
 " VimTeX
 let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
 
 if !exists('g:ycm_semantic_triggers')
   let g:ycm_semantic_triggers = {}
