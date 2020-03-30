@@ -137,3 +137,6 @@ vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR>
 
 " Author formatting fix
 vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
+
+" LaTeX commands macros
+autocmd FileType tex inoremap ;fu \footnote{\url{}}<ESC>hi
