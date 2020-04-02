@@ -1,22 +1,16 @@
 #!/bin/sh
 cd ~/uni
 
-cd msc-code
-git commit -am "Repo-wide auto-commit"
-git push
-cd ..
+cap () {
+  cd $1
+  echo -e "\e[31;1mHandling $(pwd) ...\n\e[0m"
+  git commit -am "Repo-wide auto-commit"
+  git push
+  cd ..
+  echo ""
+}
 
-cd msc-journal
-git commit -am "Repo-wide auto-commit"
-git push
-cd ..
-
-cd msc-resources
-git commit -am "Repo-wide auto-commit"
-git push
-cd ..
-
-cd msc-thesis
-git commit -am "Repo-wide auto-commit"
-git push
-cd ..
+cap msc-code
+cap msc-journal
+cap msc-resources
+cap msc-thesis
