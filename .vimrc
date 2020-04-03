@@ -73,10 +73,6 @@ augroup END
 " Paste multiple times
 xnoremap p pgvy
 
-" LaTeX
-map <F3> :w !detex \| wc -w<CR>
-map <F2> :setlocal spell! spelllang=en_us<CR>
-
 " Leader
 "let mapleader=" "
 "nnoremap <SPACE> <Nop>
@@ -118,6 +114,10 @@ map <F7> gg=G<C-o><C-o>
 " Auto commit and push
 command Gcp :! git commit --all -m "-" && git push
 
+"------------------------------- LaTeX -------------------------------
+map <F3> :w !detex \| wc -w<CR>
+map <F2> :setlocal spell! spelllang=en_us<CR>
+
 " VimTeX
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
@@ -140,4 +140,14 @@ vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR>
 vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
 
 " LaTeX commands macros
+" Citations
 autocmd FileType tex inoremap ;fu \footnote{\url{}}<ESC>hi
+autocmd FileType tex inoremap ;tc \textcite{}<ESC>i
+autocmd FileType tex inoremap ;pc \parencite{}<ESC>i
+" Formatting
+autocmd FileType tex inoremap ;bf \textbf{}<ESC>i
+autocmd FileType tex inoremap ;eq \enquote{}<ESC>i
+autocmd FileType tex inoremap ;em \emph{}<ESC>i
+autocmd FileType tex inoremap ;li \lstinline{}<ESC>i
+" Environments
+autocmd FileType tex inoremap ;bi \begin{itemize}<ESC>o<CR>\end{itemize}<ESC>ki\item 
