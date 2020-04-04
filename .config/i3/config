@@ -368,5 +368,5 @@ exec ~/git/dotfiles/set-us-layout.sh
 # Auto mount external hard drives
 exec udiskie
 
-# Open emoji search bar
-bindsym Mod4+period exec emoji-keyboard -s
+# Open emoji search bar via rofi
+bindsym Mod4+period exec rofi -show emoji -modi emoji -font "Roboto Mono for Powerline Bold 18"
