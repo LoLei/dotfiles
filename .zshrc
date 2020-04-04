@@ -91,20 +91,17 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-alias drive="~/go/bin/drive"
 alias e="evince"
 alias za="zathura"
-alias gnomestartx="startx /usr/bin/gnome-session"
-alias i3startx="startx ~/.xinitrc"
-alias i3s="startx ~/.xinitrc"
 alias mj="make -j && make test"
+
 # Pre-compose properly hard-wrapped email body
 alias vim-email="vim -c 'set textwidth=72'"
 
 # Tree Color
 alias tree="tree -C"
 
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 ## VI mode ##############################################
