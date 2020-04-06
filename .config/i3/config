@@ -363,7 +363,7 @@ exec_always --no-startup-id ~/git/dotfiles/launch-polybar.sh
 popup_during_fullscreen smart
 
 # Set us layout if on us-keyboard
-exec ~/git/dotfiles/set-us-layout.sh
+exec ~/git/dotfiles/scripts/set-us-layout.sh
 
 # Auto mount external hard drives
 exec udiskie
