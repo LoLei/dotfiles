@@ -65,7 +65,7 @@ plugins=(
 # User configuration
 
 source $ZSH/oh-my-zsh.sh
-source zsh-history-substring-search.zsh
+source $HOME/zsh-history-substring-search.zsh
 
 # User bins
 export PATH="/home/me/.local/bin:$PATH"
