@@ -1,5 +1,20 @@
 #!/bin/sh
 
+# This script symlinks via mpv opened files to a directory for easier access
+# later. (No more navigating into deep hierarchies)
+# 
+# It also handles the case if the mpv plugin nextfile.lua is used, which plays 
+# the next file in a directory, but it doesn't start a new process, it simply
+# replaces the loaded file in the existing mpv process.
+#
+# How to use: Simply use this as a wrapper for mpv. E.g. mpvh <video_file>.
+#
+# Requirements: Needs to be used from the same directory as the files, or else
+# readlink fails. Simply add the script to your $PATH
+#
+# Combination: Works with ranger, if either mpv is replaced globally with mpvh,
+# or the mime type in rifle.conf is adapted
+
 get_current_mpv_file_name() {
   file_name=$(echo '{ "command": ["get_property_string", "filename"] }' | \
     socat - /tmp/mpvsocket | jq .data | tr '"' ' ')
