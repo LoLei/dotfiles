@@ -1,8 +1,7 @@
 #!/bin/sh
 
 get_current_mpv_file_name() {
-  file_name=$(mpvinfo)
-  return $file_name
+  file_name=$(echo '{ "command": ["get_property_string", "filename"] }' | socat - /tmp/mpvsocket | jq .data | tr '"' ' ')
 }
 
 symlink_mru_and_save_history() {
@@ -25,8 +24,8 @@ main() {
   last_video="placeholer"
   while :
   do
-    # See mpvinfo.sh
-    current_video=$(mpvinfo)
+    get_current_mpv_file_name
+    current_video=$file_name
     if [[ $current_video != "" ]]; then
       last_video=$current_video
     fi
