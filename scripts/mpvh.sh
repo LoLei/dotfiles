@@ -17,7 +17,8 @@
 
 get_current_mpv_file_name() {
   file_name=$(echo '{ "command": ["get_property_string", "filename"] }' | \
-    socat - /tmp/mpvsocket | jq .data | tr '"' ' ')
+    socat - /tmp/mpvsocket | jq .data | tr '"' ' ' | \
+    sed -e 's/^[[:space:]]*//' | sed -e 's/[[:space:]]*$//')
 }
 
 symlink_mru_and_save_history() {
@@ -32,7 +33,7 @@ main() {
   pid=$(echo $!)
 
   # Symlink first opened file (via new mpv process) to mru
-  symlink_mru_and_save_history $1
+  symlink_mru_and_save_history "$1"
 
   # Handle if next file has been loaded via nextfile.lua
   last_video="placeholer"
@@ -54,7 +55,7 @@ main() {
   done
 
   # Symlink last played video
-  symlink_mru_and_save_history $last_video
+  symlink_mru_and_save_history "$last_video"
 }
 
-main $1
+main "$1"
