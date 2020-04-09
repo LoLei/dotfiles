@@ -35,8 +35,6 @@ main() {
   symlink_mru_and_save_history $1
 
   # Handle if next file has been loaded via nextfile.lua
-  # (This doesn't restart the mpv process, but simply replaces the previous file
-  # in the existing mpv process)
   last_video="placeholer"
   while :
   do
