@@ -1,7 +1,8 @@
 #!/bin/sh
 
 get_current_mpv_file_name() {
-  file_name=$(echo '{ "command": ["get_property_string", "filename"] }' | socat - /tmp/mpvsocket | jq .data | tr '"' ' ')
+  file_name=$(echo '{ "command": ["get_property_string", "filename"] }' | \
+    socat - /tmp/mpvsocket | jq .data | tr '"' ' ')
 }
 
 symlink_mru_and_save_history() {
