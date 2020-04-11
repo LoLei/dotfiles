@@ -22,7 +22,7 @@ get_current_mpv_file_name() {
 }
 
 symlink_mru_and_save_history() {
-  readlink -f "$1" >> ~/.logs/mpv-history.log
+  readlink -f "$1" >> $HOME/.logs/mpv-history.log
   ln -s "$(readlink -f "$1")" $HOME/Videos/mru/
 }
 
