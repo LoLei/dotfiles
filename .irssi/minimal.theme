@@ -1,0 +1,50 @@
+##
+## statusbar
+## Colors - http://irssi.org/documentation/formats
+
+# default background for all statusbars. You can also give
+# the default foreground color for statusbar items.
+sb_background = "%0%w";
+
+# default backround for "default" statusbar group
+#sb_default_bg = "%4";
+# background for prompt / input line
+sb_prompt_bg = "%n";
+# background for info statusbar
+sb_info_bg = "%8";
+# background for topicbar (same default)
+#sb_topic_bg = "%4";
+
+# text at the beginning of statusbars. sb-item already puts
+# space there,so we don't use anything by default.
+sbstart = "";
+# text at the end of statusbars. Use space so that it's never
+# used for anything.
+sbend = " ";
+
+topicsbstart = "{sbstart $*}";
+topicsbend = "{sbend $*}";
+
+prompt = "[$*] ";
+
+sb = " %c[%n$*%c]%n";
+sbmode = "(%c+%n$*)";
+sbaway = " (%GzZzZ%n)";
+sbservertag = ":$0 (change with ^X)";
+sbnickmode = "$0";
+
+# activity in statusbar
+
+# ',' separator
+sb_act_sep = "%c$*";
+# normal text
+sb_act_text = "%c$*";
+# public message
+sb_act_msg = "%W$*";
+# hilight
+sb_act_hilight = "%M$*";
+# hilight with specified color, $0 = color, $1 = text
+sb_act_hilight_color = "$0$1-%n";
+formats = {
+  "fe-common/core" = { pubmsg = "{pubmsgnick $2 {pubnick \00311$0}}$1"; };
+};
