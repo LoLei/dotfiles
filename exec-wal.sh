@@ -2,7 +2,7 @@
 
 DIR=$1
 # Generate colors and set terminal theme
-wal -i $DIR &&
+wal -i $DIR -o ~/git/dotfiles/.config/wal/done.sh &&
 
 # Set keyboard colors
 razer-cli -a
