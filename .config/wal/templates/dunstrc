@@ -57,4 +57,10 @@
     background = "{background}"
     foreground = "{foreground}"
 
+# Ignore list
+[spotify]
+    appname = *Spotify*
+    format = ""
+    history_ignore = yes
+
 # vim:ft=cfg
