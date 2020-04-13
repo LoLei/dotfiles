@@ -171,12 +171,7 @@ for_window [class="Spotify|spotify"] move to workspace $workspace7
 exec_always picom
 exec --no-startup-id nm-applet
 exec xrdb ~/.Xresources
-
-# Tray icons
-# volume
-# exec pasystray # Has annoying notifications
-#exec volti
-#exec volumeicon
+exec dunst
 
 # clipit
 exec clipit
