@@ -96,6 +96,7 @@ alias za="zathura"
 alias tv='tabview'
 alias tvm='tabview -w max'
 alias mj="make -j && make test"
+alias py="python"
 
 # Pre-compose properly hard-wrapped email body
 alias vim-email="vim -c 'set textwidth=72'"
