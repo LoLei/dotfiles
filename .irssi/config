@@ -62,6 +62,24 @@ servers = (
     address = "irc.undernet.org";
     chatnet = "Undernet";
     port = "6667";
+  },
+  {
+    address = "192.168.0.107";
+    chatnet = "freenode-znc";
+    port = "8000";
+    password = "root/freenode:root";
+    use_tls = "no";
+    tls_verify = "no";
+    autoconnect = "no";
+  },
+  {
+    address = "192.168.0.107";
+    chatnet = "snoonet-znc";
+    port = "8000";
+    password = "root/snoonet:root";
+    use_tls = "no";
+    tls_verify = "no";
+    autoconnect = "no";
   }
 );
 
@@ -134,6 +152,8 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
+  "freenode-znc" = { type = "IRC"; };
+  "snoonet-znc" = { type = "IRC"; };
 };
 
 channels = (
@@ -301,7 +321,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "me"; user_name = "Asmoedean_"; nick = "Asmodean_"; };
+  core = { real_name = "me"; user_name = "Asmoedean"; nick = "Asmodean"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "h3rbz"; };
 };
