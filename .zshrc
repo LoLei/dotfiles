@@ -98,6 +98,10 @@ alias tvm='tabview -w max'
 alias mj="make -j && make test"
 alias py="python"
 
+# Birch IRC
+alias birchs="BIRCH_STATUS='\e[31;1m' birch -s 192.168.0.107 -P 8000 -u root/snoonet -p root"
+alias birchf="BIRCH_STATUS='\e[31;1m' birch -s 192.168.0.107 -P 8000 -u root/freenode -p root"
+
 # Pre-compose properly hard-wrapped email body
 alias vim-email="vim -c 'set textwidth=72'"
 
