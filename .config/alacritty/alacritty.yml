@@ -505,6 +505,7 @@ key_bindings:
   # (Windows, Linux, and BSD only)
   - { key: V,        mods: Control|Alt, action: Paste            }
   - { key: C,        mods: Control|Alt, action: Copy             }
+  - { key: Return,   mods: Alt|Shift,   action: SpawnNewInstance }
   #- { key: Insert,   mods: Shift,         action: PasteSelection   }
   #- { key: Key0,     mods: Control,       action: ResetFontSize    }
   #- { key: Equals,   mods: Control,       action: IncreaseFontSize }

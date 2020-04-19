@@ -6,4 +6,4 @@ if [ -z "$1" ]
     mvdir=$1
 fi
 dldir=$HOME/Downloads
-mv $dldir/$(ls -t1 $dldir |  head -n 1) $mvdir
+mv $dldir/"$(ls -t1 $dldir |  head -n 1)" $mvdir
