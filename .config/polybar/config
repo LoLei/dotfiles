@@ -108,6 +108,7 @@ mount-0 = /
 label-mounted = %{Fcolors.foreground}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+format-mounted-underline = ${colors.secondary}
 
 [module/bspwm]
 type = internal/bspwm
