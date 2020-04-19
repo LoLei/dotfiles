@@ -53,7 +53,6 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-# font-0 = RobotoMono Nerd Font:style=Regular:size=9;0
 font-0 = FiraCode Nerd Font:style=Regular:size=9;1
 font-1 = fixed:pixelsize=10;1
 font-2 = unifont:fontformat=truetype:size=8:antialias=false;0
@@ -61,7 +60,7 @@ font-3 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
 modules-center = 
-modules-right = filesystem updates-arch-combined xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
+modules-right = filesystem updates-arch-combined memory cpu wlan eth battery temperature date xbacklight pulseaudio powermenu
 
 tray-position = right
 tray-padding = 0
@@ -104,10 +103,8 @@ label-indicator-underline = ${colors.secondary}
 [module/filesystem]
 type = internal/fs
 interval = 25
-
 mount-0 = /
 
-;label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-mounted = %{Fcolors.foreground}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
@@ -290,11 +287,11 @@ label-muted =  muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-0 = ${colors.secondary}
+bar-volume-foreground-1 = ${colors.secondary}
+bar-volume-foreground-2 = ${colors.secondary}
+bar-volume-foreground-3 = ${colors.secondary}
+bar-volume-foreground-4 = ${colors.secondary}
 bar-volume-foreground-5 = #f5a70a
 bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
