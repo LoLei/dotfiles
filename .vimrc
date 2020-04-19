@@ -41,6 +41,7 @@ filetype plugin indent on    " required
 syntax on
 set clipboard=unnamedplus
 set rnu
+set nu
 set wildmenu
 set hidden
 set showcmd
