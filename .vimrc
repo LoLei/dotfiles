@@ -19,6 +19,9 @@ Plugin 'mboughaba/i3config.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'mhinz/vim-startify'
 Plugin 'lervag/vimtex'
+Plugin 'google/vim-maktaba'
+Plugin 'google/vim-codefmt'
+Plugin 'google/vim-glaive'
 
 
 " All of your Plugins must be added before the following line
