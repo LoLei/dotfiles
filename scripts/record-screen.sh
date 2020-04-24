@@ -1,7 +1,7 @@
 #!/bin/sh
 # https://www.reddit.com/r/linux/comments/8n3ylp/screen_recording_in_x11_with_ffmpeg/
 # TODO: Dynamic position and size, mic opt-in
-resolution="2560x1080"
+resolution="1280x1080"
 
 # With mic/audio
 # ffmpeg -y \

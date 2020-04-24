@@ -138,10 +138,10 @@ nnoremap <leader>bf :Bf<CR>
 
 " Title Case Capitalization
 " https://github.com/nickjj/title-case-converter
-vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR>
+vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR><ESC>
 
 " Author formatting fix
-vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR>
+vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR><ESC>x
 
 " LaTeX commands macros
 " Citations
