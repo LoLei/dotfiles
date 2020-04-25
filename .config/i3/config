@@ -234,10 +234,6 @@ set $color_transparent "rgba(26,26,26,0.57)"
 
 # xfce4-notify
 for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggle
-# shutdown menu
-bindsym $mod+Shift+p exec xfce4-session-logout
-# xfce settings
-bindsym $mod+Shift+s exec unity-control-center
 # lock screen
 bindsym $mod+Control+l exec i3lock-fancy
 
@@ -259,15 +255,23 @@ workspace $workspace0 gaps inner 70
 workspace $workspace0 gaps outer 5
 
 # Change gap size at runtime
-set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps Gaps: (a) all, (o) outer, (i) inner
+set $mode_gaps_all 0 no gaps
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global), (Shift)+r reset
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global), (Shift)+r reset
 bindsym $mod+Shift+g mode "$mode_gaps"
 set $gap_increment 25
 
 mode "$mode_gaps" {
+        bindsym a      mode "$mode_gaps_all"
         bindsym o      mode "$mode_gaps_outer"
         bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_all" {
+        bindsym 0     gaps inner current set 0 gaps outer current set 0
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
