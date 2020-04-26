@@ -14,8 +14,6 @@
     # Top right
     geometry = "300x5-0+0"
 
-
-
     # Show multiple notifications in the same box
     separator_height = 0
 
@@ -31,6 +29,15 @@
 
     # How long a user needs to be idle for sticky notifications
     idle_threshold = 120
+
+    ### History ###
+
+    # Should a notification popped up from history be sticky or timeout
+    # as if it would normally do.
+    sticky_history = no
+
+    # Maximum amount of notifications kept in history
+    history_length = 50
 
     # Font and typography settings
     font = FiraCode Nerd Font 12
@@ -54,18 +61,31 @@
 [urgency_low]
     background = "{background}"
     foreground = "{foreground}"
+    timeout = 5
 
 [urgency_normal]
     background = "{background}"
     foreground = "{foreground}"
+    timeout = 10
 
 [urgency_critical]
     background = "{background}"
     foreground = "{foreground}"
+    timeout = 0
+
+# Special settings per application
+[irssi]
+    appname = *irssi*
+    timeout = 10
 
 # Ignore list
 [spotify]
     appname = *Spotify*
+    format = ""
+    history_ignore = yes
+
+[system]
+    body = *system*
     format = ""
     history_ignore = yes
 
