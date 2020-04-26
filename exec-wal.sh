@@ -11,7 +11,13 @@ else
 fi
 
 # Set keyboard colors
-razer-cli -a
+if ! [ -z "$2" ]
+then
+  razer-cli -c $2
+  hsetroot -solid "#$2"
+else
+  razer-cli -a
+fi
 
 # Set GTK and icon theme
 ~/git/dotfiles/change-gtk-theme.sh
