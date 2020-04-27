@@ -22,6 +22,7 @@ Plugin 'lervag/vimtex'
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
+Plugin 'junegunn/goyo.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -56,6 +57,8 @@ set ruler
 set backspace=2
 set textwidth=80
 colorscheme wal
+" No automatic comment insertion on new line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Show current function name
 fun! ShowFuncName()
@@ -102,6 +105,9 @@ nnoremap <leader>gdc    :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>gdf    :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>gip    :YcmCompleter GoToImprecise<CR>
 nnoremap <leader>fi     :YcmCompleter FixIt<CR>
+
+" Goyo
+let g:goyo_width = 81
 
 " i3 config syntax highlighting
 aug i3config_ft_detection
