@@ -65,7 +65,7 @@ servers = (
   },
   {
     address = "192.168.0.107";
-    chatnet = "freenode-znc";
+    chatnet = "f";
     port = "8000";
     password = "root/freenode:root";
     use_tls = "no";
@@ -74,7 +74,7 @@ servers = (
   },
   {
     address = "192.168.0.107";
-    chatnet = "snoonet-znc";
+    chatnet = "s";
     port = "8000";
     password = "root/snoonet:root";
     use_tls = "no";
@@ -152,8 +152,8 @@ chatnets = {
     max_msgs = "1";
     max_whois = "1";
   };
-  "freenode-znc" = { type = "IRC"; };
-  "snoonet-znc" = { type = "IRC"; };
+  "f" = { type = "IRC"; };
+  "s" = { type = "IRC"; };
 };
 
 channels = (
