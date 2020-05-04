@@ -333,7 +333,7 @@ statusbar = {
 settings = {
   core = { real_name = "me"; user_name = "Asmoedean"; nick = "Asmodean"; };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = { theme = "h3rbz"; };
+  "fe-common/core" = { theme = "xchat2"; };
   "perl/core/scripts" = {
     notifications_indirect_messages = "yes";
     notifications_active_window = "yes";

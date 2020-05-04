@@ -1,0 +1,12 @@
+#!/bin/sh
+while read file
+do
+        case "$1" in
+        "C-d")
+                mv "$file" ~/.trash ;;
+        "C-n")
+                nitrogen --save --set-zoom-fill "$file" ;;
+        "C-w")
+                wal -i "$file" ;;
+        esac
+done
