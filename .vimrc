@@ -53,6 +53,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 set smartindent
+autocmd BufRead,BufNewFile *.py setlocal cindent
 set ruler
 set backspace=2
 set textwidth=80
