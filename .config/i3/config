@@ -228,17 +228,43 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Color variables
-set $color_light "#4F4F4F"
-set $color_darker "#2D2D2D"
-set $color_transparent "rgba(26,26,26,0.57)"
+# set $color_light "#4F4F4F"
+# set $color_darker "#2D2D2D"
+# set $color_transparent "rgba(26,26,26,0.57)"
+
+# Xresources colors
+# Same as in polybar
+set_from_resource $primary     color1  #000000
+set_from_resource $secondary   color2  #000000
+set_from_resource $foreground  color7  #000000
+set_from_resource $background  color0  #000000
+set_from_resource $alert       color3  #000000
+
+# Spectrum colors
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #000000
+set_from_resource $darkgreen   color2  #000000
+set_from_resource $green       color10 #000000
+set_from_resource $darkyellow  color3  #000000
+set_from_resource $yellow      color11 #000000
+set_from_resource $darkblue    color4  #000000
+set_from_resource $blue        color12 #000000
+set_from_resource $darkmagenta color5  #000000
+set_from_resource $magenta     color13 #000000
+set_from_resource $darkcyan    color6  #000000
+set_from_resource $cyan        color14 #000000
+set_from_resource $darkwhite   color7  #000000
+set_from_resource $white       color15 #000000
 
 # xfce4-notify
 for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggle
 # lock screen
 bindsym $mod+Control+l exec i3lock-fancy
 
-# no title bars
-for_window [class="^.*"] border pixel 0
+# no title bars / border size
+for_window [class="^.*"] border pixel 1
+# Hide borders when only one window is on workspace
+hide_edge_borders smart
 
 
 ################################################################################
@@ -343,11 +369,11 @@ exec xset mouse 1 0
 ################################################################################
 
 # class                 border  	backgr. 	text    	indicator
-client.focused          $color_light 	$color_light 	#ffffff 	$color_light
-client.focused_inactive $color_darker 	$color_darker 	#ffffff 	$color_darker
-client.unfocused        $color_darker 	$color_darker  	#888888 	$color_darker
-client.urgent           $color_darker 	$color_darker  	#ffffff 	$color_darker
-client.placeholder      #000000 #0c0c0c #ffffff #000000
+client.focused          $primary 	$primary 	$foreground     $secondary
+client.focused_inactive $secondary 	$background 	$foreground     $background
+client.unfocused        $background 	$background  	$foreground     $background
+client.urgent           $alert 	        $background  	$foreground     $background
+client.placeholder      #000000         #0c0c0c         #ffffff         #000000
 
 ################################################################################
 # Bar
