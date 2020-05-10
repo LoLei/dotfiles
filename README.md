@@ -2,7 +2,7 @@
 
 Configuration and other files of my Linux setups.
 
-![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/neofetch-antergos.png "neofetch")
+![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/busyyy.png "busy screenshot")
 
 ## Distro
 [Arch Linux](https://www.archlinux.org/)
