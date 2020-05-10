@@ -29,6 +29,11 @@ Configuration and other files of my Linux setups.
 Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/.vimrc)
 
 ## Colors
-[pywal](https://github.com/dylanaraps/pywal) (`base16-default` theme in the screenshot)  
+[pywal](https://github.com/dylanaraps/pywal) (`base16-default` theme in the screenshot, but usually based on a [wallpaper](https://github.com/LoLei/dotfiles/tree/master/wallpapers))  
 [oomox](https://github.com/themix-project/oomox)  
 [razer-cli](https://github.com/LoLei/razer-cli)  
+
+See the full color scheme pipeline [here](https://github.com/LoLei/dotfiles/blob/master/exec-wal.sh).
+E.g.  
+`$ ./exec-wal.sh base16-google a36ac7`  
+`$ ./exec-wal.sh wallpapers/selected-wal-wallpapers`
