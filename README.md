@@ -14,21 +14,21 @@ Configuration and other files of my Linux setups.
 [polybar](https://github.com/jaagr/polybar)
 
 ## Compositor
-[compton](https://github.com/chjj/compton)
+[picom](https://github.com/yshui/picom)
 
 ## Shell
 [Zsh](http://www.zsh.org/) with [Oh My Zsh](http://ohmyz.sh/)
 
 ## Terminal
-[urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
+[alacritty](https://github.com/alacritty/alacritty)
 
 ## Font
-[Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
+[Fira Code](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
 
 ## Editor
 Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/.vimrc)
 
 ## Colors
-[pywal](https://github.com/dylanaraps/pywal)  
+[pywal](https://github.com/dylanaraps/pywal) (`base16-default` theme in the screenshot)  
 [oomox](https://github.com/themix-project/oomox)  
 [razer-cli](https://github.com/LoLei/razer-cli)  
