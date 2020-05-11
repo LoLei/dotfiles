@@ -2,7 +2,7 @@
 
 Configuration and other files of my Linux setups.
 
-![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/neofetch-antergos.png "neofetch")
+![](https://raw.githubusercontent.com/LoLei/dotfiles/master/images/busyyy.png "busy screenshot")
 
 ## Distro
 [Arch Linux](https://www.archlinux.org/)
@@ -14,21 +14,26 @@ Configuration and other files of my Linux setups.
 [polybar](https://github.com/jaagr/polybar)
 
 ## Compositor
-[compton](https://github.com/chjj/compton)
+[picom](https://github.com/yshui/picom)
 
 ## Shell
 [Zsh](http://www.zsh.org/) with [Oh My Zsh](http://ohmyz.sh/)
 
 ## Terminal
-[urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)
+[alacritty](https://github.com/alacritty/alacritty)
 
 ## Font
-[Roboto Mono](https://github.com/powerline/fonts/tree/master/RobotoMono)
+[Fira Code](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
 
 ## Editor
 Vim with various [addons](https://github.com/LoLei/dotfiles/blob/master/.vimrc)
 
 ## Colors
-[pywal](https://github.com/dylanaraps/pywal)  
+[pywal](https://github.com/dylanaraps/pywal) (`base16-default` theme in the screenshot, but usually based on a [wallpaper](https://github.com/LoLei/dotfiles/tree/master/wallpapers))  
 [oomox](https://github.com/themix-project/oomox)  
 [razer-cli](https://github.com/LoLei/razer-cli)  
+
+See the full color scheme pipeline [here](https://github.com/LoLei/dotfiles/blob/master/exec-wal.sh).
+E.g.  
+`$ ./exec-wal.sh base16-google a36ac7`  
+`$ ./exec-wal.sh wallpapers/selected-wal-wallpapers`
