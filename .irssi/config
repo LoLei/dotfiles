@@ -337,6 +337,7 @@ settings = {
   "perl/core/scripts" = {
     notifications_indirect_messages = "yes";
     notifications_active_window = "yes";
+    smartfilter_delay = "28800";
   };
 };
 logs = { };
