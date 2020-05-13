@@ -148,6 +148,7 @@ nnoremap <leader>bf :Bf<CR>
 vnoremap <leader>tc c<C-R>=system('tcc', getreg('"'))[:-2]<CR><ESC>
 
 " Author formatting fix
+" https://github.com/LoLei/authorfix
 vnoremap <leader>af c<C-R>=system('authorfix', getreg('"'))[:-2]<CR><ESC>x
 
 " LaTeX commands macros
