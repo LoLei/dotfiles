@@ -23,6 +23,8 @@ Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
 Plugin 'junegunn/goyo.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Quramy/tsuquyomi'
 
 
 " All of your Plugins must be added before the following line
@@ -60,6 +62,9 @@ set textwidth=80
 colorscheme wal
 " No automatic comment insertion on new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+set mouse=a
+" alacritty
+set ttymouse=sgr
 
 " Show current function name
 fun! ShowFuncName()
