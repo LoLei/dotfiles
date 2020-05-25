@@ -25,7 +25,7 @@ fi
 ~/git/dotfiles/change-gtk-theme.sh
 
 # Update Firefox
-~/git/Pywalfox/daemon/pywalfox.py update
+pywalfox update
 
 # Update spotify via spoomox (user rights-adapted script)
 # Supply argument to stop spotify from starting
