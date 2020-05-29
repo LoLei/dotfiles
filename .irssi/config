@@ -342,3 +342,4 @@ settings = {
 };
 logs = { };
 keyboard = ( { key = "^Z"; id = "command"; data = "window last"; } );
+ignores = ( { mask = "browndawg"; level = "ALL"; } );
