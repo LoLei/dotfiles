@@ -130,6 +130,9 @@ map <F7> gg=G<C-o><C-o>
 " Auto commit and push
 command Gcp :! git commit --all -m "-" && git push
 
+" Inline pydoc
+nnoremap <buffer> H :<C-u>execute "!pydoc3 " . expand("<cword>")<CR>
+
 "------------------------------- LaTeX -------------------------------
 map <F3> :w !detex \| wc -w<CR>
 map <F2> :setlocal spell! spelllang=en_us<CR>
