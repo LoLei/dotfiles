@@ -1,3 +1,6 @@
 # MPV
 .config/mpv/watch_later
 .config/mpv/persistent_config.json
+
+# Binaries
+i3ipc_hideshow_border
