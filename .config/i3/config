@@ -265,6 +265,8 @@ bindsym $mod+Control+l exec i3lock-fancy
 for_window [class="^.*"] border pixel 1
 # Hide borders when only one window is on workspace
 hide_edge_borders smart
+# Change border style for currently focused window
+bindsym $mod+Shift+b exec i3ipc_hideshow_border toggle
 
 
 ################################################################################
