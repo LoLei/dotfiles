@@ -15,7 +15,7 @@ servers = (
   },
   {
     address = "chat.freenode.net";
-    chatnet = "Freenode";
+    chatnet = "freenode";
     port = "6697";
     use_tls = "yes";
     tls_verify = "yes";
@@ -89,6 +89,14 @@ servers = (
     use_tls = "no";
     tls_verify = "no";
     autoconnect = "no";
+  },
+  {
+    address = "irc.snoonet.org";
+    chatnet = "snoonet";
+    port = "6697";
+    use_tls = "yes";
+    tls_verify = "yes";
+    autoconnect = "no";
   }
 );
 
@@ -111,11 +119,14 @@ chatnets = {
     max_msgs = "4";
     max_whois = "1";
   };
-  Freenode = {
+  freenode = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "4";
     max_whois = "1";
+    sasl_mechanism = "plain";
+    sasl_username = "<username>";
+    sasl_password = "<password>";
   };
   GameSurge = {
     type = "IRC";
@@ -164,18 +175,29 @@ chatnets = {
   f = { type = "IRC"; };
   s = { type = "IRC"; };
   "Slacktu-lsd" = { type = "IRC"; };
+  snoonet = {
+    type = "IRC";
+    sasl_mechanism = "plain";
+    sasl_username = "<username>";
+    sasl_password = "<password>";
+  };
 };
 
 channels = (
   { name = "#lobby"; chatnet = "EsperNet"; autojoin = "No"; },
-  { name = "#freenode"; chatnet = "Freenode"; autojoin = "No"; },
-  { name = "#irssi"; chatnet = "Freenode"; autojoin = "No"; },
   { name = "#gamesurge"; chatnet = "GameSurge"; autojoin = "No"; },
   { name = "#irssi"; chatnet = "IRCNet"; autojoin = "No"; },
   { name = "#ircsource"; chatnet = "IRCSource"; autojoin = "No"; },
   { name = "#netfuze"; chatnet = "NetFuze"; autojoin = "No"; },
   { name = "#oftc"; chatnet = "OFTC"; autojoin = "No"; },
-  { name = "silc"; chatnet = "SILC"; autojoin = "No"; }
+  { name = "silc"; chatnet = "SILC"; autojoin = "No"; },
+  { name = "#linuxmasterrace"; chatnet = "snoonet"; autojoin = "Yes"; },
+  { name = "#casualconversation"; chatnet = "snoonet"; autojoin = "Yes"; },
+  { name = "#talk"; chatnet = "snoonet"; autojoin = "Yes"; },
+  { name = "#archlinux"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "##linux"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "#python"; chatnet = "freenode"; autojoin = "Yes"; },
+  { name = "##programming"; chatnet = "freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -331,7 +353,7 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = "me"; user_name = "Asmoedean"; nick = "Asmodean"; };
+  core = { real_name = "me"; user_name = "<username>"; nick = "<username>"; };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "xchat2"; };
   "perl/core/scripts" = {
