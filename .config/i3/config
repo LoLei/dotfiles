@@ -180,6 +180,9 @@ exec clipit
 # bluetooth
 exec blueberry-tray
 
+# ssh irc notifications
+exec notossh start -H 192.168.0.105 -P 4222
+
 # User applications
 # exec slack && xdotool search --sync --name "slack" set_window --urgency 0
 # https://www.reddit.com/r/i3wm/comments/3yy916/how_to_stop_i3_showing_highlighted_workspaces/
