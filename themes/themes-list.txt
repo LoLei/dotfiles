@@ -1,3 +1,7 @@
 base16-black-metal* 333333
 base16-default 008080
+base16-other 008080
 base16-google a36ac7
+base16-dracula
+base16-eighties 747369
+base16-embers 5a5047
