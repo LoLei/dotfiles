@@ -416,7 +416,7 @@ menu-2-1-exec = menu-open-0
 [module/updates-arch-combined]
 type = custom/script
 exec = ~/git/dotfiles/.config/polybar/updates-arch-combined.sh
-interval = 600
+interval = 1800
 
 [settings]
 screenchange-reload = true
