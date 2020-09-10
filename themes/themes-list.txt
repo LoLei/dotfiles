@@ -1,7 +1,27 @@
 base16-black-metal* 333333
 base16-default 008080
-base16-other 008080
-base16-google a36ac7
 base16-dracula
 base16-eighties 747369
 base16-embers 5a5047
+base16-google a36ac7
+base16-gruvbox-hard
+base16-material
+base16-materialer
+base16-nord
+base16-ocean
+base16-oceanicnext
+base16-onedark
+base16-other 008080
+base16-seti
+base16-solarized
+base16-tomorrow-night
+base16-twilight
+base16-woodland
+hybrid-material
+sexy-dawn
+sexy-s3r0-modified
+sexy-sweetlove
+sexy-trim-yer-beard
+sexy-user-77-mashup-colors
+sexy-vacuous2
+vscode
