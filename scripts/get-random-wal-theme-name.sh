@@ -7,7 +7,6 @@ cd "$HOME/git/dotfiles/themes"
 if [ -z "$1" ]
 then
   shuf -n 1 themes-list.txt
-  echo "No argument supplied"
 else
   shuf -n 1 themes-list.txt | awk '{print $1;}'
 fi
