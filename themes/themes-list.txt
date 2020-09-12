@@ -19,7 +19,7 @@ base16-twilight
 base16-woodland
 hybrid-material
 sexy-dawn
-sexy-s3r0-modified
+sexy-s3r0-modified 775759
 sexy-sweetlove
 sexy-trim-yer-beard
 sexy-user-77-mashup-colors
