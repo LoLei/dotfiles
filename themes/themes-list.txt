@@ -13,7 +13,7 @@ base16-oceanicnext
 base16-onedark
 base16-other 008080
 base16-seti
-base16-solarized
+base16-solarized 6c71c4
 base16-tomorrow-night
 base16-twilight
 base16-woodland
