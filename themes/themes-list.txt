@@ -7,7 +7,7 @@ base16-google a36ac7
 base16-gruvbox-hard
 base16-material
 base16-materialer
-base16-nord
+base16-nord d08770
 base16-ocean
 base16-oceanicnext
 base16-onedark
