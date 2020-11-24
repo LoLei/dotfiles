@@ -58,7 +58,7 @@ bindsym $mod+Control+Shift+k focus parent, focus parent, focus parent, focus par
 # rofi
 bindsym $mod+d exec rofi -show run -font $user_font
 bindsym $mod+Shift+d exec CM_LAUNCHER=rofi clipmenu
-bindsym $mod+Ctrl+c exec rofi -show drun -font $user_font
+#bindsym $mod+Shift+d exec rofi -show drun -font $user_font
 bindsym $mod+Ctrl+d exec rofi -show run -font $user_font -run-command 'gksudo {cmd}'
 
 # change focus
