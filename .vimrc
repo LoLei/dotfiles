@@ -92,6 +92,9 @@ xnoremap p pgvy
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
+" Ctrl-P
+let g:ctrlp_cmd = 'CtrlPMRU'
+
 " Ctrl-P Funky
 nnoremap <Leader>fu :CtrlPFunky<Cr>
 " narrow the list down with a word under cursor
