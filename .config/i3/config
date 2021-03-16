@@ -263,8 +263,6 @@ set_from_resource $white       color15 #000000
 
 # xfce4-notify
 for_window [class="Xfce4-notifyd"] floating enable;border none; focus mode_toggle
-# lock screen
-bindsym $mod+Control+l exec i3lock-fancy
 
 # no title bars / border size
 for_window [class="^.*"] border pixel 1

@@ -2,3 +2,4 @@
 *.swp
 # GDB breakpoint file
 bps
+.idea/
