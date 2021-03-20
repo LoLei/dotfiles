@@ -48,7 +48,3 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
-
-(package! pyvenv)
-(package! python-pytest)
-(package! lsp-java)

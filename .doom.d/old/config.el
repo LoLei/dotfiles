@@ -19,13 +19,13 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "JetBrains Mono" :size 16 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "sans" :size 16))
+(setq doom-font (font-spec :family "FiraCode Nerd Font" :size 16 :weight 'semi-light)
+      doom-variable-pitch-font (font-spec :family "Fira Sans" :size 16))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'doom-tomorrow-night)
+(setq doom-theme 'doom-one)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
@@ -52,23 +52,3 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-
-(setq scroll-margin 5)
-
-(setq treemacs-width 50)
-(setq neo-window-width 50)
-(setq neo-window-fixed-size nil)
-;; Set the neo-window-width to the current width of the
-;; neotree window, to trick neotree into resetting the
-;; width back to the actual window width.
-;; Fixes: https://github.com/jaypei/emacs-neotree/issues/262
-(eval-after-load "neotree"
-'(add-to-list 'window-size-change-functions
-                (lambda (frame)
-                (let ((neo-window (neo-global--get-window)))
-                (unless (null neo-window)
-                (setq neo-window-width (window-width neo-window)))))))
-
-(setq lsp-pyls-configuration-sources ["flake8"])
-
-(setq lsp-java-java-path "/usr/bin/java")
