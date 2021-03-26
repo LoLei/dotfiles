@@ -275,15 +275,19 @@ bindsym $mod+Shift+b exec i3ipc_hideshow_border toggle
 ################################################################################
 # Gaps
 ################################################################################
-gaps inner 45
-gaps outer 5
+
+set $gap_inner_default 20
+set $gap_increment 10
+
+gaps inner $gap_inner_default
+gaps outer 0
 
 # Default gap sizes for specific workspaces
+workspace $workspace2 gaps inner 0
+workspace $workspace2 gaps outer 0
+
 workspace $workspace3 gaps inner 0
 workspace $workspace3 gaps outer 0
-
-workspace $workspace0 gaps inner 70
-workspace $workspace0 gaps outer 5
 
 # Change gap size at runtime
 set $mode_gaps Gaps: (a) all, (o) outer, (i) inner
@@ -291,7 +295,6 @@ set $mode_gaps_all 0 no gaps
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global), (Shift)+r reset
 set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global), (Shift)+r reset
 bindsym $mod+Shift+g mode "$mode_gaps"
-set $gap_increment 25
 
 mode "$mode_gaps" {
         bindsym a      mode "$mode_gaps_all"
@@ -316,8 +319,8 @@ mode "$mode_gaps_inner" {
         bindsym Shift+minus gaps inner all minus $grap_increment
         bindsym Shift+0     gaps inner all set 0
 
-        bindsym r           gaps inner current set 45
-        bindsym Shift+r     gaps inner all set 45
+        bindsym r           gaps inner current set $gap_inner_default
+        bindsym Shift+r     gaps inner all set $gap_inner_default
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
