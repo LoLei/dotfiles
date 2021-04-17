@@ -6,10 +6,10 @@ if [[ -f "$1" ]] || [[ -d "$1" ]]
 then
   # Directory or image supplied
   # Generate colors and set terminal theme
-  wal $3 -i $1 -o ~/git/dotfiles/.config/wal/done.sh &&
+  wal $3 -i $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
 else
   # Theme name supplied
-  wal $3 --theme $1 -o ~/git/dotfiles/.config/wal/done.sh &&
+  wal $3 --theme $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
 fi
 
 # Set keyboard colors
@@ -22,7 +22,7 @@ else
 fi
 
 # Set GTK and icon theme
-~/git/dotfiles/change-gtk-theme.sh
+/home/me/git/dotfiles/change-gtk-theme.sh
 
 # Update Firefox
 pywalfox update
