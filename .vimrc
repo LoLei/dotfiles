@@ -58,6 +58,7 @@ set smartindent
 autocmd BufRead,BufNewFile *.py setlocal cindent
 set ruler
 set backspace=2
+set scrolloff=5
 set textwidth=80
 colorscheme wal
 " No automatic comment insertion on new line
@@ -65,6 +66,10 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set mouse=a
 " alacritty
 set ttymouse=sgr
+" built-in file browser/tree
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 25
 
 " Show current function name
 fun! ShowFuncName()
