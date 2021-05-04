@@ -51,6 +51,9 @@
     # Allow some HTML tags like <i> and <u> in notifications
     markup = full
 
+    # Disable icons
+    icon_position = off
+
 # These are the keybindings used to control dunst notifications
 [shortcuts]
     close = ctrl+space
