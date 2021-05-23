@@ -45,7 +45,8 @@ set scrolloff=5
 set textwidth=80
 set mouse=a
 
-highlight CursorLineNr ctermfg=darkyellow
+hi CursorLineNr ctermfg=darkyellow
+hi StatusLine ctermbg=none cterm=bold
 
 " No automatic comment insertion on new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
