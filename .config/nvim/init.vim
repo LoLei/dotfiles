@@ -29,6 +29,7 @@ syntax enable
 set nu
 colorscheme wal
 filetype plugin indent on
+set clipboard+=unnamedplus
 
 " Leader
 let mapleader = "\<Space>"
@@ -100,7 +101,7 @@ end
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "rust_analyzer" }
+local servers = { "rust_analyzer", "tsserver", "pyright" }
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
