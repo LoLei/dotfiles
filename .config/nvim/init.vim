@@ -6,8 +6,13 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin(stdpath('data') . '/plugged')
 
+" General
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-commentary'
+
 " Theme
 Plug 'dylanaraps/wal.vim'
+Plug 'Glench/Vim-Jinja2-Syntax'
 
 " Telescope
 Plug 'nvim-lua/popup.nvim'
@@ -26,14 +31,34 @@ call plug#end()
 " GENERAL SETTINGS
 " -----------------------------------------------------------------------------
 syntax enable
-set nu
+set rnu
 colorscheme wal
 filetype plugin indent on
 set clipboard+=unnamedplus
+set showcmd
+set shiftwidth=2
+set softtabstop=2
+set smartindent
+set ruler
+set backspace=2
+set scrolloff=5
+set textwidth=80
+set mouse=a
+
+highlight CursorLineNr ctermfg=darkyellow
+
+" No automatic comment insertion on new line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Highlight tera files via jinja syntax
+autocmd BufNewFile,BufRead *.tera set ft=jinja
 
 " Leader
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
+
+" Rebind auto-pairs toggle
+let g:AutoPairsShortcutToggle = '<C-P>'
 
 " -----------------------------------------------------------------------------
 " TELESCOPE
