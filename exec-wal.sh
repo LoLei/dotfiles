@@ -22,11 +22,11 @@ else
 fi
 
 # Set GTK and icon theme
-/home/me/git/dotfiles/change-gtk-theme.sh
+# /home/me/git/dotfiles/change-gtk-theme.sh
 
 # Update Firefox
-pywalfox update
+# pywalfox update
 
 # Update spotify via spoomox (user rights-adapted script)
 # Supply argument to stop spotify from starting
-spoomox 0xdeadbeef
+# spoomox 0xdeadbeef
