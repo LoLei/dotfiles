@@ -9,9 +9,15 @@ call plug#begin(stdpath('data') . '/plugged')
 " General
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
 
 " Theme
 Plug 'dylanaraps/wal.vim'
+Plug 'morhetz/gruvbox'
 Plug 'Glench/Vim-Jinja2-Syntax'
 
 " Telescope
@@ -26,13 +32,14 @@ Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'nvim-lua/completion-nvim'
 
 call plug#end()
+call glaive#Install()
 
 " -----------------------------------------------------------------------------
 " GENERAL SETTINGS
 " -----------------------------------------------------------------------------
 syntax enable
 set rnu
-colorscheme wal
+
 filetype plugin indent on
 set clipboard+=unnamedplus
 set showcmd
@@ -44,6 +51,14 @@ set backspace=2
 set scrolloff=5
 set textwidth=80
 set mouse=a
+
+" Themeing / colorscheme
+let g:gruvbox_sign_column = 'bg0'
+let g:gruvbox_italic = '1'
+let g:gruvbox_bold = '1'
+let g:gruvbox_transparent_bg = '1'
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 
 hi CursorLineNr ctermfg=darkyellow
 hi StatusLine ctermbg=none cterm=bold

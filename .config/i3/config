@@ -358,9 +358,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 set $firstMonitor DP-2
 
 ################################################################################
-# Wallpaper
+# Wallpaper & Themeing
 ################################################################################
-exec_always ~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers
+# exec_always ~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers
 bindsym $mod+Shift+w exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
 bindsym $mod+Shift+v exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/vaporwave"
 
