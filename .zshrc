@@ -60,6 +60,7 @@ plugins=(
   screen
   svn
   web-search
+  kubectl
 )
 
 # User configuration
@@ -154,3 +155,5 @@ export PATH="/home/me/.emacs.d/bin:$PATH"
 export PATH="/home/me/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+eval "$(starship init zsh)"
