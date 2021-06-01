@@ -25,3 +25,5 @@ sexy-trim-yer-beard
 sexy-user-77-mashup-colors
 sexy-vacuous2 2d2031
 vscode
+themes/spaceduck.json
+themes/base16-gruvbox-hard-edit.json

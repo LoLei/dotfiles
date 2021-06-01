@@ -46,6 +46,7 @@ set showcmd
 set shiftwidth=2
 set softtabstop=2
 set smartindent
+set expandtab
 set ruler
 set backspace=2
 set scrolloff=5

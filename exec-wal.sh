@@ -2,6 +2,7 @@
 
 ## colors-source [hardcoded-colors] [-l]
 
+
 if [[ -f "$1" ]] || [[ -d "$1" ]]
 then
   # Directory or image supplied
@@ -9,6 +10,7 @@ then
   wal $3 -i $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
 else
   # Theme name supplied
+  cd /home/me/git/dotfiles || exit
   wal $3 --theme $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
 fi
 

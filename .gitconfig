@@ -26,6 +26,7 @@
     features = line-numbers decorations
     whitespace-error-style = 22 reverse
     navigate = true
+    syntax-theme = base16
 [interactive]
     diffFilter = delta --color-only
 
