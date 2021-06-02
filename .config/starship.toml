@@ -55,9 +55,9 @@ $status\
 $character"""
 
 [character]
-success_symbol = "[λ](bold green)"
-error_symbol = "[λ](bold red)"
-vicmd_symbol = "[λ](bold yellow)"
+success_symbol = "[»](bold green)"
+error_symbol = "[»](bold red)"
+vicmd_symbol = "[«](bold yellow)"
 
 [git_branch]
 symbol = "± "
