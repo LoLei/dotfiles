@@ -100,6 +100,7 @@ alias mj="make -j && make test"
 alias py="python"
 alias sxiv="sxiv -d"
 alias pastescrot="maim -s /dev/stdout | curl -s -F c=@- https://c-v.sh | xsel --clipboard"
+alias kubeclr='sed -i"" -e"s/^current-context:.*$/current-context:/" ~/.kube/config'
 
 # Birch IRC
 alias birchs="BIRCH_STATUS='\e[31;1m' birch -s 192.168.0.107 -P 8000 -u root/snoonet -p root"
