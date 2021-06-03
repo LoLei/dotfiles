@@ -61,6 +61,7 @@ plugins=(
   svn
   web-search
   kubectl
+  zsh-syntax-highlighting
 )
 
 # User configuration

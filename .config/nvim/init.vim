@@ -14,6 +14,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
+Plug 'alvan/vim-closetag'
 
 " Theme
 Plug 'dylanaraps/wal.vim'
@@ -76,6 +77,12 @@ let maplocalleader = "\\"
 
 " Rebind auto-pairs toggle
 let g:AutoPairsShortcutToggle = '<C-P>'
+
+" -----------------------------------------------------------------------------
+" CLOSETAG
+" -----------------------------------------------------------------------------
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.tsx'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx'
 
 " -----------------------------------------------------------------------------
 " TELESCOPE
