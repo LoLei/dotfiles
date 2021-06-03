@@ -92,7 +92,7 @@ let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx'
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers show_all_buffers=true sort_last_used=true<cr>
+nnoremap <leader>fb <cmd>Telescope buffers show_all_buffers=true sort_lastused=true<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
