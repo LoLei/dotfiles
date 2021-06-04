@@ -103,6 +103,11 @@ alias sxiv="sxiv -d"
 alias pastescrot="maim -s /dev/stdout | curl -s -F c=@- https://c-v.sh | xsel --clipboard"
 alias kubeclr='sed -i"" -e"s/^current-context:.*$/current-context:/" ~/.kube/config'
 
+# Kubecolor
+source <(kubectl completion zsh)
+alias kubectl="kubecolor"
+compdef kubecolor=kubectl
+
 # Birch IRC
 alias birchs="BIRCH_STATUS='\e[31;1m' birch -s 192.168.0.107 -P 8000 -u root/snoonet -p root"
 alias birchf="BIRCH_STATUS='\e[31;1m' birch -s 192.168.0.107 -P 8000 -u root/freenode -p root"
