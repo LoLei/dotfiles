@@ -360,7 +360,9 @@ set $firstMonitor DP-2
 ################################################################################
 # Wallpaper & Themeing
 ################################################################################
-# exec_always ~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers
+exec wal --theme ~/git/dotfiles/themes/base16-gruvbox-hard-edit.json
+exec feh --randomize --bg-fill ~/git/dotfiles/wallpapers/gruvbox/
+exec razer-cli -e multicolor
 bindsym $mod+Shift+w exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
 bindsym $mod+Shift+v exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/vaporwave"
 

@@ -2,7 +2,6 @@
 
 ## colors-source [hardcoded-colors] [-l]
 
-
 if [[ -f "$1" ]] || [[ -d "$1" ]]
 then
   # Directory or image supplied
