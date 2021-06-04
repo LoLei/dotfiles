@@ -156,6 +156,16 @@ for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup { on_attach = on_attach }
 end
 
+-- Servers with additional setup
+nvim_lsp["yamlls"].setup {
+  settings = {
+    yaml = {
+      schemas = { kubernetes = "/*.yaml" },
+    },
+  },
+  on_attach = on_attach
+}
+
 -- Enable diagnostics
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
