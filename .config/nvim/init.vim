@@ -69,7 +69,8 @@ hi StatusLine ctermbg=none cterm=bold
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Highlight tera files via jinja syntax
-autocmd BufNewFile,BufRead *.tera set ft=jinja
+" Disable as it messes up indendation, but syntax highlighting still works
+" autocmd BufNewFile,BufRead *.tera set ft=jinja
 
 " Leader
 let mapleader = "\<Space>"
