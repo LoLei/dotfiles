@@ -54,8 +54,9 @@ set expandtab
 set ruler
 set backspace=2
 set scrolloff=5
-set textwidth=80
+set textwidth=120
 set mouse=a
+set nowrap
 
 " Themeing / colorscheme
 let g:gruvbox_sign_column = 'bg0'
@@ -87,6 +88,18 @@ let g:AutoPairsShortcutToggle = '<C-P>'
 " -----------------------------------------------------------------------------
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx,*.tsx'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.tsx'
+
+" -----------------------------------------------------------------------------
+" NERDTREE
+" -----------------------------------------------------------------------------
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 
 " -----------------------------------------------------------------------------
 " TELESCOPE
