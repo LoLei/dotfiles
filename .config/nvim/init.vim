@@ -16,6 +16,8 @@ Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 Plug 'alvan/vim-closetag'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
 " Theme
 Plug 'dylanaraps/wal.vim'
