@@ -18,11 +18,13 @@ Plug 'google/vim-glaive'
 Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
 
 " Theme
 Plug 'dylanaraps/wal.vim'
 Plug 'morhetz/gruvbox'
 Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Telescope
 Plug 'nvim-lua/popup.nvim'
@@ -228,3 +230,26 @@ set signcolumn=yes
 autocmd CursorMoved,InsertLeave,BufEnter,BufWinEnter,TabEnter,BufWritePost *
 \ lua require'lsp_extensions'.inlay_hints{ prefix = '', highlight = "Comment", enabled = {"TypeHint", "ChainingHint", "ParameterHint"} }
 
+
+" -----------------------------------------------------------------------------
+" TREESITTER
+" -----------------------------------------------------------------------------
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ignore_install = { }, -- List of parsers to ignore installing
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = { },  -- list of language that will be disabled
+  },
+  indent = {
+    enable = true
+  },
+}
+EOF
+
+" -----------------------------------------------------------------------------
+" INDENT-BLANKLINE
+" -----------------------------------------------------------------------------
+let g:indent_blankline_use_treesitter = v:true
+let g:indent_blankline_show_current_context = v:true
