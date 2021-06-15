@@ -91,6 +91,9 @@ nnoremap <leader>wj :wincmd j<CR>
 nnoremap <leader>wk :wincmd k<CR>
 nnoremap <leader>wl :wincmd l<CR>
 
+" Spellcheck
+map <F2> :setlocal spell! spelllang=en_us<CR>
+
 " -----------------------------------------------------------------------------
 " CLOSETAG
 " -----------------------------------------------------------------------------
