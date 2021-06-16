@@ -23,6 +23,9 @@ Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
 " Theme
 Plug 'dylanaraps/wal.vim'
 Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
+Plug 'srcery-colors/srcery-vim'
+Plug 'ayu-theme/ayu-vim'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -61,12 +64,22 @@ set mouse=a
 set nowrap
 
 " Themeing / colorscheme
-let g:gruvbox_sign_column = 'bg0'
-let g:gruvbox_italic = '1'
-let g:gruvbox_bold = '1'
-let g:gruvbox_transparent_bg = '1'
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
+set termguicolors     " enable true colors support
+
+" let g:gruvbox_sign_column = 'bg0'
+" let g:gruvbox_italic = '1'
+" let g:gruvbox_bold = '1'
+" let g:gruvbox_transparent_bg = '1'
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme gruvbox
+
+" let ayucolor="dark"   " for dark version of theme
+" colorscheme ayu
+
+let g:srcery_italic = 1
+let g:srcery_bold = 1
+let g:srcery_underline = 1
+colorscheme srcery
 
 hi CursorLineNr ctermfg=darkyellow
 hi StatusLine ctermbg=none cterm=bold
@@ -119,9 +132,12 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 " telescope
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>ff <cmd>Telescope find_files hidden=true<cr>
+nnoremap <leader>fr <cmd>Telescope file_browser<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers show_all_buffers=true sort_lastused=true<cr>
+nnoremap <leader>fs <cmd>Telescope grep_string<cr>
+nnoremap <leader>fz <cmd>Telescope current_buffer_fuzzy_find<cr>
+nnoremap <leader>fb <cmd>Telescope buffers show_all_buffers=true sort_lastused=true ignore_current_buffer=true<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
