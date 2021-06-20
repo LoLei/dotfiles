@@ -95,9 +95,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
 
-" Rebind auto-pairs toggle
-let g:AutoPairsShortcutToggle = '<C-Ö>'
-
 " Moving between windows
 nnoremap <leader>wh :wincmd h<CR>
 nnoremap <leader>wj :wincmd j<CR>
@@ -106,6 +103,18 @@ nnoremap <leader>wl :wincmd l<CR>
 
 " Spellcheck
 map <F2> :setlocal spell! spelllang=en_us<CR>
+
+" -----------------------------------------------------------------------------
+" AUTOPAIRS
+" -----------------------------------------------------------------------------
+" Rebind auto-pairs toggle
+let g:AutoPairsShortcutToggle = '<C-Ö>'
+
+" -----------------------------------------------------------------------------
+" FORMATTING
+" -----------------------------------------------------------------------------
+map <C-M-L> :FormatCode<CR>
+map <C-M-P> :FormatCode prettier<CR>
 
 " -----------------------------------------------------------------------------
 " CLOSETAG
