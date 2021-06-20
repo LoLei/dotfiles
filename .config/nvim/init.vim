@@ -59,7 +59,7 @@ set expandtab
 set ruler
 set backspace=2
 set scrolloff=5
-set textwidth=120
+set textwidth=100
 set mouse=a
 set nowrap
 
