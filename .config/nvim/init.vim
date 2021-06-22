@@ -64,7 +64,9 @@ set mouse=a
 set nowrap
 
 " Themeing / colorscheme
-set termguicolors     " enable true colors support
+" set termguicolors     " enable true colors support
+
+colorscheme wal
 
 " let g:gruvbox_sign_column = 'bg0'
 " let g:gruvbox_italic = '1'
@@ -76,10 +78,10 @@ set termguicolors     " enable true colors support
 " let ayucolor="dark"   " for dark version of theme
 " colorscheme ayu
 
-let g:srcery_italic = 1
-let g:srcery_bold = 1
-let g:srcery_underline = 1
-colorscheme srcery
+" let g:srcery_italic = 1
+" let g:srcery_bold = 1
+" let g:srcery_underline = 1
+" colorscheme srcery
 
 hi CursorLineNr ctermfg=darkyellow
 hi StatusLine ctermbg=none cterm=bold

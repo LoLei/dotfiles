@@ -360,9 +360,9 @@ set $firstMonitor DP-2
 ################################################################################
 # Wallpaper & Themeing
 ################################################################################
-exec wal --theme ~/git/dotfiles/themes/srcerywal.json
-exec feh --randomize --bg-fill ~/git/dotfiles/wallpapers/other/
-# exec razer-cli -e multicolor
+# exec wal --theme ~/git/dotfiles/themes/srcerywal.json
+# exec feh --randomize --bg-fill ~/git/dotfiles/wallpapers/other/
+exec --no-startup-id "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
 bindsym $mod+Shift+w exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/selected-wal-wallpapers"
 bindsym $mod+Shift+v exec "~/git/dotfiles/exec-wal.sh ~/git/dotfiles/wallpapers/vaporwave"
 
