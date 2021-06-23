@@ -12,6 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-unimpaired'
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
@@ -19,6 +20,7 @@ Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 
 " Theme
 Plug 'dylanaraps/wal.vim'
@@ -283,3 +285,8 @@ EOF
 " -----------------------------------------------------------------------------
 let g:indent_blankline_use_treesitter = v:true
 let g:indent_blankline_show_current_context = v:true
+
+" -----------------------------------------------------------------------------
+" MARKDOWN-PREVIEW
+" -----------------------------------------------------------------------------
+let g:mkdp_browser = 'qutebrowser'
