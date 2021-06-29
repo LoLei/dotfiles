@@ -218,7 +218,7 @@ end
 nvim_lsp["yamlls"].setup {
   settings = {
     yaml = {
-      schemas = { kubernetes = "/*.yaml" },
+      schemas = { kubernetes = {"deployment.yaml", "statefulset.yaml", "/*secret.yaml"} },
     },
   },
   on_attach = on_attach
