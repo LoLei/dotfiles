@@ -19,12 +19,14 @@ base16-tomorrow-night
 base16-twilight
 base16-woodland
 hybrid-material
+monokai 75715E
 sexy-dawn
 sexy-s3r0-modified 775759
 sexy-sweetlove
 sexy-trim-yer-beard
 sexy-user-77-mashup-colors
 sexy-vacuous2 2d2031
-vscode
-themes/spaceduck.json
+sexy-zenburn 705050
 themes/base16-gruvbox-hard-edit.json
+themes/spaceduck.json
+vscode
