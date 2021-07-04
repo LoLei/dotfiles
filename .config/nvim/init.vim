@@ -19,11 +19,13 @@ Plug 'google/vim-glaive'
 Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'lua' }
+Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'master' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Theme
-Plug 'dylanaraps/wal.vim'
+" Plug 'dylanaraps/wal.vim'
+Plug 'sprockmonty/wal.vim'
 Plug 'morhetz/gruvbox'
 Plug 'nanotech/jellybeans.vim'
 Plug 'srcery-colors/srcery-vim'
@@ -66,7 +68,7 @@ set mouse=a
 set nowrap
 
 " Themeing / colorscheme
-" set termguicolors     " enable true colors support
+set termguicolors     " enable true colors support
 
 colorscheme wal
 
