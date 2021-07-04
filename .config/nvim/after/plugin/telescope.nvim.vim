@@ -1,4 +1,5 @@
 lua << EOF
+local actions = require('telescope.actions')
 require('telescope').setup{
   defaults = {
     vimgrep_arguments = {
@@ -38,6 +39,11 @@ require('telescope').setup{
     file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
     grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
     qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      },
+    },
 
     -- Developer configurations: Not meant for general override
     buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
