@@ -71,7 +71,7 @@ us-east-1 = "va"
 
 [kubernetes]
 disabled = false
-format = 'on [⛵$context ](cyan bold)'
+format = 'on [⛵ $context ](blue bold)'
 
 [python]
 format = 'via [${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
