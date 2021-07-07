@@ -47,7 +47,7 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -196,7 +196,6 @@ exec notossh start -H 192.168.0.105 -P 4222
 
 
 # reload the configuration file
-# bindsym $mod+Shift+c reload
 bindsym $mod+Shift+Control+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
