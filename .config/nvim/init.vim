@@ -107,6 +107,10 @@ nnoremap <leader>wj :wincmd j<CR>
 nnoremap <leader>wk :wincmd k<CR>
 nnoremap <leader>wl :wincmd l<CR>
 
+" Resizing windows
+nnoremap <silent> <Leader>+ :vertical res +10<CR>
+nnoremap <silent> <Leader>- :vertical res -10<CR>
+
 " Spellcheck
 map <F2> :setlocal spell! spelllang=en_us<CR>
 
@@ -140,6 +144,9 @@ nnoremap <leader>nr :NERDTreeRefreshRoot<CR>
 " Exit Vim if NERDTree is the only window left.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
+
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeHighlightCursorline = 0
 
 " -----------------------------------------------------------------------------
 " TELESCOPE
