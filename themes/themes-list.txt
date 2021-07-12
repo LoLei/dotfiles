@@ -13,6 +13,7 @@ base16-ocean
 base16-oceanicnext
 base16-onedark
 base16-other 008080
+base16-pop
 base16-seti
 base16-solarized 6c71c4
 base16-tomorrow-night
@@ -21,6 +22,7 @@ base16-woodland
 hybrid-material
 monokai 75715E
 sexy-dawn
+sexy-eqie6
 sexy-s3r0-modified 775759
 sexy-sweetlove
 sexy-trim-yer-beard
