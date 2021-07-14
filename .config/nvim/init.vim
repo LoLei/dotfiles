@@ -18,6 +18,7 @@ Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 Plug 'alvan/vim-closetag'
 Plug 'preservim/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 " Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'master' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
@@ -227,7 +228,9 @@ end
 nvim_lsp["yamlls"].setup {
   settings = {
     yaml = {
-      schemas = { kubernetes = {"deployment.yaml", "statefulset.yaml", "/*secret.yaml", "serviceaccount.yaml"} },
+      schemas = { kubernetes = {"deployment.yaml", "statefulset.yaml", "/*secret.yaml",
+      "serviceaccount.yaml", "role.yaml", "clusterrole.yaml", "rolebinding.yaml",
+      "clusterrolebinding.yaml"} },
     },
   },
   on_attach = on_attach
