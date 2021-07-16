@@ -19,7 +19,8 @@ then
   razer-cli -c $2
   hsetroot -solid "#$2"
 else
-  razer-cli -a
+  # razer-cli -a
+  razer-cli -e multicolor,xpalette
 fi
 
 # Set GTK and icon theme
