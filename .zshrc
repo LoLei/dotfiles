@@ -105,6 +105,10 @@ alias kubeclr='sed -i"" -e"s/^current-context:.*$/current-context:/" ~/.kube/con
 alias mtail="multitail --config /home/me/.multitailrc"
 alias ktail="mtail -cS ls1 -j"
 
+pastor () {
+	curl --progress-bar -F "c=@$1" https://c-v.sh/
+}
+
 # Kubecolor
 source <(kubectl completion zsh)
 alias kubectl="kubecolor"
