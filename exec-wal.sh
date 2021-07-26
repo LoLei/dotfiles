@@ -2,14 +2,19 @@
 
 ## colors-source [hardcoded-colors] [-l]
 
-if [[ -f "$1" ]] || [[ -d "$1" ]]
+echo "Arg: $1"
+
+if [[ -d "$1" ]]
 then
-  # Directory or image supplied
-  # Generate colors and set terminal theme
+  echo Directory supplied
+  wal $3 -i $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
+elif [[ -f "$1" ]] && ([[ $1 == *.jpg ]] || [[ $1 == *.png ]])
+then
+  echo Image supplied
   wal $3 -i $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
 else
-  # Theme name supplied
-  cd /home/me/git/dotfiles || exit
+  echo Theme supplied
+  cd /home/me/git/dotfiles/themes || exit
   wal $3 --theme $1 -o /home/me/git/dotfiles/.config/wal/done.sh &&
 fi
 

@@ -1,4 +1,3 @@
-base16-black-metal* 333333
 base16-brewer
 base16-default 008080
 base16-dracula
@@ -13,7 +12,6 @@ base16-nord d08770
 base16-ocean
 base16-oceanicnext
 base16-onedark
-base16-other 008080
 base16-pop
 base16-seti
 base16-solarized 6c71c4
@@ -30,6 +28,6 @@ sexy-trim-yer-beard
 sexy-user-77-mashup-colors
 sexy-vacuous2 2d2031
 sexy-zenburn 705050
-themes/base16-gruvbox-hard-edit.json
-themes/spaceduck.json
+base16-gruvbox-hard-edit.json
+spaceduck.json
 vscode
