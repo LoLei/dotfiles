@@ -22,7 +22,7 @@ hybrid-material
 monokai 75715E
 sexy-dawn
 sexy-eqie6
-sexy-orangish.json EB4509
+sexy-orangish EB4509
 sexy-s3r0-modified 775759
 sexy-sweetlove
 sexy-trim-yer-beard
