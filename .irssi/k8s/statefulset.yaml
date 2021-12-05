@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: irssi
-          image: docker.io/lolei/irssi:0.0.1
+          image: docker.io/lolei/irssi:0.0.3
           imagePullPolicy: IfNotPresent
           volumeMounts:
             - name: irssi-config-file
@@ -25,6 +25,10 @@ spec:
             - name: irssi-config-dir
               mountPath: /home/user/.irssi
               readOnly: false
+          resources:
+            limits:
+              memory: "8Mi"
+              cpu: "5m"
       volumes:
       - name: irssi-config-file
         secret:

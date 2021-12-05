@@ -6,8 +6,8 @@ FROM docker.io/irssi:1.2.3
 USER root
 
 RUN apt update
-RUN apt install screen -y
+RUN apt install screen vim -y
 
 USER user
 
-CMD ["bash"]
+ENTRYPOINT ["bash", "-c", "while true; do echo 'looping endlessly...'; sleep 3600; done"]
