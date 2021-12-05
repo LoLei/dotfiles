@@ -1,0 +1,13 @@
+# docker build -f Containerfile -t docker.io/lolei/irssi:$TAG .
+# docker push docker.io/lolei/irssi:$TAG
+
+FROM docker.io/irssi:1.2.3
+
+USER root
+
+RUN apt update
+RUN apt install screen -y
+
+USER user
+
+CMD ["bash"]

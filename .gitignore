@@ -4,3 +4,5 @@
 
 # Binaries
 i3ipc_hideshow_border
+*-secret.yaml
+.irssi/config-filled-out

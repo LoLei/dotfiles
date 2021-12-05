@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: irssi-sts
+spec:
+  serviceName: "irssi-svc"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: irssi
+  template:
+    metadata:
+      labels:
+        app: irssi
+    spec:
+      containers:
+        - name: irssi
+          image: docker.io/lolei/irssi:0.0.1
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - name: irssi-config-file
+              mountPath: /home/user/.irssi/config
+              subPath: config
+              readOnly: true
+            - name: irssi-config-dir
+              mountPath: /home/user/.irssi
+              readOnly: false
+      volumes:
+      - name: irssi-config-file
+        secret:
+          secretName: irssi-config-file-secret
+  volumeClaimTemplates:
+    - metadata:
+        name: irssi-config-dir
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi
+        storageClassName: do-block-storage
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: irssi-svc
+  labels:
+    app: irssi
+spec:
+  clusterIP: None
+  selector:
+    app: irssi
