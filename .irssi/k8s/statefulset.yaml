@@ -27,8 +27,8 @@ spec:
               readOnly: false
           resources:
             limits:
-              memory: "8Mi"
-              cpu: "5m"
+              memory: "128Mi"
+              cpu: "100m"
       volumes:
       - name: irssi-config-file
         secret:
