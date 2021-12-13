@@ -33,6 +33,8 @@ spec:
       - name: irssi-config-file
         secret:
           secretName: irssi-config-file-secret
+      securityContext:
+        fsGroup: 1000
   volumeClaimTemplates:
     - metadata:
         name: irssi-config-dir
