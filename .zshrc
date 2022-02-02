@@ -104,6 +104,7 @@ alias pastescrot="maim -s /dev/stdout | curl -s -F c=@- https://c-v.sh | xsel --
 alias kubeclr='sed -i"" -e"s/^current-context:.*$/current-context:/" ~/.kube/config'
 alias mtail="multitail --config /home/me/.multitailrc"
 alias ktail="mtail -cS ls1 -j"
+alias ls="lsd"
 
 pastor () {
 	curl --progress-bar -F "c=@$1" https://c-v.sh/
