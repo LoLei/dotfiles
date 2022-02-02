@@ -23,6 +23,7 @@ Plug 'ryanoasis/vim-devicons'
 " Plug 'lukas-reineke/indent-blankline.nvim', { 'branch': 'master' }
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'google/vim-jsonnet'
 
 " Theme
 " Plug 'dylanaraps/wal.vim'
