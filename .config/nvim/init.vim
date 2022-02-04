@@ -99,6 +99,9 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Disable as it messes up indendation, but syntax highlighting still works
 " autocmd BufNewFile,BufRead *.tera set ft=jinja
 
+" Highlight .env.* files with .env syntax
+autocmd BufNewFile,BufRead *.env.* set filetype=sh
+
 " Leader
 let mapleader = "\<Space>"
 let maplocalleader = "\\"
