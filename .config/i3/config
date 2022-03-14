@@ -194,6 +194,8 @@ exec notossh start -H 192.168.0.105 -P 4222
 # User defined key bindings
 ################################################################################
 
+# Screenshot
+bindsym $mod+Shift+s exec shutter -s
 
 # reload the configuration file
 bindsym $mod+Shift+Control+c reload
