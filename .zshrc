@@ -160,7 +160,7 @@ man() {
     command man "$@"
 }
 
-eval "$(fnm env)"
+eval "$(fnm env --use-on-cd)"
 
 export PATH="/home/me/.emacs.d/bin:$PATH"
 

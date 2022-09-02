@@ -38,5 +38,6 @@
     },
     "[yaml]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "explorer.confirmDelete": false
 }
