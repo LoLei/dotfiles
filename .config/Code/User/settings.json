@@ -1,0 +1,43 @@
+{
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
+  "window.zoomLevel": 2,
+  "window.menuBarVisibility": "toggle",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "files.insertFinalNewline": true,
+  "vim.useSystemClipboard": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontSize": 16,
+  "editor.lineNumbers": "relative",
+  "vim.smartRelativeLine": true,
+  "files.autoSave": "onFocusChange",
+  "editor.fontFamily": "RobotoMono Nerd Font",
+  "redhat.telemetry.enabled": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Gitpod Dark",
+  "editor.cursorSurroundingLines": 5,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false
+}
